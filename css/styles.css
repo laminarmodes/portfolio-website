@@ -37,7 +37,7 @@
 
 body {
     /*background-color: var(--background-color);*/
-    /* test */
+
 
     background: rgb(81,0,255);
     background: linear-gradient(135deg, rgba(81,0,255,0.23853291316526615) 0%, rgba(0,127,189,0.22172619047619047) 14%, rgba(213,168,0,0.48783263305322133) 100%);
@@ -45,7 +45,8 @@ body {
     /*background: rgb(81,0,255);
 background: linear-gradient(135deg, rgba(81,0,255,0.46262254901960786) 0%, rgba(0,127,189,0.44861694677871145) 14%, rgba(213,168,0,1) 100%);  */ 
 
-
+    /*background: rgb(81,0,255);
+background: linear-gradient(135deg, rgba(81,0,255,1) 0%, rgba(0,127,189,1) 14%, rgba(213,168,0,1) 100%);*/
     font-family: 'Space Mono', monospace;
     font-weight: 400;
     font-size: 16px;
