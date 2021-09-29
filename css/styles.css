@@ -1,0 +1,731 @@
+/*************/
+/* VARIABLES */
+/*************/
+
+:root {
+    --primary-color: #26547B;
+    --secondary-color: #990182;
+    --dark-grey: #333;
+
+    --background-color: #F5F5F5;
+    --nav-background-color: #F5F5F5;
+    --light-gray: #F5F5F5;
+
+    --light-text-color: #fff;
+    --text-opacity: 0.9;
+
+    --warm-primary: #6B0097;
+    --warm-secondary: #990182;
+    --warm-tertiary: #BE3263;
+    --warm-quaternary: #DF5848;
+
+    --cool-primary: #342870;
+    --cool-secondary: #26547B;
+    --cool-tertiary: #1F7F79;
+    --cool-quaternary: #2FAC66;
+
+    --grid-corner-radius: 10px;
+    --margin-desktop: 4%;
+    --color-animation-duration: 4s;
+
+    --main-page-width: 800px;
+}
+
+/*****************/
+/* GLOBAL STYLES */
+/*****************/
+
+body {
+    /*background-color: var(--background-color);*/
+
+
+    background: rgb(81,0,255);
+    background: linear-gradient(135deg, rgba(81,0,255,0.23853291316526615) 0%, rgba(0,127,189,0.22172619047619047) 14%, rgba(213,168,0,0.48783263305322133) 100%);
+
+    /*background: rgb(81,0,255);
+background: linear-gradient(135deg, rgba(81,0,255,0.46262254901960786) 0%, rgba(0,127,189,0.44861694677871145) 14%, rgba(213,168,0,1) 100%);  */ 
+
+    /*background: rgb(81,0,255);
+background: linear-gradient(135deg, rgba(81,0,255,1) 0%, rgba(0,127,189,1) 14%, rgba(213,168,0,1) 100%);*/
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'BioRhyme', serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--dark-grey)
+}
+
+h2 {
+    font-family: 'BioRhyme', serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--dark-grey)
+}
+
+h3 {
+    font-family: 'BioRhyme', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--dark-grey)
+}
+
+p {
+    color: var(--dark-grey)
+}
+
+/*********/
+/* LINKS */
+/*********/
+
+a {
+    color: var(--primary-color)
+}
+
+a:visited {
+    color: var(--secondary-color)
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--secondary-color)
+}
+
+/***********/
+/* BUTTONS */
+/***********/
+
+button, .button {
+    /* overwrite broswer defaults and set border to none */
+    border: none;
+    /* remember, for a-block, width is ignored so have to use display: inline-block first */
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+
+    /* use fron from outer container */
+    font-family: 'Lato', sans-serif;
+    
+    /* background color, font color and text decoration */
+    background-color: #00AEFF;
+    color: white;
+    text-decoration: none;
+
+    /* spacing */
+    line-height: 42px;
+    border-radius: 50px;
+
+    /* 
+        box-shadow: (inset = inner shadow) h-offset v-offset blur spread color
+        layer two grey shadows on top of each other 
+        guide from https://html-css-js.com/css/generator/box-shadow/
+    */
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+    7px 7px 20px 0px rgba(0,0,0,.1), 
+    4px 4px 5px 0px rgba(0,0,0,.1);
+
+    /* text shadow */
+    text-shadow:  2px 2px 3px rgba(255,255,255,.5),
+              -4px -4px 6px rgba(116, 125, 136, .2);
+  
+    outline: none;
+
+    transition: 0.2s opacity;
+
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+/* page container is a relative child element, goes around everything on the page and sets minimum height to 100% of the viewport height (vh)*/
+.page-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+    max-width: var(--main-page-width);
+    margin: 0 auto;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+.profile__portrait {
+    float: left;
+    width: 50%;
+    margin-right: 40px;
+}
+
+.profile {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* attention: when making width 100% then adding padding and boarder causes 100% + padding + boarder */
+* {
+    box-sizing: border-box;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+.page-header {
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: var(--nav-background-color);
+    z-index: 3;
+  }
+  
+  /**************/
+  /* NAVIGATION */
+  /**************/
+  
+  .main-navigation {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .main-navigation img {
+    height: 16px;
+    width: auto;
+    justify-self: start;
+    margin-left: 20px;
+  }
+  
+  .main-navigation ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-self: end;
+    
+  }
+  
+  .navigation-list {
+    transform: translate(0);
+    /* z-index: 3; */
+  }
+  
+  .navigation-list__item a {
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+  }
+  
+  .navivation-list__item a:hover {
+    color: #3498db;
+  }
+
+  /* SEARCH FUNCTION */
+  .no-search {
+    transform: translate(0);
+    transition: transform 0.7s ease-in-out;
+  }
+  
+/***************************/  
+/* MOBILE MENU & ANIMATION */
+/***************************/ 
+
+.menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    background-color: #3f3f3f;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-toggle {
+    justify-self: end;
+    margin-right: 25px;
+    display: none;
+  }
+  
+  .menu-toggle:hover{
+    cursor: pointer;
+  }
+  
+  /* Through animation, changes the 3-bar hamburger to a 2-bar X */
+
+  /* Rotate the 1st bar 45 degrees */
+  #mobile-menu.is-active .bar:nth-child(1){
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  /* Hide the middle bar */
+  #mobile-menu.is-active .bar:nth-child(2){
+    opacity: 0;
+  }
+  
+  /* Rotate the 3rd bar -45 deg */
+  #mobile-menu.is-active .bar:nth-child(3){
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+/***********************************/  
+/* Mobile Devices - Phones/Tablets */
+/***********************************/  
+  
+  @media only screen and (max-width: 720px) { 
+    .features {
+      flex-direction: column;
+      padding: 50px;
+    }
+    
+    /* MOBILE HEADINGS */
+    
+    h1 {
+      font-size: 1.9rem;
+    }
+    
+    h2 {
+      font-size: 1rem;
+    }
+    
+    p {
+      font-size: 0.8rem;
+    }
+    
+    /* MOBILE NAVIGATION */
+       
+    .main-navigation ul {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      justify-content: start;
+      top: 55px;
+      background-color: var(--nav-background-color);
+      width: 100%;
+      height: calc(100vh - 55px);
+      /* moves the nav drawer off screen */
+      transform: translate(-101%);
+      text-align: center;
+      overflow: hidden;
+      z-index: 3;
+      
+      
+    }
+    
+    .main-navigation li {
+      padding: 15px;
+    }
+    
+    .main-navigation li:first-child {
+      margin-top: 50px;
+    }
+    
+    .main-navigation li a {
+      font-size: 1rem;
+    }
+     
+    .menu-toggle, .bar {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .mobile-nav {
+    transform: translate(0%)!important;
+    
+  }
+     
+  }
+
+/*****************/
+/* ABOUT SECTION */
+/*****************/
+
+/*.about-intro {
+    max-width: 700px;
+    margin: 0 auto;
+}*/
+
+.about-illustration {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.emphasize {
+    font-weight: bold;
+    color: var(--cool-tertiary);
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/***********************/
+/* WORK SECTION - GRID */
+/***********************/
+
+/* start grid fallback */
+.grid__item {
+    display: inline-block;
+    width: 25%; 
+}
+/* end grid fallback */
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        /*margin: 2%;*/
+        
+        
+    }
+    
+    .grid__item {
+        /*background-color: #F6F5F5;*/
+        /* ensures power of new layout grid can still be used in modern browsers and automatically tkaes width from defined grid container */
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .grid__item img {
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
+/* center all the content in the grid cell and give padding */
+.grid__item {
+    justify-content: center;
+    padding: 2%;
+    /* this is important to make sure h4 text position is relative to grid container, not full page */
+    position: relative;
+    
+}
+
+/* The image will have a border radius, shadow and transition */
+.project-image {
+    vertical-align: middle;
+    border-radius: var(--grid-corner-radius);
+    filter: brightness(0.25);
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+
+/* The grid h3 text will be white, hidden and have a transition */
+.grid__item > .cell-text {
+    position: absolute;
+    
+    /* positions corner of text in center */
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    /* shifts text so that center of text is in center */
+    /*transform: translate(-50%, -50%);*/
+
+    color: var(--light-text-color);
+    visibility: visible;
+    opacity: var(--text-opacity);
+    z-index: 2;
+    transition: all ease-in-out 0.2%;
+}
+
+.grid__item h1 {
+    color: var(--light-text-color);
+    opacity: var(--text-opacity);
+}
+
+.grid__item h2 {
+    color: var(--light-text-color);
+    opacity: var(--text-opacity);
+}
+
+.grid__item h3 {
+    color: var(--light-text-color);
+    opacity: var(--text-opacity);
+}
+
+.grid__item p {
+    color: var(--light-text-color);
+    opacity: var(--text-opacity);
+}
+
+.project-image:hover {
+    vertical-align: middle;
+    border-radius: var(--grid-corner-radius);
+    filter: brightness(1);
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+    transition: all ease-in-out 0.2%;
+    
+}
+
+.grid__item:hover > .cell-text {
+    visibility: hidden;
+}
+
+@media all and (min-width: 500px) and (max-width: 750px)
+{
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* when on mobile, the grid cells are bigger so make the font bigger */
+     .grid__item h2 {
+            font-size: 30px;
+    }
+    /* when on mobile, the grid cells are bigger so make the font bigger */
+    .grid__item p {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    /* when on mobile, the grid cells are bigger so make the font bigger */
+    .grid__item h2 {
+            font-size: 30px;
+    }
+    /* when on mobile, the grid cells are bigger so make the font bigger */
+    .grid__item p {
+        font-size: 22px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    .professional {
+        gap: 10px;
+    }
+        /* when on mobile, the grid cells are bigger so make the font bigger */
+        .grid__item p {
+            font-size: 20px;
+        }
+}
+
+/************************************/
+/* ABOUT SECTION - IMAGE ANIMATIONS */
+/************************************/
+
+/* Circle 0 */
+@keyframes circle-0-color-change {
+    0% {
+        fill: var(--warm-primary);
+        stroke: var(--warm-primary)
+    }
+    100% {
+        fill: var(--cool-primary);
+        stroke: var(--cool-primary)
+    }
+}
+
+@keyframes circle-0-ring-color-change {
+    0% { 
+        stroke: var(--warm-primary)
+    }
+    100% {   
+        stroke: var(--cool-primary)
+    }
+}
+
+.circle-0 {
+    animation-duration: var(--color-animation-duration);
+    animation-name: circle-0-color-change;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+.circle-0-ring {
+    animation-duration: var(--color-animation-duration);
+    animation-name: circle-0-ring-color-change;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+/* Circlel 1 */
+@keyframes circle-1-color-change {
+    0% {
+        fill: var(--warm-tertiary);
+        stroke: var(--warm-tertiary)
+    }
+    100% {
+        fill: var(--cool-tertiary);
+        stroke: var(--cool-tertiary)
+    }
+}
+
+@keyframes circle-1-ring-color-change {
+    0% {  
+        stroke: var(--warm-tertiary)
+    }
+    100% { 
+        stroke: var(--cool-tertiary)
+    }
+}
+
+.circle-1 {
+    animation-duration: var(--color-animation-duration);
+    animation-name: circle-1-color-change;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+.circle-1-ring {
+    animation-duration: var(--color-animation-duration);
+    animation-name: circle-1-ring-color-change;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+/* Circle 2 */
+@keyframes circle-2-color-change {
+    0% {
+        fill: var(--warm-secondary);
+        stroke: var(--warm-secondary)
+    }
+    100% {
+        fill: var(--cool-secondary);
+        stroke: var(--cool-secondary);
+    }
+
+}
+
+@keyframes circle-2-ring-color-change {
+    0% {
+        
+        stroke: var(--warm-secondary)
+    }
+    100% {
+        
+        stroke: var(--cool-secondary)
+    }
+
+}
+
+.circle-2 {
+    animation-duration: var(--color-animation-duration);
+    animation-name: circle-2-color-change;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+.circle-2-ring {
+    animation-duration: var(--color-animation-duration);
+    animation-name: circle-2-ring-color-change;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+
+/* circle 3 */
+@keyframes circle-3-color-change {
+    0% {
+        fill: var(--warm-quaternary);
+        stroke: var(--warm-quaternary);
+        
+    }
+    100% {
+        
+        fill: var(--cool-quaternary);
+        stroke: var(--cool-quaternary);
+    }
+}
+
+@keyframes circle-3-ring-color-change {
+    0% {
+        
+        stroke: var(--warm-quaternary);
+    }
+    100% {
+        stroke: var(--cool-quaternary);
+        
+    }
+
+}
+
+.circle-3 {
+    animation-duration: var(--color-animation-duration);
+    animation-name: circle-3-color-change;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+.circle-3-ring {
+    animation-duration: var(--color-animation-duration);
+    animation-name: circle-3-ring-color-change;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+/* Background Circle Animation */
+
+@keyframes blob-float {
+    from {
+        transform-origin: 50% 50%;
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform-origin: 50% 50%;
+        transform: rotateZ(360deg);
+    }
+}
+
+.background-circle {
+    animation-duration: 30s;
+    animation-name: blob-float;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
