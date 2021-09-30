@@ -8,11 +8,12 @@
     --dark-grey: #333;
 
     --background-color: #F5F5F5;
-    --nav-background-color: #F5F5F5;
+    /*--nav-background-color: #F5F5F5;*/
+    --nav-background-color: none;
     --light-gray: #F5F5F5;
 
     --light-text-color: #fff;
-    --text-opacity: 0.9;
+    --text-opacity: 1;
 
     --warm-primary: #6B0097;
     --warm-secondary: #990182;
@@ -42,39 +43,50 @@ body {
     background: rgb(81,0,255);
     background: linear-gradient(135deg, rgba(81,0,255,0.23853291316526615) 0%, rgba(0,127,189,0.22172619047619047) 14%, rgba(213,168,0,0.48783263305322133) 100%);
 
-    /*background: rgb(81,0,255);
-background: linear-gradient(135deg, rgba(81,0,255,0.46262254901960786) 0%, rgba(0,127,189,0.44861694677871145) 14%, rgba(213,168,0,1) 100%);  */ 
-
-    /*background: rgb(81,0,255);
-background: linear-gradient(135deg, rgba(81,0,255,1) 0%, rgba(0,127,189,1) 14%, rgba(213,168,0,1) 100%);*/
-    font-family: 'Space Mono', monospace;
+    /*font-family: 'Space Mono', monospace;*/
+    font-family: 'Merriweather', serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
 }
 
+
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive;
+*/
+
 h1 {
-    font-family: 'BioRhyme', serif;
+    /*font-family: 'BioRhyme', serif;*/
+    font-family: 'Sacramento', cursive;
     font-weight: 700;
-    font-size: 36px;
-    color: var(--dark-grey)
+    font-size: 52px;
+    color: var(--dark-grey);
+    
+    
+    line-height: 0.5;
+    margin-top: 90px;
 }
 
 h2 {
-    font-family: 'BioRhyme', serif;
-    font-weight: 400;
+    /*font-family: 'BioRhyme', serif;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     font-size: 24px;
     color: var(--dark-grey)
 }
 
 h3 {
-    font-family: 'BioRhyme', serif;
+    /*font-family: 'BioRhyme', serif;*/
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: var(--dark-grey)
 }
 
 p {
+    font-family: 'Merriweather', serif;
     color: var(--dark-grey)
 }
 
@@ -163,23 +175,105 @@ button:hover, button:focus, .button:hover, .button:focus {
     margin: 0 auto;
 }
 
+@media all and (min-width: 500px) and (max-width: 750px)
+{
+    .main {
+        margin: 20px;
+    }  
+}
+
+@media all and (max-width: 500px) {
+    .main {
+        margin: 20px;
+    }
+}
+
 .navigation-list__item--active {
     text-decoration: none;
 }
 
+/*****************************/
+/* PROFILE SECTION - CONTENT */
+/*****************************/
+
 .profile__portrait {
     float: left;
     width: 50%;
+    border-radius: 50%;
     margin-right: 40px;
 }
 
-.profile {
+/*.profile {
     margin: 0;
     position: absolute;
     top: 40%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}*/
+
+/**************************/
+/* PROFILE SECTION - GRID */
+/**************************/
+
+.profile-grid__item {
+    display: inline-block;
+    width: 25%;
+}
+
+@supports (display: grid) {
+    .profile-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .profile-grid__item {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .profile-grid__item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px)
+{
+    .profile-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* when on mobile, the grid cells are bigger so make the font bigger */
+     .profile-grid__item h2 {
+            font-size: 30px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+    /* when on mobile, the grid cells are bigger so make the font bigger */
+    .profile-grid__item h2 {
+            font-size: 30px;
+    }
+    /* when on mobile, the grid cells are bigger so make the font bigger */
+}
+
+@media all and (max-width: 750px) {
+    .profile-grid {
+        gap: 10px;
+    }
+    .profile-grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+        /* when on mobile, the grid cells are bigger so make the font bigger */
+        .profile-grid__item p {
+            font-size: 20px;
+        }
 }
 
 /* attention: when making width 100% then adding padding and boarder causes 100% + padding + boarder */
@@ -310,15 +404,19 @@ button:hover, button:focus, .button:hover, .button:focus {
     /* MOBILE HEADINGS */
     
     h1 {
-      font-size: 1.9rem;
+      font-size: 2rem;
     }
     
     h2 {
-      font-size: 1rem;
+      font-size: 2rem;
     }
+
+    h3 {
+        font-size: 1rem;
+      }
     
     p {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
     
     /* MOBILE NAVIGATION */
@@ -436,17 +534,29 @@ button:hover, button:focus, .button:hover, .button:focus {
 /* center all the content in the grid cell and give padding */
 .grid__item {
     justify-content: center;
-    padding: 2%;
+    
     /* this is important to make sure h4 text position is relative to grid container, not full page */
     position: relative;
+
+    /* supports filter blur by making edges sharp*/
+    border-radius: var(--grid-corner-radius);
     
+    overflow: hidden;
 }
 
 /* The image will have a border radius, shadow and transition */
 .project-image {
     vertical-align: middle;
     border-radius: var(--grid-corner-radius);
-    filter: brightness(0.25);
+    
+    /* creates dark overlay */
+    /*filter: brightness(.7);*/
+
+    /* create blur overlay */
+    filter: brightness(0.7) blur(5px);
+    margin: -5px -10px -10px -0px;
+
+    /* crate box shadow */
     box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
 }
 
@@ -491,7 +601,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .project-image:hover {
     vertical-align: middle;
     border-radius: var(--grid-corner-radius);
-    filter: brightness(1);
+    filter: brightness(1); /* seems to have no effect, done in grid__item */
     box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
     transition: all ease-in-out 0.2%;
     
