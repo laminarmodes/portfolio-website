@@ -484,6 +484,21 @@ button:hover, button:focus, .button:hover, .button:focus {
     color: var(--cool-tertiary);
 }
 
+th {
+    padding-right: 25px;
+    text-align: left;
+}
+
+td {
+    padding-right: 25px;
+    text-align: left;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 /**********/
 /* FOOTER */
 /**********/
@@ -655,6 +670,62 @@ button:hover, button:focus, .button:hover, .button:focus {
         .grid__item p {
             font-size: 20px;
         }
+}
+
+
+/************************************/
+/* WORK - VISUAL DESIGN */
+/************************************/
+
+#form-language-01 {
+    width: 100%;
+    height: auto;
+}
+
+
+#form-language-03 {
+    width: 100%;
+    height: auto;
+}
+
+#form-language-04 {
+    width: 100%;
+    height: auto;
+}
+
+#form-language-w1 {
+    width: 100%;
+    height: auto;
+}
+
+#form-language-w2 {
+    width: 100%;
+    height: auto;
+}
+
+#form-language-w3 {
+    width: 100%;
+    height: auto;
+}
+
+#form-language-w4 {
+    width: 100%;
+    height: auto;
+}
+
+#atmosphere-small {
+    width: 100%;
+    height: auto;
+}
+
+#book-inspiration {
+    width: 100%;
+    height: auto;
+}
+
+#shoe-series-small {
+    width: 100%;
+    height: auto;    
 }
 
 /************************************/
