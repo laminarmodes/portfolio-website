@@ -65,20 +65,18 @@ h1 {
     /*font-family: 'BioRhyme', serif;*/
     font-family: 'Courgette', cursive;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 36px;
     color: var(--dark-grey);
-    
-    
-    line-height: 0.5;
-    margin-top: 90px;
+    margin-bottom: 10px;
 }
 
 h2 {
     /*font-family: 'BioRhyme', serif;*/
-    font-family: 'Courgette', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 24px;
-    color: var(--dark-grey)
+    color: var(--dark-grey);
+    margin-top: 10px;
 }
 
 h3 {
@@ -805,6 +803,32 @@ table {
 #ux-06 {
     width: 100%;
     height: auto; 
+}
+
+#technology-evolution-01 {
+    width: 100%;
+    height: auto;     
+}
+#technology-evolution-02 {
+    width: 100%;
+    height: auto;     
+}
+
+#workshop-01 {
+    width: 100%;
+    height: auto;       
+}
+#workshop-02 {
+    width: 100%;
+    height: auto;       
+}
+#workshop-03 {
+    width: 100%;
+    height: auto;       
+}
+#workshop-04 {
+    width: 100%;
+    height: auto;       
 }
 
 /************************************/
