@@ -8,8 +8,8 @@
     --dark-grey: #333;
 
     --background-color: #F5F5F5;
-    /*--nav-background-color: #F5F5F5;*/
-    --nav-background-color: none;
+    --nav-background-color: #F5F5F5;
+    /*--nav-background-color: none;*/
     --light-gray: #F5F5F5;
 
     --light-text-color: #fff;
@@ -720,7 +720,37 @@ table {
     height: auto;
 }
 
-#book-inspiration {
+#colors-01 {
+    width: 100%;
+    height: auto;
+}
+
+#colors-02 {
+    width: 100%;
+    height: auto;
+}
+
+#colors-03 {
+    width: 100%;
+    height: auto;
+}
+
+#colors-04 {
+    width: 100%;
+    height: auto;
+}
+
+#colors-05 {
+    width: 100%;
+    height: auto;
+}
+
+#colors-06 {
+    width: 100%;
+    height: auto;
+}
+
+#colors-07 {
     width: 100%;
     height: auto;
 }
