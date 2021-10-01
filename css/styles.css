@@ -44,7 +44,7 @@ body {
     background: linear-gradient(135deg, rgba(81,0,255,0.23853291316526615) 0%, rgba(0,127,189,0.22172619047619047) 14%, rgba(213,168,0,0.48783263305322133) 100%);
 
     /*font-family: 'Space Mono', monospace;*/
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -56,10 +56,14 @@ font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Sacramento', cursive;
 */
+/*
+font-family: 'Courgette', cursive;
+font-family: 'Lato', sans-serif;
+*/
 
 h1 {
     /*font-family: 'BioRhyme', serif;*/
-    font-family: 'Sacramento', cursive;
+    font-family: 'Courgette', cursive;
     font-weight: 700;
     font-size: 52px;
     color: var(--dark-grey);
@@ -71,7 +75,7 @@ h1 {
 
 h2 {
     /*font-family: 'BioRhyme', serif;*/
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Courgette', cursive;
     font-weight: 500;
     font-size: 24px;
     color: var(--dark-grey)
@@ -86,7 +90,7 @@ h3 {
 }
 
 p {
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     color: var(--dark-grey)
 }
 
@@ -727,45 +731,78 @@ table {
     width: 100%;
     height: auto;    
 }
+#shoes-cover-small {
+    width: 100%;
+    height: auto;
+}
 
+#viridis-data-04-xcode {
+    width: 100%;
+    height: auto; 
+}
 #data-all-v04 {
     width: 100%;
     height: auto; 
 }
 
 #viridis-data-01 {
-    width: 100%;
+    width: 50%;
     height: auto; 
 }
 #plasma-data-01 {
-    width: 100%;
-    height: auto; 
-}
-#viridis-data-04-xcode {
-    width: 100%;
+    width: 50%;
     height: auto; 
 }
 #neo-plasma-01 {
+    width: 50%;
+    height: auto; 
+}
+#neo-vir-03 {
+    width: 50%;
+    height: auto; 
+}
+#neo-vir-06-xcode {
     width: 100%;
     height: auto; 
 }
-#neo-plasma-03 {
-    width: 100%;
+
+#neo-plasma-02 {
+    width: 50%;
+    height: auto; 
+}
+#neo-vir-04 {
+    width: 50%;
     height: auto; 
 }
 #neo-plasma-05-all {
     width: 100%;
     height: auto; 
 }
-#neo-vir-02 {
+#ux-07 {
     width: 100%;
     height: auto; 
 }
-#neo-vir-04 {
+#ux-01 {
     width: 100%;
     height: auto; 
 }
-#neo-vir-06-xcode {
+#ux-02 {
+    width: 100%;
+    height: auto; 
+}
+#ux-03 {
+    width: 100%;
+    height: auto; 
+}
+#ux-04 {
+    width: 100%;
+    height: auto; 
+}
+#ux-05 {
+    width: 100%;
+    height: auto; 
+}
+#ux-06 {
     width: 100%;
     height: auto; 
 }
