@@ -728,6 +728,48 @@ table {
     height: auto;    
 }
 
+#data-all-v04 {
+    width: 100%;
+    height: auto; 
+}
+
+#viridis-data-01 {
+    width: 100%;
+    height: auto; 
+}
+#plasma-data-01 {
+    width: 100%;
+    height: auto; 
+}
+#viridis-data-04-xcode {
+    width: 100%;
+    height: auto; 
+}
+#neo-plasma-01 {
+    width: 100%;
+    height: auto; 
+}
+#neo-plasma-03 {
+    width: 100%;
+    height: auto; 
+}
+#neo-plasma-05-all {
+    width: 100%;
+    height: auto; 
+}
+#neo-vir-02 {
+    width: 100%;
+    height: auto; 
+}
+#neo-vir-04 {
+    width: 100%;
+    height: auto; 
+}
+#neo-vir-06-xcode {
+    width: 100%;
+    height: auto; 
+}
+
 /************************************/
 /* ABOUT SECTION - IMAGE ANIMATIONS */
 /************************************/
