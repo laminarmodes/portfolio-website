@@ -57,7 +57,9 @@
             </nav>
         </header>
 
-        <main class="main">
+    <!-- KEEP THIS CODE IN CASE PARALLAX EXPERIMENT DOESN'T WORK -->
+
+        <!--<main class="main">
             <div class="profile">
 
                 <h1>Hello...</h1>
@@ -77,12 +79,97 @@
                         <p>I am currently building this portfolio and welcome you to explore while I add my work.</p>
                     </div>
                 </div>
-            </div>
-        </main>
+            </div>-->
 
-        <footer class="page-footer">
-            <p>Find me on</p>
+            <!-- PARALLAX SCROLLING EXPERIMENT -->
 
+
+              <div class="slides">
+                <div class="slide" id="slide-1">
+                  <div class="slide__bg"></div>
+                  <div class="slide__content profile-grid">
+                    <div class="slide__text profile-grid-item">
+                      <h1 id="slide-1-title">Pure CSS Parallax</h1>
+                      <p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+                    </div>
+                    <div class="slide__image profile-grid__item">
+                      <img id="profile-pic-01" src="img/anya-full.jpg">
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="slide" id="slide-2">
+                  <div class="slide__bg"></div>
+                  <div class="slide__content">
+                    <div class="slide__text">
+                      <h1 id="slide-2-title">Slide 2 title</h1>
+                      <p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+                      <p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+                    </div>
+                    <div class="slide__image">
+                      <img class="image-100" src="img/data-visualization/data-sketch.jpg">
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="slide" id="slide-3">
+                  <div class="slide__bg"></div>
+                  <div class="slide__content">
+                    <div class="slide__text">
+                      <h1 id="slide-3-title">Slide 3 title</h1>
+                      <p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+                      <p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+                    </div>
+                    <div class="slide__image">
+                      <img class="image-100" src="img/native-ios-data/data-all-v04.png">
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="slide" id="slide-4">
+                  <div class="slide__bg"></div>
+                  <div class="slide__content">
+                    <div class="slide__text">
+                      <h1 id="slide-4-title">Slide 4 title</h1>
+                      <p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+                    </div>
+                    <div class="slide__image">
+                      <img class="image-100" src="img/colors/atmosphere-small.jpg">
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="slide" id="slide-5">
+                  <div class="slide__bg"></div>
+                  <div class="slide__content">
+                    <div class="slide__text">
+                      <h1 id="slide-5-title">Slide 5 title</h1>
+                      <p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+                    </div>
+                    <div class="slide__image">
+                      <img class="image-100" src="img/workshops/workshop-01.png">
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="slide" id="slide-6">
+                  <div class="slide__bg"></div>
+                  <div class="slide__content">
+                    <div class="slide__text">
+                      <h1 id="slide-6-title">Slide 6 title</h1>
+                      <p>Bacon ipsum dolor amet alcatra beef meatloaf brisket beef ribs meatball tenderloin shank ball tip ribeye pig pastrami filet mignon. Sirloin tail fatback venison shank salami. Picanha pastrami venison meatball kevin pork chop leberkas. Meatloaf tenderloin leberkas pancetta hamburger cow kielbasa, filet mignon tri-tip beef ribs.</p>
+                    </div>
+                    <div class="slide__image">
+                      <img class="image-100" src="img/come-say-hi.jpg">
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+
+              <!-- Change class back to "page-footer" if parallax scrolling doesn't work, and move outisde the 'main' class -->
+
+        <footer  class="scrolling_footer">
             <div class="social-media">
                 <a href="https://twitter.com/LaminarModes" target="_blank"><img width="50"
                         src="img/twitter_black_icon.svg" alt="twitter image"></a>
@@ -92,8 +179,9 @@
                 <a href="https://www.linkedin.com/in/anyatraille/" target="_blank"><img width="50"
                         src="img/linkedin.png" alt="linkedin image"></a>
             </div>
-
         </footer>
+
+    
 
     </div>
 
