@@ -679,6 +679,11 @@ table {
 /* WORK - VISUAL DESIGN */
 /************************************/
 
+#android-01 {
+    width: 100%;
+    height: auto;  
+}
+
 #form-language-01 {
     width: 100%;
     height: auto;
