@@ -110,10 +110,11 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+    color: var(--warm-tertiary);
 }
 
 a:active {
-    color: var(--secondary-color)
+    color: var(--warm-tertiary);
 }
 
 /***********/
@@ -890,6 +891,8 @@ table {
   .slide {
     position: relative;
     padding: 8% 0;
+    /* height: 100%; */
+    height: 60%; /* USE THIS TO CHANGE THE HEIGHT OF EACH SLIDE */
   }
   .slide__content {
     max-width: 1200px; /* 1200px */
@@ -1018,7 +1021,8 @@ table {
         bottom: -50%;
       }
       .slide:first-child {
-        padding-top: 14%;
+        /*padding-top: 14%;*/
+        /*padding-bottom: 10%;*/ /* Controls the padding for the first slide */
       }
       .slide:last-child {
         padding-bottom: 14%;
