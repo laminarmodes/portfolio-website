@@ -892,7 +892,7 @@ table {
     position: relative;
     padding: 8% 0;
     /* height: 100%; */
-    height: 60%; /* USE THIS TO CHANGE THE HEIGHT OF EACH SLIDE */
+    /*height: 100%;*/ /* USE THIS TO CHANGE THE HEIGHT OF EACH SLIDE */
   }
   .slide__content {
     max-width: 1200px; /* 1200px */
