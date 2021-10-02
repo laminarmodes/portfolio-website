@@ -676,195 +676,19 @@ table {
 
 
 /************************************/
-/* WORK - VISUAL DESIGN */
+/* IMAGE SIZES */
 /************************************/
 
-#android-01 {
-    width: 100%;
-    height: auto;  
-}
-
-#form-language-01 {
+.image-100 {
     width: 100%;
     height: auto;
 }
 
-
-#form-language-03 {
-    width: 100%;
-    height: auto;
-}
-
-#form-language-04 {
-    width: 100%;
-    height: auto;
-}
-
-#form-language-w1 {
-    width: 100%;
-    height: auto;
-}
-
-#form-language-w2 {
-    width: 100%;
-    height: auto;
-}
-
-#form-language-w3 {
-    width: 100%;
-    height: auto;
-}
-
-#form-language-w4 {
-    width: 100%;
-    height: auto;
-}
-
-#atmosphere-small {
-    width: 100%;
-    height: auto;
-}
-
-#colors-01 {
-    width: 100%;
-    height: auto;
-}
-
-#colors-02 {
-    width: 100%;
-    height: auto;
-}
-
-#colors-03 {
-    width: 100%;
-    height: auto;
-}
-
-#colors-04 {
-    width: 100%;
-    height: auto;
-}
-
-#colors-05 {
-    width: 100%;
-    height: auto;
-}
-
-#colors-06 {
-    width: 100%;
-    height: auto;
-}
-
-#colors-07 {
-    width: 100%;
-    height: auto;
-}
-
-#shoe-series-small {
-    width: 100%;
-    height: auto;    
-}
-#shoes-cover-small {
-    width: 100%;
-    height: auto;
-}
-
-#viridis-data-04-xcode {
-    width: 100%;
-    height: auto; 
-}
-#data-all-v04 {
-    width: 100%;
-    height: auto; 
-}
-
-#viridis-data-01 {
+.image-50 {
     width: 50%;
-    height: auto; 
-}
-#plasma-data-01 {
-    width: 50%;
-    height: auto; 
-}
-#neo-plasma-01 {
-    width: 50%;
-    height: auto; 
-}
-#neo-vir-03 {
-    width: 50%;
-    height: auto; 
-}
-#neo-vir-06-xcode {
-    width: 100%;
-    height: auto; 
+    height: auto;
 }
 
-#neo-plasma-02 {
-    width: 50%;
-    height: auto; 
-}
-#neo-vir-04 {
-    width: 50%;
-    height: auto; 
-}
-#neo-plasma-05-all {
-    width: 100%;
-    height: auto; 
-}
-#ux-07 {
-    width: 100%;
-    height: auto; 
-}
-#ux-01 {
-    width: 100%;
-    height: auto; 
-}
-#ux-02 {
-    width: 100%;
-    height: auto; 
-}
-#ux-03 {
-    width: 100%;
-    height: auto; 
-}
-#ux-04 {
-    width: 100%;
-    height: auto; 
-}
-#ux-05 {
-    width: 100%;
-    height: auto; 
-}
-#ux-06 {
-    width: 100%;
-    height: auto; 
-}
-
-#technology-evolution-01 {
-    width: 100%;
-    height: auto;     
-}
-#technology-evolution-02 {
-    width: 100%;
-    height: auto;     
-}
-
-#workshop-01 {
-    width: 100%;
-    height: auto;       
-}
-#workshop-02 {
-    width: 100%;
-    height: auto;       
-}
-#workshop-03 {
-    width: 100%;
-    height: auto;       
-}
-#workshop-04 {
-    width: 100%;
-    height: auto;       
-}
 
 /************************************/
 /* ABOUT SECTION - IMAGE ANIMATIONS */
