@@ -129,7 +129,7 @@ button, .button {
     border: none;
     /* remember, for a-block, width is ignored so have to use display: inline-block first */
     display: inline-block;
-    width: 130px;
+    width: 150px;
     height: 40px;
 
     /* use fron from outer container */
@@ -139,11 +139,14 @@ button, .button {
     background-color: #00AEFF;
     color: white;
     text-decoration: none;
-
+    
     /* spacing */
     line-height: 42px;
     border-radius: 50px;
-
+    /* align text vertically */
+    padding: 0;
+    align-items: center;
+    
     /* 
         box-shadow: (inset = inner shadow) h-offset v-offset blur spread color
         layer two grey shadows on top of each other 
@@ -162,6 +165,16 @@ button, .button {
 
     transition: 0.2s opacity;
 
+    margin: 0 auto;
+
+}
+
+.return-button {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -519,6 +532,13 @@ table {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.find-me-on {
+    width: 50px;
+    height: auto;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 /***********************/
@@ -1045,12 +1065,8 @@ table {
 
 
 
-
-
-
-
-  /**************************/
-/* PROJECT GRID */
+/**************************/
+/* IOS Data PROJECT GRID */
 /**************************/
 
 .native-ios-grid__item {
@@ -1059,6 +1075,7 @@ table {
 }
 
 @supports (display: grid) {
+
     .native-ios-grid {
         display: grid; /* use grid layout */
         grid-template-columns: 1fr 1fr; /* no of grid columns */
@@ -1077,15 +1094,18 @@ table {
         height: auto;
     }
 
+    /* Intro Text */
     .native-ios-grid__item:first-child {
         grid-column-start: span 2;
     
     }
 
+    /* Image of all phones */
     .native-ios-grid__item:nth-child(2) {
         grid-column-start: span 2;
     }
 
+    /* User flow sketch description */
     .native-ios-grid__item:nth-child(7) {
         grid-column-start: span 2;
     }
@@ -1117,4 +1137,947 @@ table {
     .native-ios-grid__item:nth-child(18) {
         grid-column-start: span 2;
     }
+}
+
+/*------------------------- Grid for mobile devices ----------------------------- */
+
+/* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
+
+@media all and (max-width: 750px) {
+
+    .native-ios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .native-ios-grid__item:first-child {
+        grid-column-start: span 1;
+        grid-row-start: 1;
+    
+    }
+
+    .native-ios-grid__item:nth-child(2) {
+        grid-column-start: span 1;
+        grid-row-start: 2;
+    }
+
+    .native-ios-grid__item:nth-child(3) {
+        grid-row-start: 3;
+    }
+
+    .native-ios-grid__item:nth-child(4) {
+        grid-row-start: 4;
+    }
+
+    .native-ios-grid__item:nth-child(5) {
+        grid-row-start: 6;
+    }
+
+    .native-ios-grid__item:nth-child(6) {
+        grid-row-start: 5;
+    }
+
+    .native-ios-grid__item:nth-child(7) {
+        grid-column-start: span 1;
+    }
+
+    .native-ios-grid__item:nth-child(8) {
+        grid-column-start: span 1;
+    }
+
+    .native-ios-grid__item:nth-child(9) {
+        grid-row-start: 7;
+    }
+
+    .native-ios-grid__item:nth-child(10) {
+        grid-row-start: 8;
+    }
+
+    .native-ios-grid__item:nth-child(11) {
+        grid-row-start: 12;
+    }
+
+    .native-ios-grid__item:nth-child(12) {
+        grid-row-start: 11;
+    }
+
+    .native-ios-grid__item:nth-child(13) {
+        grid-column-start: span 1;
+        grid-row-start: 13;
+    }
+
+    .native-ios-grid__item:nth-child(14) {
+        grid-column-start: span 1;
+        grid-row-start: 14;
+    }
+
+    .native-ios-grid__item:nth-child(15) {
+        grid-column-start: span 1;
+        grid-row-start: 15;
+    }
+
+    .native-ios-grid__item:nth-child(16) {
+        grid-column-start: span 1;
+        grid-row-start: 16;
+    }
+
+    .native-ios-grid__item:nth-child(17) {
+        grid-column-start: span 1;
+        grid-row-start: 17;
+    }
+
+    .native-ios-grid__item:nth-child(18) {
+        grid-column-start: span 1;
+        grid-row-start: 18;
+    }
+}
+
+
+/******************** IOS UI PROJECT GRID *******************/
+
+.ios-ui-grid__item {
+    display: inline-block;
+    width: 50%;
+}
+
+@supports (display: grid) {
+
+    .ios-ui-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .ios-ui-grid__item {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .ios-ui-grid__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ios-ui-grid__item:first-child {
+        grid-column-start: span 2;
+    }
+
+    .ios-ui-grid__item:nth-child(2) {
+        grid-column-start: span 2;
+    }
+
+    .ios-ui-grid__item:nth-child(3) {
+        grid-column-start: span 2;
+    }
+
+    .ios-ui-grid__item:nth-child(4) {
+        grid-column-start: span 2;
+    }
+
+}
+
+/*------------------------- Grid for mobile devices ----------------------------- */
+
+/* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
+
+@media all and (max-width: 750px) {
+
+    .ios-ui-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ios-ui-grid__item:first-child {
+        grid-column-start: span 1;
+        grid-row-start: 1;
+    }
+
+    .ios-ui-grid__item:nth-child(2) {
+        grid-column-start: span 1;
+        grid-row-start: 2;
+    }
+
+    .ios-ui-grid__item:nth-child(3) {
+        grid-column-start: span 1;
+        grid-row-start: 3;
+    }
+
+    .ios-ui-grid__item:nth-child(4) {
+        grid-column-start: span 1;
+        grid-row-start: 4;
+    }
+
+    .ios-ui-grid__item:nth-child(5) {
+        grid-row-start: 5;
+    }
+
+    .ios-ui-grid__item:nth-child(6) {
+        grid-row-start: 6;
+    }
+
+    .ios-ui-grid__item:nth-child(7) {
+        grid-row-start: 8;
+    }
+
+    .ios-ui-grid__item:nth-child(8) {
+        grid-row-start: 7;
+    }
+
+    .ios-ui-grid__item:nth-child(9) {
+        grid-row-start: 9;
+    }
+
+    .ios-ui-grid__item:nth-child(10) {
+        grid-row-start: 10;
+    }
+
+    .ios-ui-grid__item:nth-child(11) {
+        grid-row-start: 12;
+    }
+
+    .ios-ui-grid__item:nth-child(12) {
+        grid-row-start: 11;
+    }
+
+}
+
+/**************************/
+/* FORM LANGUAGE GRID */
+/**************************/
+
+.form-language-grid__item {
+    display: inline-block;
+    width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+
+    .form-language-grid {
+        display: grid; /* use grid layout */
+        grid-template-columns: 1fr 1fr; /* no of grid columns */
+        gap: 50px; /* spacing between grid elements */
+    }
+
+    .form-language-grid__item { /* grid cell contents will occupiy entire space */
+        /* Center contents */
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .form-language-grid__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-language-grid__item:nth-child(3) {
+        grid-column-start: span 2;
+    }
+        
+    .form-language-grid__item:nth-child(4) {
+            grid-column-start: span 2;
+    }
+         
+    .form-language-grid__item:nth-child(5) {
+        grid-column-start: span 2;
+    }
+        
+    .form-language-grid__item:nth-child(6) {
+            grid-column-start: span 2;
+    }
+
+    .form-language-grid__item:nth-child(11) {
+        grid-column-start: span 2;
+    }
+
+    .form-language-grid__item:nth-child(12) {
+        grid-column-start: span 2;
+    }
+
+    .form-language-grid__item:nth-child(13) {
+        grid-column-start: span 2;
+    }
+
+    .form-language-grid__item:nth-child(14) {
+        grid-column-start: span 2;
+    }       
+
+}
+
+/*------------------------- Grid for mobile devices ----------------------------- */
+
+/* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
+
+@media all and (max-width: 750px) {
+
+    .form-language-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-language-grid__item:first-child {
+        grid-column-start: span 1;
+        grid-row-start: 1;
+    }
+
+    .form-language-grid__item:nth-child(2) {
+        grid-column-start: span 1;
+        grid-row-start: 2;
+    }
+
+    .form-language-grid__item:nth-child(3) {
+        grid-column-start: span 1;
+        grid-row-start: 3;
+    }
+
+    .form-language-grid__item:nth-child(4) {
+        grid-column-start: span 1;
+        grid-row-start: 4;
+    }
+
+    .form-language-grid__item:nth-child(5) {
+        grid-column-start: span 1;
+        grid-row-start: 5;
+    }
+
+    .form-language-grid__item:nth-child(6) {
+        grid-column-start: span 1;
+        grid-row-start: 6;
+    }
+
+    .form-language-grid__item:nth-child(7) {
+        grid-column-start: span 1;
+        grid-row-start: 7;
+    }
+
+    .form-language-grid__item:nth-child(8) {
+        grid-column-start: span 1;
+        grid-row-start: 8;
+    }
+
+    .form-language-grid__item:nth-child(9) {
+        grid-column-start: span 1;
+        grid-row-start: 10;
+    }
+
+    .form-language-grid__item:nth-child(10) {
+        grid-column-start: span 1;
+        grid-row-start: 9;
+    }
+
+    .form-language-grid__item:nth-child(11) {
+        grid-column-start: span 1;
+        grid-row-start: 11;
+    }
+
+    .form-language-grid__item:nth-child(12) {
+        grid-column-start: span 1;
+        grid-row-start: 12;
+    }
+
+    .form-language-grid__item:nth-child(13) {
+        grid-column-start: span 1;
+        grid-row-start: 13;
+    }
+
+    .form-language-grid__item:nth-child(14) {
+        grid-column-start: span 1;
+        grid-row-start: 14;
+    }
+}
+
+
+/**************************/
+/* IOS Data PROJECT GRID */
+/**************************/
+
+.native-ios-grid__item {
+    display: inline-block;
+    width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+
+    .native-ios-grid {
+        display: grid; /* use grid layout */
+        grid-template-columns: 1fr 1fr; /* no of grid columns */
+        gap: 50px; /* spacing between grid elements */
+    }
+
+    .native-ios-grid__item { /* grid cell contents will occupiy entire space */
+        /* Center contents */
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .native-ios-grid__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Intro Text */
+    .native-ios-grid__item:first-child {
+        grid-column-start: span 2;
+    
+    }
+
+    /* Image of all phones */
+    .native-ios-grid__item:nth-child(2) {
+        grid-column-start: span 2;
+    }
+
+    /* User flow sketch description */
+    .native-ios-grid__item:nth-child(7) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(8) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(13) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(14) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(15) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(16) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(17) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(18) {
+        grid-column-start: span 2;
+    }
+}
+
+/*------------------------- Grid for mobile devices ----------------------------- */
+
+/* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
+
+@media all and (max-width: 750px) {
+
+    .native-ios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .native-ios-grid__item:first-child {
+        grid-column-start: span 1;
+        grid-row-start: 1;
+    
+    }
+
+    .native-ios-grid__item:nth-child(2) {
+        grid-column-start: span 1;
+        grid-row-start: 2;
+    }
+
+    .native-ios-grid__item:nth-child(3) {
+        grid-row-start: 3;
+    }
+
+    .native-ios-grid__item:nth-child(4) {
+        grid-row-start: 4;
+    }
+
+    .native-ios-grid__item:nth-child(5) {
+        grid-row-start: 6;
+    }
+
+    .native-ios-grid__item:nth-child(6) {
+        grid-row-start: 5;
+    }
+
+    .native-ios-grid__item:nth-child(7) {
+        grid-column-start: span 1;
+    }
+
+    .native-ios-grid__item:nth-child(8) {
+        grid-column-start: span 1;
+    }
+
+    .native-ios-grid__item:nth-child(9) {
+        grid-row-start: 7;
+    }
+
+    .native-ios-grid__item:nth-child(10) {
+        grid-row-start: 8;
+    }
+
+    .native-ios-grid__item:nth-child(11) {
+        grid-row-start: 12;
+    }
+
+    .native-ios-grid__item:nth-child(12) {
+        grid-row-start: 11;
+    }
+
+    .native-ios-grid__item:nth-child(13) {
+        grid-column-start: span 1;
+        grid-row-start: 13;
+    }
+
+    .native-ios-grid__item:nth-child(14) {
+        grid-column-start: span 1;
+        grid-row-start: 14;
+    }
+
+    .native-ios-grid__item:nth-child(15) {
+        grid-column-start: span 1;
+        grid-row-start: 15;
+    }
+
+    .native-ios-grid__item:nth-child(16) {
+        grid-column-start: span 1;
+        grid-row-start: 16;
+    }
+
+    .native-ios-grid__item:nth-child(17) {
+        grid-column-start: span 1;
+        grid-row-start: 17;
+    }
+
+    .native-ios-grid__item:nth-child(18) {
+        grid-column-start: span 1;
+        grid-row-start: 18;
+    }
+}
+
+
+/**************************/
+/* COLORS PROJECT GRID */
+/**************************/
+
+.colors-grid__item {
+    display: inline-block;
+    width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+
+    .colors-grid {
+        display: grid; /* use grid layout */
+        grid-template-columns: 1fr 1fr; /* no of grid columns */
+        gap: 50px; /* spacing between grid elements */
+    }
+
+    .colors-grid__item { /* grid cell contents will occupiy entire space */
+        /* Center contents */
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .colors-grid__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Intro Text */
+    .colors-grid__item:first-child {
+        grid-column-start: span 2;
+    }
+
+    .colors-grid__item:nth-child(2) {
+        grid-column-start: span 2;
+    }
+
+    .colors-grid__item:nth-child(5) {
+        grid-column-start: span 2;
+    }
+
+    .colors-grid__item:nth-child(6) {
+        grid-column-start: span 2;
+    }
+}
+
+@media all and (max-width: 750px) {
+
+    .colors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .colors-grid__item:first-child {
+        grid-column-start: span 1;
+        grid-row-start: 1;
+    
+    }
+
+    .colors-grid__item:nth-child(2) {
+        grid-column-start: span 1;
+        grid-row-start: 2;
+    }
+
+    .colors-grid__item:nth-child(3) {
+        grid-column-start: span 1;
+        grid-row-start: 3;
+    }
+
+    .colors-grid__item:nth-child(4) {
+        grid-column-start: span 1;
+        grid-row-start: 4;
+    }
+
+    .colors-grid__item:nth-child(5) {
+        grid-column-start: span 1;
+        grid-row-start: 5;
+    }
+
+    .colors-grid__item:nth-child(6) {
+        grid-column-start: span 1;
+        grid-row-start: 6;
+    }
+
+    .colors-grid__item:nth-child(7) {
+        grid-column-start: span 1;
+        grid-row-start: 8;
+    }
+
+    .colors-grid__item:nth-child(8) {
+        grid-column-start: span 1;
+        grid-row-start: 7;
+    }
+
+    .colors-grid__item:nth-child(9) {
+        grid-column-start: span 1;
+        grid-row-start: 9;
+    }
+
+    .colors-grid__item:nth-child(10) {
+        grid-column-start: span 1;
+        grid-row-start: 10;
+    }
+
+    .colors-grid__item:nth-child(11) {
+        grid-column-start: span 1;
+        grid-row-start: 12;
+    }
+
+    .colors-grid__item:nth-child(12) {
+        grid-column-start: span 1;
+        grid-row-start: 11;
+    }
+
+    .colors-grid__item:nth-child(13) {
+        grid-column-start: span 1;
+        grid-row-start: 13;
+    }
+
+    .colors-grid__item:nth-child(14) {
+        grid-column-start: span 1;
+        grid-row-start: 14;
+    }
+
+}
+
+/**************************/
+/* DATA VISUALIZATION PROJECT GRID */
+/**************************/
+
+.data-visualization-grid__item {
+    display: inline-block;
+    width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+
+    .data-visualization-grid {
+        display: grid; /* use grid layout */
+        grid-template-columns: 1fr 1fr; /* no of grid columns */
+        gap: 50px; /* spacing between grid elements */
+    }
+
+    .data-visualization-grid__item { /* grid cell contents will occupiy entire space */
+        /* Center contents */
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .data-visualization-grid__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Intro Text */
+    .data-visualization-grid__item:first-child {
+        grid-column-start: span 2;
+    }
+
+    .data-visualization-grid__item:nth-child(2) {
+        grid-column-start: span 2;
+    }
+
+    .data-visualization-grid__item:nth-child(3) {
+        grid-column-start: span 2;
+    }
+
+    .data-visualization-grid__item:nth-child(4) {
+        grid-column-start: span 2;
+    }
+
+    .data-visualization-grid__item:nth-child(9) {
+        grid-column-start: span 2;
+    }
+
+    .data-visualization-grid__item:nth-child(10) {
+        grid-column-start: span 2;
+    }
+
+    .data-visualization-grid__item:nth-child(11) {
+        grid-column-start: span 2;
+    }
+
+    .data-visualization-grid__item:nth-child(12) {
+        grid-column-start: span 2;
+    }
+
+}
+
+@media all and (max-width: 750px) {
+
+    .data-visualization-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .data-visualization-grid__item:first-child {
+        grid-column-start: span 1;
+        grid-row-start: 1;
+    
+    }
+
+    .data-visualization-grid__item:nth-child(2) {
+        grid-column-start: span 1;
+        grid-row-start: 2;
+    }
+
+    .data-visualization-grid__item:nth-child(3) {
+        grid-column-start: span 1;
+        grid-row-start: 3;
+    }
+
+    .data-visualization-grid__item:nth-child(4) {
+        grid-column-start: span 1;
+        grid-row-start: 4;
+    }
+
+    .data-visualization-grid__item:nth-child(5) {
+        grid-column-start: span 1;
+        grid-row-start: 6;
+    }
+
+    .data-visualization-grid__item:nth-child(6) {
+        grid-column-start: span 1;
+        grid-row-start: 5;
+    }
+
+    .data-visualization-grid__item:nth-child(7) {
+        grid-column-start: span 1;
+        grid-row-start: 7;
+    }
+
+    .data-visualization-grid__item:nth-child(8) {
+        grid-column-start: span 1;
+        grid-row-start: 8;
+    }
+
+    .data-visualization-grid__item:nth-child(9) {
+        grid-column-start: span 1;
+        grid-row-start: 9;
+    }
+
+    .data-visualization-grid__item:nth-child(10) {
+        grid-column-start: span 1;
+        grid-row-start: 10;
+    }
+
+    .data-visualization-grid__item:nth-child(11) {
+        grid-column-start: span 1;
+        grid-row-start: 11;
+    }
+
+    .data-visualization-grid__item:nth-child(12) {
+        grid-column-start: span 1;
+        grid-row-start: 12;
+    }
+
+}
+
+/**************************/
+/* BALSAMIQ GRID */
+/**************************/
+
+.balsamiq-grid__item {
+    display: inline-block;
+    width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+
+    .balsamiq-grid {
+        display: grid; /* use grid layout */
+        grid-template-columns: 1fr 1fr 1fr; /* no of grid columns */
+        gap: 50px; /* spacing between grid elements */
+    }
+
+    .balsamiq-grid__item { /* grid cell contents will occupiy entire space */
+        /* Center contents */
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .balsamiq-grid__item img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media all and (max-width: 750px) {
+
+    .balsamiq-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/**************************/
+/* FLYUX PROJECT GRID */
+/**************************/
+
+.fly-ux-grid__item {
+    display: inline-block;
+    width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+
+    .flyux-grid {
+        display: grid; /* use grid layout */
+        grid-template-columns: 1fr 1fr; /* no of grid columns */
+        gap: 50px; /* spacing between grid elements */
+    }
+
+    .flyux-grid__item { /* grid cell contents will occupiy entire space */
+        /* Center contents */
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .flyux-grid__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flyux-grid__item:nth-child(5) {
+        grid-column-start: span 2;
+    }
+
+    .flyux-grid__item:nth-child(6) {
+        grid-column-start: span 2;
+    }
+
+    .flyux-grid__item:nth-child(7) {
+        grid-column-start: span 2;
+    }
+
+    .flyux-grid__item:nth-child(8) {
+        grid-column-start: span 2;
+    }
+
+    .flyux-grid__item:nth-child(9) {
+        grid-column-start: span 2;
+    }
+
+    .flyux-grid__item:nth-child(10) {
+        grid-column-start: span 2;
+    }
+}
+
+@media all and (max-width: 750px) {
+
+    .flyux-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flyux-grid__item:first-child {
+        grid-column-start: span 1;
+        grid-row-start: 1;
+    
+    }
+
+    .flyux-grid__item:nth-child(2) {
+        grid-column-start: span 1;
+        grid-row-start: 2;
+    }
+
+    .flyux-grid__item:nth-child(3) {
+        grid-column-start: span 1;
+        grid-row-start: 4;
+    }
+
+    .flyux-grid__item:nth-child(4) {
+        grid-column-start: span 1;
+        grid-row-start: 3;
+    }
+
+    .flyux-grid__item:nth-child(5) {
+        grid-column-start: span 1;
+        grid-row-start: 5;
+    }
+
+    .flyux-grid__item:nth-child(6) {
+        grid-column-start: span 1;
+        grid-row-start: 6;
+    }
+
+    .flyux-grid__item:nth-child(7) {
+        grid-column-start: span 1;
+        grid-row-start: 7;
+    }
+
+    .flyux-grid__item:nth-child(8) {
+        grid-column-start: span 1;
+        grid-row-start: 8;
+    }
+
+    .flyux-grid__item:nth-child(9) {
+        grid-column-start: span 1;
+        grid-row-start: 9;
+    }
+
+    .flyux-grid__item:nth-child(10) {
+        grid-column-start: span 1;
+        grid-row-start: 10;
+    }
+
+    .flyux-grid__item:nth-child(11) {
+        grid-column-start: span 1;
+        grid-row-start: 11;
+    }
+
+    .flyux-grid__item:nth-child(12) {
+        grid-column-start: span 1;
+        grid-row-start: 12;
+    }
+
+    .flyux-grid__item:nth-child(13) {
+        grid-column-start: span 1;
+        grid-row-start: 14;
+    }
+
+    .flyux-grid__item:nth-child(14) {
+        grid-column-start: span 1;
+        grid-row-start: 13;
+    }
+
 }
