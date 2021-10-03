@@ -40,8 +40,11 @@ body {
     /*background-color: var(--background-color);*/
     scroll-behavior: smooth;
 
+    background: white;
+    /*
     background: rgb(81,0,255);
     background: linear-gradient(135deg, rgba(81,0,255,0.23853291316526615) 0%, rgba(0,127,189,0.22172619047619047) 14%, rgba(213,168,0,0.48783263305322133) 100%);
+    */
 
     /*font-family: 'Space Mono', monospace;*/
     font-family: 'Lato', sans-serif;
@@ -225,7 +228,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .profile-grid__item {
     display: inline-block;
-    width: 25%;
+    width: 25%; /* each grid item occupies 1/4 of the row */
 }
 
 @supports (display: grid) {
@@ -954,7 +957,7 @@ table {
   }
   
   
-  /* Large screen layout
+  /* Homepage Large screen layout
   --------------------------------------------- */  
   
   @media screen and (min-width: 45em) {
@@ -1022,7 +1025,7 @@ table {
       }
       .slide:first-child {
         /*padding-top: 14%;*/
-        /*padding-bottom: 10%;*/ /* Controls the padding for the first slide */
+        /**/padding-bottom: 3%; /* Controls the padding for the first slide */
       }
       .slide:last-child {
         padding-bottom: 14%;
@@ -1039,3 +1042,79 @@ table {
     height: auto;
     border-radius: 50%;
   }
+
+
+
+
+
+
+
+  /**************************/
+/* PROJECT GRID */
+/**************************/
+
+.native-ios-grid__item {
+    display: inline-block;
+    width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+    .native-ios-grid {
+        display: grid; /* use grid layout */
+        grid-template-columns: 1fr 1fr; /* no of grid columns */
+        gap: 50px; /* spacing between grid elements */
+    }
+
+    .native-ios-grid__item { /* grid cell contents will occupiy entire space */
+        /* Center contents */
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .native-ios-grid__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .native-ios-grid__item:first-child {
+        grid-column-start: span 2;
+    
+    }
+
+    .native-ios-grid__item:nth-child(2) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(7) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(8) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(13) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(14) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(15) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(16) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(17) {
+        grid-column-start: span 2;
+    }
+
+    .native-ios-grid__item:nth-child(18) {
+        grid-column-start: span 2;
+    }
+}
