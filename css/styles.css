@@ -1045,10 +1045,10 @@ table {
       }
       .slide:first-child {
         /*padding-top: 14%;*/
-        /**/padding-bottom: 3%; /* Controls the padding for the first slide */
+        /**/padding-bottom: 1%; /* Controls the padding for the first slide */
       }
       .slide:last-child {
-        padding-bottom: 14%;
+        padding-bottom: 20%;
       }
       .slide:nth-child(2n) {
         z-index: 1; /* ensure slides overlay correctly */
@@ -1080,6 +1080,8 @@ table {
         display: grid; /* use grid layout */
         grid-template-columns: 1fr 1fr; /* no of grid columns */
         gap: 50px; /* spacing between grid elements */
+        align-items: center;
+        justify-items: center;
     }
 
     .native-ios-grid__item { /* grid cell contents will occupiy entire space */
@@ -1087,6 +1089,7 @@ table {
         width: auto;
         min-height: auto;
         margin: 0;
+
     }
 
     .native-ios-grid__item img {
@@ -1229,6 +1232,16 @@ table {
         grid-column-start: span 1;
         grid-row-start: 18;
     }
+
+    .native-ios-grid__item:nth-child(19) {
+        grid-column-start: span 1;
+        grid-row-start: 19;
+    }
+
+    .native-ios-grid__item:nth-child(20) {
+        grid-column-start: span 1;
+        grid-row-start: 20;
+    }
 }
 
 
@@ -1237,6 +1250,8 @@ table {
 .ios-ui-grid__item {
     display: inline-block;
     width: 50%;
+    align-items: center;
+    justify-items: center;
 }
 
 @supports (display: grid) {
@@ -1245,6 +1260,8 @@ table {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
+        align-items: center;
+        justify-items: center;
     }
 
     .ios-ui-grid__item {
@@ -1355,6 +1372,8 @@ table {
         display: grid; /* use grid layout */
         grid-template-columns: 1fr 1fr; /* no of grid columns */
         gap: 50px; /* spacing between grid elements */
+        align-items: center;
+        justify-items: center;
     }
 
     .form-language-grid__item { /* grid cell contents will occupiy entire space */
@@ -1374,7 +1393,7 @@ table {
     }
         
     .form-language-grid__item:nth-child(4) {
-            grid-column-start: span 2;
+        grid-column-start: span 2;
     }
          
     .form-language-grid__item:nth-child(5) {
@@ -1382,7 +1401,7 @@ table {
     }
         
     .form-language-grid__item:nth-child(6) {
-            grid-column-start: span 2;
+        grid-column-start: span 2;
     }
 
     .form-language-grid__item:nth-child(11) {
@@ -1391,16 +1410,18 @@ table {
 
     .form-language-grid__item:nth-child(12) {
         grid-column-start: span 2;
-    }
+    }     
 
-    .form-language-grid__item:nth-child(13) {
-        grid-column-start: span 2;
-    }
+}
 
-    .form-language-grid__item:nth-child(14) {
-        grid-column-start: span 2;
-    }       
+#form-language-w4 {
+    width: 200%;
+    transform: translate(-25%, 0);
+}
 
+#form-language-w2 {
+    width: 200%;
+    transform: translate(-25%, 0);
 }
 
 /*------------------------- Grid for mobile devices ----------------------------- */
@@ -1473,15 +1494,6 @@ table {
         grid-row-start: 12;
     }
 
-    .form-language-grid__item:nth-child(13) {
-        grid-column-start: span 1;
-        grid-row-start: 13;
-    }
-
-    .form-language-grid__item:nth-child(14) {
-        grid-column-start: span 1;
-        grid-row-start: 14;
-    }
 }
 
 
@@ -1500,6 +1512,8 @@ table {
         display: grid; /* use grid layout */
         grid-template-columns: 1fr 1fr; /* no of grid columns */
         gap: 50px; /* spacing between grid elements */
+        align-items: center;
+        justify-items: center;
     }
 
     .native-ios-grid__item { /* grid cell contents will occupiy entire space */
@@ -1667,6 +1681,8 @@ table {
         display: grid; /* use grid layout */
         grid-template-columns: 1fr 1fr; /* no of grid columns */
         gap: 50px; /* spacing between grid elements */
+        align-items: center;
+        justify-items: center;
     }
 
     .colors-grid__item { /* grid cell contents will occupiy entire space */
@@ -1793,6 +1809,8 @@ table {
         display: grid; /* use grid layout */
         grid-template-columns: 1fr 1fr; /* no of grid columns */
         gap: 50px; /* spacing between grid elements */
+        align-items: center;
+        justify-items: center;
     }
 
     .data-visualization-grid__item { /* grid cell contents will occupiy entire space */
@@ -1926,6 +1944,8 @@ table {
         display: grid; /* use grid layout */
         grid-template-columns: 1fr 1fr 1fr; /* no of grid columns */
         gap: 50px; /* spacing between grid elements */
+        align-items: center;
+        justify-items: center;
     }
 
     .balsamiq-grid__item { /* grid cell contents will occupiy entire space */
@@ -1964,6 +1984,8 @@ table {
         display: grid; /* use grid layout */
         grid-template-columns: 1fr 1fr; /* no of grid columns */
         gap: 50px; /* spacing between grid elements */
+        align-items: center;
+        justify-items: center;
     }
 
     .flyux-grid__item { /* grid cell contents will occupiy entire space */
