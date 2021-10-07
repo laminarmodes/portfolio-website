@@ -26,7 +26,10 @@
 
 body {
   scroll-behavior: smooth;
-  background: white;
+  background-color: white;
+
+  /* background: white; */
+
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
