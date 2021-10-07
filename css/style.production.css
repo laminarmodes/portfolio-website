@@ -11,7 +11,10 @@
 
 body {
   scroll-behavior: smooth;
-  background: white;
+  background-color: white;
+
+  /* background: white; */
+
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -226,6 +229,10 @@ button:focus,
 
 /*** ------------------------- NAVIGATION ----------------------------- ***/
 
+.navigation-list__item {
+  font-size: 18px;
+}
+
 .navigation-list__item--active {
   text-decoration: none;
 }
@@ -399,7 +406,7 @@ button:focus,
   }
 
   .main-navigation li a {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .menu-toggle,
@@ -2433,18 +2440,4 @@ table {
     -ms-grid-row: 13;
         grid-row-start: 13;
   }
-}
-.example {
-    display: -ms-grid;
-    display: grid;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: -o-linear-gradient(top, white, black);
-    background: linear-gradient(to bottom, white, black);
 }

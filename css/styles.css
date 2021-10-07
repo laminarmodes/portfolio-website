@@ -223,6 +223,10 @@ button:focus,
 
 /*** ------------------------- NAVIGATION ----------------------------- ***/
 
+.navigation-list__item {
+  font-size: 18px;
+}
+
 .navigation-list__item--active {
   text-decoration: none;
 }
@@ -374,7 +378,7 @@ button:focus,
   }
 
   .main-navigation li a {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .menu-toggle,
