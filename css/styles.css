@@ -53,12 +53,12 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: var(--dark-grey)
+  color: var(--dark-grey);
 }
 
 p {
   font-family: 'Lato', sans-serif;
-  color: var(--dark-grey)
+  color: var(--dark-grey);
 }
 
 /* attention: when making width 100% then adding padding and boarder causes 100% + padding + boarder */
@@ -85,11 +85,11 @@ p {
 /*** ------------------------- LINKS ----------------------------- ***/
 
 a {
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 a:visited {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 a:hover {
@@ -103,9 +103,11 @@ a:active {
 
 /*** ------------------------- BUTTONS ----------------------------- ***/
 
-button, .button {
+button,
+.button {
   /* overwrite broswer defaults and set border to none */
   border: none;
+
   /* remember, for a-block, width is ignored so have to use display: inline-block first */
   display: inline-block;
   width: 150px;
@@ -115,13 +117,14 @@ button, .button {
   font-family: 'Lato', sans-serif;
 
   /* background color, font color and text decoration */
-  background-color: #00AEFF;
+  background-color: #00aeff;
   color: white;
   text-decoration: none;
 
   /* spacing */
   line-height: 42px;
   border-radius: 50px;
+
   /* align text vertically */
   padding: 0;
   align-items: center;
@@ -131,21 +134,19 @@ button, .button {
   layer two grey shadows on top of each other
   guide from https://html-css-js.com/css/generator/box-shadow/
   */
-  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-  inset -7px -7px 10px 0px rgba(0,0,0,.1),
-  7px 7px 20px 0px rgba(0,0,0,.1),
-  4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow:
+    inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5),
+    inset -7px -7px 10px 0 rgba(0, 0, 0, 0.1),
+    7px 7px 20px 0 rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0 rgba(0, 0, 0, 0.1);
 
   /* text shadow */
-  text-shadow:  2px 2px 3px rgba(255,255,255,.5),
-  -4px -4px 6px rgba(116, 125, 136, .2);
-
+  text-shadow:
+    2px 2px 3px rgba(255, 255, 255, 0.5),
+    -4px -4px 6px rgba(116, 125, 136, 0.2);
   outline: none;
-
   transition: 0.2s opacity;
-
   margin: 0 auto;
-
 }
 
 .return-button {
@@ -156,7 +157,10 @@ button, .button {
   margin-top: 30px;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
 
@@ -166,7 +170,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 /*** ------------------------- MAIN PAGE ----------------------------- ***/
 
-/* page container is a relative child element, goes around everything on the page and sets minimum height to 100% of the viewport height (vh)*/
+/* page container is a relative child element, goes around everything on the page and sets minimum height to 100% of the viewport height (vh) */
 .page-wrap {
   display: flex;
   flex-direction: column;
@@ -205,7 +209,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .page-header {
   width: 100%;
-  /*height: 55px;  set */
+
+  /* height: 55px;  set */
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -237,13 +242,13 @@ button:hover, button:focus, .button:hover, .button:focus {
 .main-navigation ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   justify-self: end;
-
 }
 
 .navigation-list {
   transform: translate(0);
+
   /* z-index: 3; */
 }
 
@@ -262,13 +267,15 @@ button:hover, button:focus, .button:hover, .button:focus {
 /* SEARCH FUNCTION */
 .no-search {
   transform: translate(0);
+
   /* This makes the menu slide in and out - removed */
-  /*transition: transform 0.7s ease-in-out;*/
+
+  /* transition: transform 0.7s ease-in-out; */
 }
 
 /*** ------------------------- MOBILE MENU AND ANIMATION ----------------------------- ***/
 
-.menu-toggle .bar{
+.menu-toggle .bar {
   width: 25px;
   height: 3px;
   background-color: #3f3f3f;
@@ -284,14 +291,14 @@ button:hover, button:focus, .button:hover, .button:focus {
   display: none;
 }
 
-.menu-toggle:hover{
+.menu-toggle:hover {
   cursor: pointer;
 }
 
 /* Through animation, changes the 3-bar hamburger to a 2-bar X */
 
 /* Rotate the 1st bar 45 degrees */
-#mobile-menu.is-active .bar:nth-child(1){
+#mobile-menu.is-active .bar:nth-child(1) {
   -webkit-transform: translateY(8px) rotate(45deg);
   -ms-transform: translateY(8px) rotate(45deg);
   -o-transform: translateY(8px) rotate(45deg);
@@ -299,12 +306,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 /* Hide the middle bar */
-#mobile-menu.is-active .bar:nth-child(2){
+#mobile-menu.is-active .bar:nth-child(2) {
   opacity: 0;
 }
 
 /* Rotate the 3rd bar -45 deg */
-#mobile-menu.is-active .bar:nth-child(3){
+#mobile-menu.is-active .bar:nth-child(3) {
   -webkit-transform: translateY(-8px) rotate(-45deg);
   -ms-transform: translateY(-8px) rotate(-45deg);
   -o-transform: translateY(-8px) rotate(-45deg);
@@ -367,13 +374,14 @@ button:hover, button:focus, .button:hover, .button:focus {
     font-size: 1rem;
   }
 
-  .menu-toggle, .bar {
+  .menu-toggle,
+  .bar {
     display: block;
     cursor: pointer;
   }
 
   .mobile-nav {
-    transform: translate(0%)!important;
+    transform: translate(0%) !important;
   }
 }
 
@@ -438,7 +446,7 @@ table {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 
-    /*margin: 2%;*/
+    /* margin: 2%; */
   }
 
   .grid__item {
@@ -461,7 +469,7 @@ table {
   /* this is important to make sure h4 text position is relative to grid container, not full page */
   position: relative;
 
-  /* supports filter blur by making edges sharp*/
+  /* supports filter blur by making edges sharp */
   border-radius: var(--grid-corner-radius);
   overflow: hidden;
 }
@@ -472,11 +480,12 @@ table {
   border-radius: var(--grid-corner-radius);
 
   /* creates dark overlay */
-  /*filter: brightness(.7);*/
+
+  /* filter: brightness(.7); */
 
   /* create blur overlay */
   filter: brightness(0.7) blur(5px);
-  margin: -5px -10px -10px -0px;
+  margin: -5px -10px -10px -0;
 
   /* crate box shadow */
   box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
@@ -492,7 +501,8 @@ table {
   right: 10%;
 
   /* shifts text so that center of text is in center */
-  /*transform: translate(-50%, -50%);*/
+
+  /* transform: translate(-50%, -50%); */
 
   color: var(--light-text-color);
   visibility: visible;
@@ -586,29 +596,28 @@ table {
   }
 }
 
-
 /*** ------------------------- ABOUT SECTION - IMAGE ANIMATIONS ----------------------------- ***/
 
 /* Circle 0 */
 @keyframes circle-0-color-change {
   0% {
     fill: var(--warm-primary);
-    stroke: var(--warm-primary)
+    stroke: var(--warm-primary);
   }
 
   100% {
     fill: var(--cool-primary);
-    stroke: var(--cool-primary)
+    stroke: var(--cool-primary);
   }
 }
 
 @keyframes circle-0-ring-color-change {
   0% {
-    stroke: var(--warm-primary)
+    stroke: var(--warm-primary);
   }
 
   100% {
-    stroke: var(--cool-primary)
+    stroke: var(--cool-primary);
   }
 }
 
@@ -632,21 +641,22 @@ table {
 @keyframes circle-1-color-change {
   0% {
     fill: var(--warm-tertiary);
-    stroke: var(--warm-tertiary)
+    stroke: var(--warm-tertiary);
   }
+
   100% {
     fill: var(--cool-tertiary);
-    stroke: var(--cool-tertiary)
+    stroke: var(--cool-tertiary);
   }
 }
 
 @keyframes circle-1-ring-color-change {
   0% {
-    stroke: var(--warm-tertiary)
+    stroke: var(--warm-tertiary);
   }
 
   100% {
-    stroke: var(--cool-tertiary)
+    stroke: var(--cool-tertiary);
   }
 }
 
@@ -670,7 +680,7 @@ table {
 @keyframes circle-2-color-change {
   0% {
     fill: var(--warm-secondary);
-    stroke: var(--warm-secondary)
+    stroke: var(--warm-secondary);
   }
 
   100% {
@@ -681,14 +691,12 @@ table {
 
 @keyframes circle-2-ring-color-change {
   0% {
-
-    stroke: var(--warm-secondary)
+    stroke: var(--warm-secondary);
   }
+
   100% {
-
-    stroke: var(--cool-secondary)
+    stroke: var(--cool-secondary);
   }
-
 }
 
 .circle-2 {
@@ -775,22 +783,31 @@ table {
 .slide {
   position: relative;
   padding: 8% 0;
+
   /* height: 100%; */
-  /*height: 100%;*/ /* USE THIS TO CHANGE THE HEIGHT OF EACH SLIDE */
+
+  /* height: 100%; */
+
+  /* USE THIS TO CHANGE THE HEIGHT OF EACH SLIDE */
 }
+
 .slide__content {
   max-width: 1200px; /* 1200px */
   margin: auto;
 }
-.slide__text, .slide__image {
+
+.slide__text,
+.slide__image {
   padding: 8%;
 }
+
 .slide__image svg {
   display: block;
   width: 100%;
   max-width: 560px;
   margin: auto;
 }
+
 .slide__bg {
   position: absolute;
   top: 0;
@@ -803,7 +820,7 @@ table {
 /* slide backgrounds */
 
 #slide-1 .slide__bg {
-  background-image: linear-gradient(135deg, rgba(81,0,255,0.23853291316526615) 0%, rgba(0,127,189,0.22172619047619047) 14%, rgba(213,168,0,0.48783263305322133) 100%);
+  background-image: linear-gradient(135deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
 }
 
 #slide-2 .slide__bg {
@@ -811,7 +828,7 @@ table {
 }
 
 #slide-3 .slide__bg {
-  background-image: linear-gradient(135deg, rgba(81,0,255,0.23853291316526615) 0%, rgba(0,127,189,0.22172619047619047) 14%, rgba(213,168,0,0.48783263305322133) 100%);
+  background-image: linear-gradient(135deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
 }
 
 #slide-4 .slide__bg {
@@ -819,13 +836,12 @@ table {
 }
 
 #slide-5 .slide__bg {
-  background-image: linear-gradient(135deg, rgba(81,0,255,0.23853291316526615) 0%, rgba(0,127,189,0.22172619047619047) 14%, rgba(213,168,0,0.48783263305322133) 100%);
+  background-image: linear-gradient(135deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
 }
 
 #slide-6 .slide__bg {
   background: white;
 }
-
 
 /* misc
 --------------------------------------------- */
@@ -836,23 +852,23 @@ table {
   bottom: 0;
   font-size: 80%;
   text-align: center;
-  background: rgba(80,0,170,.5);
+  background: rgba(80, 0, 170, 0.5);
   padding: 0.5em;
   z-index: 100;
 }
-
 
 /* Homepage Large screen layout
 --------------------------------------------- */
 
 @media screen and (min-width: 45em) {
-
   .slide__content {
     display: -webkit-flex;
     display: flex;
     align-items: center;
   }
-  .slide__image, .slide__text {
+
+  .slide__image,
+  .slide__text {
     padding: 3%;
     -webkit-flex: 1;
     flex: 1;
@@ -862,20 +878,24 @@ table {
     -webkit-order: 1;
     order: 1;
   }
+
   .nav {
     display: block;
   }
 
   /* parallax */
   @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
-
-    html, body {
-      /*overflow: hidden;*/
-      /*height: 100%;*/
-    }
+    html,
     body {
-      transform: translateZ(0px); /* Fix paint issues in Edge && Safari H/W acceleration */
+      /* overflow: hidden;* /
+
+      /* height: 100%; */
     }
+
+    body {
+      transform: translateZ(0); /* Fix paint issues in Edge && Safari H/W acceleration */
+    }
+
     .slides {
       position: absolute;
       width: 100%;
@@ -885,36 +905,47 @@ table {
       perspective: 300px;
       scroll-behavior: smooth;
     }
-    .slide, .slide__content {
+
+    .slide,
+    .slide__content {
       transform-style: preserve-3d;
     }
+
     .slide__text {
-      transform: translateZ(60px) scale(.8);
+      transform: translateZ(60px) scale(0.8);
       transform-origin: 100% 50%;
     }
+
     .slide:nth-child(2n) .slide__image {
-      transform: translateZ(100px) scale(.67);
+      transform: translateZ(100px) scale(0.67);
       transform-origin: 100% 50%;
     }
+
     .slide:nth-child(2n) .slide__text {
       transform-origin: 0% 50%;
     }
+
     .slide:nth-child(2n) .slide__bg {
-      transform: translateZ(59px) scale(.85);
+      transform: translateZ(59px) scale(0.85);
     }
+
     .slide:nth-child(2n+1):not(:first-child) .slide__bg {
       top: -50%;
     }
+
     .slide:nth-child(2n+1):not(:last-child) .slide__bg {
       bottom: -50%;
     }
+
     .slide:first-child {
-      /*padding-top: 14%;*/
-      /**/padding-bottom: 1%; /* Controls the padding for the first slide */
+      /* padding-top: 14%; */
+      padding-bottom: 1%; /* Controls the padding for the first slide */
     }
+
     .slide:last-child {
       padding-bottom: 20%;
     }
+
     .slide:nth-child(2n) {
       z-index: 1; /* ensure slides overlay correctly */
     }
@@ -949,7 +980,6 @@ table {
     width: auto;
     min-height: auto;
     margin: 0;
-
   }
 
   .native-ios-grid__item img {
@@ -960,7 +990,6 @@ table {
   /* Intro Text */
   .native-ios-grid__item:first-child {
     grid-column-start: span 2;
-
   }
 
   /* Image of all phones */
@@ -1002,7 +1031,7 @@ table {
   }
 }
 
-/*------------------------- Grid for mobile devices ----------------------------- */
+/* ------------------------- Grid for mobile devices ----------------------------- */
 
 /* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
 
@@ -1147,7 +1176,9 @@ table {
     grid-column-start: span 2;
   }
 }
-/*------------------------- Grid for mobile devices ----------------------------- */
+
+/* ------------------------- Grid for mobile devices ----------------------------- */
+
 /* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
 
 @media all and (max-width: 750px) {
@@ -1207,6 +1238,7 @@ table {
     grid-row-start: 11;
   }
 }
+
 /*** ------------------------- FORM LANGUAGE GRID ----------------------------- ***/
 
 .form-language-grid__item {
@@ -1269,7 +1301,8 @@ table {
   width: 200%;
   transform: translate(-25%, 0);
 }
-/*------------------------- Grid for mobile devices ----------------------------- */
+
+/* ------------------------- Grid for mobile devices ----------------------------- */
 
 /* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
 
@@ -1410,7 +1443,9 @@ table {
     grid-column-start: span 2;
   }
 }
-/*------------------------- Grid for mobile devices ----------------------------- */
+
+/* ------------------------- Grid for mobile devices ----------------------------- */
+
 /* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
 
 @media all and (max-width: 750px) {
