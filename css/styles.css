@@ -437,6 +437,17 @@ table {
   margin-right: 4px;
 }
 
+/*** ------------------------- CUSTOM STYLES ----------------------------- ***/
+
+.small-h1 {
+  font-size: 26px;
+}
+
+.small-h2 {
+  font-size: 20px;
+}
+
+
 /*** ------------------------- WORK SECTION ----------------------------- ***/
 
 /* start grid fallback */
@@ -572,6 +583,16 @@ table {
     grid-template-columns: 1fr;
   }
 
+  .grid a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .grid a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
   /* when on mobile, the grid cells are bigger so make the font bigger */
   .grid__item h2 {
     font-size: 30px;
@@ -586,6 +607,17 @@ table {
 @media all and (max-width: 750px) {
   .grid {
     gap: 10px;
+  }
+
+
+  .grid a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .grid a:visited {
+    text-decoration: none;
+    color: inherit;
   }
 
   .grid__item:last-child {
@@ -1047,6 +1079,14 @@ table {
     grid-template-columns: 1fr;
   }
 
+  .native-ios-grid h1 {
+    font-size: 26px;
+  }
+
+  .native-ios-grid h2 {
+    font-size: 20px;
+  }
+
   .native-ios-grid__item:first-child {
     grid-column-start: span 1;
     grid-row-start: 1;
@@ -1193,6 +1233,14 @@ table {
     grid-template-columns: 1fr;
   }
 
+  .ios-ui-grid h1 {
+    font-size: 26px;
+  }
+
+  .ios-ui-grid h2 {
+    font-size: 20px;
+  }
+
   .ios-ui-grid__item:first-child {
     grid-column-start: span 1;
     grid-row-start: 1;
@@ -1299,15 +1347,19 @@ table {
   }
 }
 
-#form-language-w4 {
+/* #form-language-w4 {
   width: 200%;
-  transform: translate(-25%, 0);
+  -webkit-transform: translate(-25%, 0);
+      -ms-transform: translate(-25%, 0);
+          transform: translate(-25%, 0);
 }
 
 #form-language-w2 {
   width: 200%;
-  transform: translate(-25%, 0);
-}
+  -webkit-transform: translate(-25%, 0);
+      -ms-transform: translate(-25%, 0);
+          transform: translate(-25%, 0);
+} */
 
 /* ------------------------- Grid for mobile devices ----------------------------- */
 
@@ -1316,6 +1368,14 @@ table {
 @media all and (max-width: 750px) {
   .form-language-grid {
     grid-template-columns: 1fr;
+  }
+
+  .form-language-grid h1 {
+    font-size: 26px;
+  }
+
+  .form-language-grid h2 {
+    font-size: 20px;
   }
 
   .form-language-grid__item:first-child {
@@ -1460,6 +1520,14 @@ table {
     grid-template-columns: 1fr;
   }
 
+  .native-ios-grid h1 {
+    font-size: 26px;
+  }
+
+  .native-ios-grid h2 {
+    font-size: 20px;
+  }
+
   .native-ios-grid__item:first-child {
     grid-column-start: span 1;
     grid-row-start: 1;
@@ -1590,6 +1658,14 @@ table {
 @media all and (max-width: 750px) {
   .colors-grid {
     grid-template-columns: 1fr;
+  }
+
+  .colors-grid h1 {
+    font-size: 26px;
+  }
+
+  .colors-grid h2 {
+    font-size: 20px;
   }
 
   .colors-grid__item:first-child {
@@ -1728,6 +1804,14 @@ table {
 @media all and (max-width: 750px) {
   .data-visualization-grid {
     grid-template-columns: 1fr;
+  }
+
+  .data-visualization-grid h1 {
+    font-size: 26px;
+  }
+
+  .data-visualization-grid h2 {
+    font-size: 20px;
   }
 
   .data-visualization-grid__item:first-child {
@@ -1882,6 +1966,14 @@ table {
 @media all and (max-width: 750px) {
   .flyux-grid {
     grid-template-columns: 1fr;
+  }
+
+  .flyux-grid h1 {
+    font-size: 26px;
+  }
+
+  .flyux-grid h2 {
+    font-size: 20px;
   }
 
   .flyux-grid__item:first-child {
