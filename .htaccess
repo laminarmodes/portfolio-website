@@ -1,2 +1,6 @@
-#Alternate default index page
-DirectoryIndex index.html
+RewriteEngine On
+# Remove "index.html"
+RewriteRule (.*)index\.html$ /$1 [R=301,L]
+# Force to open secure
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

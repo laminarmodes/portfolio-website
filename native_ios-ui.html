@@ -8,22 +8,22 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Patua+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 <!-- This is a comment -->
 
@@ -74,14 +74,14 @@
 
                     <!-- 2: Image of phones in simulators -->
                     <div class="ios-ui-grid__item">
-                        <img class="image-100" id="neo-vir-06-xcode" src="https://res.cloudinary.com/dkpkt1jdn/image/upload/c_scale,q_auto:good,w_1736/v1633672918/Portfolio/ios_native_neu/neo-plasma-05-all_ld0wnp.png" alt="All simulators">
+                        <img class="image-100" id="neo-vir-06-xcode" src="https://res.cloudinary.com/dkpkt1jdn/image/upload/c_scale,w_1999/v1634373299/Portfolio/ios_native_data/neo-plasma-05-all-cropped_gvuzbd.jpg" alt="All simulators">
                     </div>
 
                     <!-- 3: Text about phones in Xcode -->
                     <div class="ios-ui-grid__item">
                         <h2>Implementation</h2>
                       <p> I wanted to test the aesthetic feel of neomorphism in high fidelity so I made a demonstrator using SwiftUI.
-                          I converted a flat design into a neuromorphic one in it's most simple form through a status indicator, button and different card layouts.</p>
+                          I converted a flat design into a neuromorphic UI in it's most simple form through a status indicator, button and various card layouts.</p>
                     </div>
 
                     <!-- 4: Images of phones in Xcode -->
@@ -92,10 +92,15 @@
                     <!-- 5: Text about 'new item' screen -->
                     <div class="ios-ui-grid__item">
                         <h2>Accessibility issues</h2>
-                      <p>Neumorphism is challenged by issues due to accessibility.</p>
+                      <p>Neumorphism has been challenged, and for good reason, due to issues with accessibility.</p>
                       <p>This can be slightly overcome by incorporating the use of color around components.
-                          Color neumorphic components can be very accessibly but the slight drawback is that they
-                          become more complex to build and require patience and a good eye.</p>
+                          And while color neumorphic components can be more accessible, the slight drawback is that they
+                          become more complex to build from scratch and clutter up the code.  Also coding 3D components requires
+                          experimentation, patience and a very good eye.</p>
+                          <p>
+                              Transitions are also extremly important.  This is something that can be very tricky to get right with 3D buttons.  If not designed well, 
+                              the interaction can feel creepy and unrealistic.
+                          </p>
                     </div>
 
                     <!-- 6: Image of 'new item' screen -->
@@ -111,7 +116,12 @@
                     <!-- 8: Text about carousel view -->
                     <div class="ios-ui-grid__item">
                         <h2>Element spacing</h2>
-                      <p>Another thing to watch out for is element spacing.  The 3D effect is created with shadows and so extra margin between components in needed in order to avoid cutting off the shadow.</p>
+                      <p>Another thing to watch out for is element spacing.  The 3D effect is created with layers of shadows and so extra margin between components in needed in order to avoid 
+                          cutting these shadows off.  This limits the amount of components that can fit into the screen space (which actually isn't a bad thing at all).</p>
+                          <p>
+                            Here, the title for each row of cards needed to be lifted away from the top of the cards to avoid cutting through the top shadow.  Also, each row/title set needed additional separation to 1) protect the 
+                        bottom shadows of the cards and 2) compensate for the loss in proximity between the cards and the row title.
+                          </p>
                     </div>
 
                     <!-- 9: Text about card view -->
@@ -120,13 +130,13 @@
                       <p>Looking past the accessibility issues, there are still many great things that come out of this style</p>
                       <ul>
                           <li>
-                             The 3D effect really brings the screen to life
+                             The 3D effect really brings the screen to life in a new and engaging way.
                           </li>
                           <li>
-                             It lets you go softer on the colors while keeping affordance
+                             The extra affordance lets you go softer on the colors (though it is still good too keep them to improve accessibility).
                           </li>
                           <li>
-                              It could be a great bridge into 3D design systems for augmented reality
+                              It could be a great bridge into 3D design systems for augmented reality productivity apps.  Here I am imagining virtual post-it notes.
                           </li>
                       </ul>
                     </div>
@@ -144,7 +154,7 @@
                     <!-- 12: Text about lazy-grid view -->
                     <div class="ios-ui-grid__item">
                         <h2>Give it a go</h2>
-                      <p>Aside from accessibility and implementation complexity, neumorphism can create some very stunning user interface.  There is no harm in
+                      <p>Aside from accessibility, implementation complexity and cluttering up code (for now), neumorphism can create some very stunning user interface.  There is no harm in
                           building a fun app with it, but it might be a good idea to give users the option to toggle back to a more traditional interface.  This
                           can be done with a clean design system architecture.</p>
                     </div>

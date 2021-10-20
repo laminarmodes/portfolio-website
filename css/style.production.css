@@ -9,43 +9,80 @@
 
 /*** ------------------------- GLOBAL STYLES ----------------------------- ***/
 
+/* font-family: 'Lora', serif;
+font-family: 'Patua One', cursive; */
+
 body {
   scroll-behavior: smooth;
   background-color: white;
 
   /* background: white; */
 
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
+  font-family:  'EB Garamond', serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  
 }
 
 h1 {
-  font-family: 'Courgette', cursive;
+  /* font-family: 'Courgette', cursive; 
+  font-weight: 700;*/
+  /*font-family: 'Proza Libre', sans-serif;
+  font-weight: 700;*/
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 36px;
   color: #333;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  /* font-family: 'Montserrat', sans-serif;
+  font-weight: 500; */
+  /* font-family: 'Proza Libre', sans-serif;
+  font-weight: 400; */
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   font-size: 24px;
   color: #333;
   margin-top: 10px;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #333;
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  font-size: 20px;
+  /*font-family: 'Merriweather', serif; */
+  /* font-family:  'Cormorant Garamond', serif; */
+  font-family:  'EB Garamond', serif;
+  font-weight: 300;
+  color: #333;
+}
+
+ul {
+  /* font-family: 'Lato', sans-serif; */
+  font-size: 20px;
+  /*font-family: 'Merriweather', serif; */
+  /* font-family:  'Cormorant Garamond', serif; */
+  font-family:  'EB Garamond', serif;
+  font-weight: 300;
+  color: #333;
+}
+
+li {
+  /* font-family: 'Lato', sans-serif; */
+  font-size: 20px;
+  /*font-family: 'Merriweather', serif; */
+  /* font-family:  'Cormorant Garamond', serif; */
+  font-family:  'EB Garamond', serif;
+  font-weight: 300;
   color: #333;
 }
 
@@ -99,7 +136,7 @@ button,
 
   /* remember, for a-block, width is ignored so have to use display: inline-block first */
   display: inline-block;
-  width: 150px;
+  width: 170px;
   height: 40px;
 
   /* use fron from outer container */
@@ -230,7 +267,7 @@ button:focus,
 /*** ------------------------- NAVIGATION ----------------------------- ***/
 
 .navigation-list__item {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .navigation-list__item--active {
@@ -245,7 +282,7 @@ button:focus,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
+  height: 55px; /* from 50 */
   overflow: hidden;
 }
 
@@ -343,7 +380,8 @@ button:focus,
 
 /*** ------------------------- MOBILE NAVIGATION ----------------------------- ***/
 
-@media only screen and (max-width: 720px) {
+/* THIS CAN BE USED TO SHRINK THE FONT SIZE IN THE SLIDES */ 
+@media only screen and (max-width: 770px) {
   .features {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -366,9 +404,9 @@ button:focus,
     font-size: 1rem;
   }
 
-  p {
+  /*p {
     font-size: 1rem;
-  }
+  }*/
 
   /* MOBILE NAVIGATION MENU */
 
@@ -395,6 +433,7 @@ button:focus,
     text-align: center;
     overflow: hidden;
     z-index: 3;
+    padding: 0;
   }
 
   .main-navigation li {
@@ -515,6 +554,7 @@ table {
     width: 100%;
     height: auto;
   }
+
 }
 
 /* center all the content in the grid cell and give padding */
@@ -541,8 +581,8 @@ table {
   /* filter: brightness(.7); */
 
   /* create blur overlay */
-  -webkit-filter: brightness(0.7) blur(5px);
-          filter: brightness(0.7) blur(5px);
+  -webkit-filter: brightness(0.55) blur(5px);
+          filter: brightness(0.55) blur(5px);
   margin: -5px -10px -10px -0;
 
   /* crate box shadow */
@@ -608,50 +648,6 @@ table {
   visibility: hidden;
 }
 
-@media all and (min-width: 500px) and (max-width: 750px)
-{
-  .grid {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* when on mobile, the grid cells are bigger so make the font bigger */
-  .grid__item h2 {
-    font-size: 30px;
-  }
-
-  /* when on mobile, the grid cells are bigger so make the font bigger */
-  .grid__item p {
-    font-size: 18px;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .grid a:active {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .grid a:visited {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  /* when on mobile, the grid cells are bigger so make the font bigger */
-  .grid__item h2 {
-    font-size: 30px;
-  }
-
-  /* when on mobile, the grid cells are bigger so make the font bigger */
-  .grid__item p {
-    font-size: 22px;
-  }
-}
 
 @media all and (max-width: 750px) {
   .grid {
@@ -679,6 +675,107 @@ table {
   }
 
   /* when on mobile, the grid cells are bigger so make the font bigger */
+
+  .grid__item h2 {
+    font-size: 40px;
+  }
+
+  .grid__item p {
+    font-size: 24px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 770px)
+{
+
+   .main {
+    margin-left: 2%;
+    margin-right: 2%;
+ 
+  }  
+
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid__item h2 {
+    font-size: 40px;
+  }
+
+  .grid__item p {
+    font-size: 24px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 600px)
+{
+
+   .main {
+    margin-left: 2%;
+    margin-right: 2%;
+ 
+  }  
+
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid__item h2 {
+    font-size: 30px;
+  }
+
+  .grid__item p {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .grid a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .grid a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .grid__item h2 {
+    font-size: 40px;
+  }
+
+  .grid__item p {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .grid a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .grid a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .grid__item h2 {
+    font-size: 32px;
+  }
+
   .grid__item p {
     font-size: 20px;
   }
@@ -1194,7 +1291,7 @@ table {
     }
 
     .slide:first-child {
-      /* padding-top: 14%; */
+       padding-top: 14%; 
       padding-bottom: 1%; /* Controls the padding for the first slide */
     }
 
@@ -1207,6 +1304,8 @@ table {
     }
   }
 }
+
+
 
 /* images */
 #profile-pic-01 {
@@ -1229,10 +1328,9 @@ table {
     -ms-grid-columns: 1fr 50px 1fr;
     grid-template-columns: 1fr 1fr; /* no of grid columns */
     gap: 50px; /* spacing between grid elements */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
   }
 
   .native-ios-grid__item { /* grid cell contents will occupiy entire space */
@@ -1458,10 +1556,9 @@ table {
     -ms-grid-columns: 1fr 50px 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
   }
 
   .ios-ui-grid__item {
@@ -1597,10 +1694,9 @@ table {
     -ms-grid-columns: 1fr 50px 1fr;
     grid-template-columns: 1fr 1fr; /* no of grid columns */
     gap: 50px; /* spacing between grid elements */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
   }
 
   .form-language-grid__item { /* grid cell contents will occupiy entire space */
@@ -1777,10 +1873,9 @@ table {
     -ms-grid-columns: 1fr 50px 1fr;
     grid-template-columns: 1fr 1fr; /* no of grid columns */
     gap: 50px; /* spacing between grid elements */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
   }
 
   .native-ios-grid__item { /* grid cell contents will occupiy entire space */
@@ -1988,10 +2083,9 @@ table {
     -ms-grid-columns: 1fr 50px 1fr;
     grid-template-columns: 1fr 1fr; /* no of grid columns */
     gap: 50px; /* spacing between grid elements */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
+     /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
   }
 
   .colors-grid__item { /* grid cell contents will occupiy entire space */
@@ -2155,10 +2249,9 @@ table {
     -ms-grid-columns: 1fr 50px 1fr;
     grid-template-columns: 1fr 1fr; /* no of grid columns */
     gap: 50px; /* spacing between grid elements */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
   }
 
   .data-visualization-grid__item { /* grid cell contents will occupiy entire space */
@@ -2328,10 +2421,9 @@ table {
     -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
     grid-template-columns: 1fr 1fr 1fr; /* no of grid columns */
     gap: 50px; /* spacing between grid elements */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
   }
 
   .balsamiq-grid__item { /* grid cell contents will occupiy entire space */
@@ -2368,10 +2460,9 @@ table {
     -ms-grid-columns: 1fr 50px 1fr;
     grid-template-columns: 1fr 1fr; /* no of grid columns */
     gap: 50px; /* spacing between grid elements */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
   }
 
   .flyux-grid__item { /* grid cell contents will occupiy entire space */
@@ -2412,6 +2503,16 @@ table {
   }
 
   .flyux-grid__item:nth-child(10) {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+  }
+
+  .flyux-grid__item:nth-child(15) {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+  }
+
+  .flyux-grid__item:nth-child(16) {
     -ms-grid-column: span 2;
         grid-column-start: span 2;
   }
@@ -2527,5 +2628,19 @@ table {
         grid-column-start: span 1;
     -ms-grid-row: 13;
         grid-row-start: 13;
+  }
+
+  .flyux-grid__item:nth-child(15) {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+    -ms-grid-row: 15;
+        grid-row-start: 15;
+  }
+
+  .flyux-grid__item:nth-child(16) {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+    -ms-grid-row: 16;
+        grid-row-start: 16;
   }
 }
