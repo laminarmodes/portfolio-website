@@ -66,10 +66,15 @@
           <!-- 1: Intro text -->
           <div class="native-ios-grid__item">
             <h2>Mobile-first data visualization</h2>
-            <p>Learning Swift was a great experience and I was very excited to transition to SwiftUI
-              and continue to explore one of my favorite parts of coding which is data visualization.
-              This app is still in the making so I am not ready to reveal what it does but I am very keen to share the journey I have taken, from ideation to native 
-              demonstrator and soon the app store.</p>
+            <p>I am SwiftUI addicted.  Learning Swift was a great experience and I was super excited to transition to SwiftUI
+              and continue to explore one of my favorite parts of coding which is data visualization.  
+              </p>
+              <p>
+                I love, Love, LOVE making data charts in SwiftUI (and will soon do the same in Jetpack Compose)
+                </p>
+              <p>
+                This app is still in the making so I am not ready to reveal what it does but I am very keen to share the journey I have taken, from ideation to proof-of-concept app and soon the app store.
+              </p>
           </div>
 
           <!-- 2: Image of all phones -->
@@ -79,13 +84,10 @@
 
           <!-- 3: User flow sketch description -->
           <div class="native-ios-grid__item">
-            <h2>The Flow -> How does it work?</h2>
-            <p>I always try to break my ideas down into the basic steps in order to identify
-              gaps in the concept. I know what the user is going to accomplish but
-              need
-              to clarify how they will go about it. Here, the user can accomplish three things 1) add
-              information
-              quickly, 2) sort information comfortably and 3) present information clearly.</p>
+            <h2>Getting ideas out</h2>
+            <p>I tend to come up with ridiculous ideas on a daily basis.  Thankfully I keep most of them to myself but every now and then I try to break them down into 
+              the basic steps. Here, the user can accomplish three things 1) add
+              information quickly, 2) sort information comfortably and 3) present information clearly.</p>
           </div>
 
           <!-- 4: Image of user flow sketch -->
@@ -100,21 +102,19 @@
 
           <!-- 6: Screen sketch description -->
           <div class="native-ios-grid__item">
-            <h2>How is information displayed?</h2>
+            <h2>What problem does the UI solve?</h2>
             <p>People need diverse options to organize, communicate & interpret information: charts,
-              words, symbols, images, tables, lists. I brainstormed different ways to
-              toggle between all options in a simple UI. The mobile-first approach comes limits
-              in real estate for rendering data so smart design patterns are needed to help simplify the
-              user interface, without losing information.</p>
+              words, symbols, images, tables, lists. I imagined different ways to
+              toggle between all options in a simple UI. The mobile-first approach is space limiting so smart design patterns are needed to simplify the
+              UI, without losing information.</p>
           </div>
 
           <!-- 7: Swift description -->
           <div class="native-ios-grid__item">
-            <h2>SwiftUI</h2>
-            <p> It's wonderful to experience how Data Binding is super simple to implement in SwiftUI, allowing more
+            <h2>Any excuse to write some beautiful code</h2>
+            <p>Data Binding is super simple to implement in SwiftUI and give me the space to
               focus on creating a complex UI that lets the user explore, drill-down, compare, scan and browse. The
-              actual user
-              input (shown later) is persisted, but in a simple way for now in order to collect user feedback and
+              actual user input (shown later) is persisted, but in a simple way for now in order to collect user feedback and
               iterate on.  Once the demonstrator is validated I can complete the core data design for the final app.
             </p>
           </div>
@@ -126,22 +126,22 @@
 
           <!-- 9: Phone with barchart description -->
           <div class="native-ios-grid__item">
-            <h2>Data Summary</h2>
+            <h2>Simplifying Data Summaries</h2>
             <p>
-              Taking a mobile-first design approach to data visualization is something I have always been
-              interested in because it could really free the analyst from their desk and allow them to explore data,
-              monitor trends, do comparisons and listen out for alerts while moving around.  
-            </p>
-            <p>
-              Color-blind friendly color palettes can also be used to label a list of data sets. In the bar chart,
+              In the bar chart,
               each bar height represents the number of items that are contained inside each large summary card. The
               color of the bar
-              then corresponds to the color of the large summary card.
+              then corresponds to the color of the large summary card. Color-blind friendly color palettes should be used to label data sets. 
             </p>
             <p>
               An additional interaction could be, when the user selects a bar, it automatically scrolls to the
               corresponding
               card for them.
+            </p>
+            <p style="font-style: oblique;">
+              Taking a mobile-first design approach to data visualization is something I have always been
+              interested in because it could really free the analyst from their desk and allow them to explore data,
+              monitor trends, do comparisons and listen out for alerts while moving around.  
             </p>
           </div>
 
@@ -157,7 +157,7 @@
 
           <!-- 12: Description of phone with line chart -->
           <div class="native-ios-grid__item">
-            <h2>Casual scrolling</h2>
+            <h2>Keeping Drill-Downs Simple</h2>
             <p>
               This view would allow the user to drill down past the summary, and look at all the information
               contained within all summary cards at once. Each row should correspond to the color of the large card.
@@ -168,15 +168,15 @@
               a 'single point' on the line. Each project can have a different overall color theme; in this case, a warm
               color-blind friendly color ramp.
             </p>
-            <p>
-              I rembmer a statement from a very famous Decision Scientist who described the data analyst as, the one who "holds the flashlight".  I see the mobile-first 
+            <p style="font-style: oblique;">
+              I remember a statement from a very famous Decision Scientist who described the data analyst as, the one who "holds the flashlight".  I see the mobile-first 
               data visualization approach as giving them a really efficient portable flashlight.
             </p>
           </div>
 
           <!-- 13: Description of adding items -->
           <div class="native-ios-grid__item">
-            <h2>Preserving details</h2>
+            <h2>Show the details, only when they need them</h2>
             <p>Looking now at the small cards, clicking one card will reveal the details of the card and alternatively, the user can view a row of
               cards in a list view which may be preferred for presentations and discussions.
             </p>
@@ -197,7 +197,8 @@
           <div class="native-ios-grid__item">
             <h2>User input</h2>
             <p>New cards can be added to each individual row (see 'Test Item, Test Description') and a new category can
-              be added as an empty list (see 'Test List').</p>
+              be added as an empty list (see 'Test List').  In this proof-of-concept app, I used Core Data to persist the 
+              information that the user entered.</p>
 
           </div>
 
@@ -209,8 +210,8 @@
           <!-- 17: Description of adding section -->
           <div class="native-ios-grid__item">
             <h2>Transition animations</h2>
-            <p>However when a new card is added, the transition can be sudden and the card may go unnoticed. It is
-              important to remember to use animations for these interactions. </p>
+            <p>However when a new card is added, the transition can be sudden and the card may go unnoticed. The card just kind of appears out of nowhere. It is
+              important to remember to use animations for these interactions and the beauty of SwiftUI is that you can implement them with just a few lines of code. </p>
           </div>
 
           <!-- 18: Image of adding section-->
@@ -221,9 +222,8 @@
           <!-- 19: Description of future plans -->
           <div class="native-ios-grid__item">
             <h2>What's next</h2>
-            <p>There are a lot more features that could be added, for instance, the ability to drag cards to either
-              reorder them, more move them to a new category. These things though
-              will be addressed after more user testing is done.
+            <p>I am looking foward to sharing more details on what this app does once I get closer to 
+              publishing on the app store.  For now, I just hope to share my journy and inspire other UI designers to get into SwiftUI.
             </p>
           </div>
 
