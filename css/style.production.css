@@ -2306,6 +2306,11 @@ table {
     -ms-grid-column: span 2;
         grid-column-start: span 2;
   }
+
+  .data-visualization-grid__item:nth-child(13) {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+  }
 }
 
 @media all and (max-width: 750px) {
@@ -2404,6 +2409,13 @@ table {
         grid-column-start: span 1;
     -ms-grid-row: 12;
         grid-row-start: 12;
+  }
+
+  .data-visualization-grid__item:nth-child(13) {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+    -ms-grid-row: 13;
+        grid-row-start: 13;
   }
 }
 

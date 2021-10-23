@@ -1882,6 +1882,10 @@ table {
   .data-visualization-grid__item:nth-child(12) {
     grid-column-start: span 2;
   }
+
+  .data-visualization-grid__item:nth-child(13) {
+    grid-column-start: span 2;
+  }
 }
 
 @media all and (max-width: 750px) {
@@ -1955,6 +1959,11 @@ table {
   .data-visualization-grid__item:nth-child(12) {
     grid-column-start: span 1;
     grid-row-start: 12;
+  }
+
+  .data-visualization-grid__item:nth-child(13) {
+    grid-column-start: span 1;
+    grid-row-start: 13;
   }
 }
 
