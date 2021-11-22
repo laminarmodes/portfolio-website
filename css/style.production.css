@@ -87,7 +87,7 @@ li {
 }
 
 .navigation-list__item {
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* attention: when making width 100% then adding padding and boarder causes 100% + padding + boarder */
@@ -338,7 +338,7 @@ button:focus,
   /* transition: transform 0.7s ease-in-out; */
 }
 
-/*** ------------------------- MOBILE MENU & ANIMATION ----------------------------- ***/
+/*** ------------------------- MOBILE MENU AND ANIMATION ----------------------------- ***/
 
 .menu-toggle .bar {
   width: 25px;
@@ -1111,6 +1111,87 @@ table {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
+
+
+/**************************/
+/* PROFILE SECTION - GRID */
+/**************************/
+
+.home-background {
+  background-image: -o-linear-gradient(315deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
+  background-image: linear-gradient(135deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
+}
+
+.profile {
+  margin: 0;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.profile-grid__item {
+  display: inline-block;
+  width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+  .profile-grid {
+    display: -ms-grid;
+    display: grid; /* use grid layout */
+    -ms-grid-columns: 1fr 50px 1fr;
+    grid-template-columns: 1fr 1fr; /* no of grid columns */
+    gap: 50px; /* spacing between grid elements */
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
+  }
+
+  .profile-grid__item { /* grid cell contents will occupiy entire space */
+    /* Center contents */
+    width: auto;
+    min-height: auto;
+    margin: 0;
+  }
+
+  .profile-grid__item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .profile-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .profile-grid h1 {
+    font-size: 26px;
+  }
+
+  .profile-grid h2 {
+    font-size: 20px;
+  }
+
+  .profile-grid__item:first-child {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+
+  .profile-grid__item:nth-child(2) {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+}
+
 
 /*** ------------------------- PARALLAX SCROLLING EXPERIMENT ----------------------------- ***/
 

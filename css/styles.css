@@ -893,6 +893,78 @@ table {
   animation-timing-function: linear;
 }
 
+
+/**************************/
+/* PROFILE SECTION - GRID */
+/**************************/
+
+.home-background {
+  background-image: linear-gradient(135deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
+}
+
+.profile {
+  margin: 0;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.profile-grid__item {
+  display: inline-block;
+  width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+  .profile-grid {
+    display: grid; /* use grid layout */
+    grid-template-columns: 1fr 1fr; /* no of grid columns */
+    gap: 50px; /* spacing between grid elements */
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
+  }
+
+  .profile-grid__item { /* grid cell contents will occupiy entire space */
+    /* Center contents */
+    width: auto;
+    min-height: auto;
+    margin: 0;
+  }
+
+  .profile-grid__item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-grid h1 {
+    font-size: 26px;
+  }
+
+  .profile-grid h2 {
+    font-size: 20px;
+  }
+
+  .profile-grid__item:first-child {
+    grid-column-start: span 1;
+    grid-row-start: 1;
+  }
+
+  .profile-grid__item:nth-child(2) {
+    grid-column-start: span 1;
+    grid-row-start: 2;
+  }
+}
+
+
 /*** ------------------------- PARALLAX SCROLLING EXPERIMENT ----------------------------- ***/
 
 /* slide layout
