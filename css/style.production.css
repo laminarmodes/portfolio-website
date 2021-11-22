@@ -1122,8 +1122,9 @@ table {
   background-image: linear-gradient(135deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
 }
 
-.profile {
+/* .profile {
   margin: 0;
+  margin-top: 5%;
   width: 90%;
   position: absolute;
   top: 50%;
@@ -1131,11 +1132,10 @@ table {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
+} */
 
-.profile-grid__item {
-  display: inline-block;
-  width: 50%; /* Each grid item occupies 1/4 of the view */
+.profile {
+  margin-top: 20%;
 }
 
 @supports (display: grid) {
