@@ -86,6 +86,10 @@ li {
   color: #333;
 }
 
+.navigation-list__item {
+    font-family: 'Oswald', sans-serif;
+}
+
 /* attention: when making width 100% then adding padding and boarder causes 100% + padding + boarder */
 * {
   -webkit-box-sizing: border-box;

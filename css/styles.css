@@ -81,6 +81,10 @@ p, ul, li {
   color: var(--dark-grey);
 }
 
+.navigation-list__item {
+  font-family: 'Oswald', sans-serif;
+}
+
 /* attention: when making width 100% then adding padding and boarder causes 100% + padding + boarder */
 * {
   box-sizing: border-box;
