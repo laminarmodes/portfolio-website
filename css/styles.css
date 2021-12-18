@@ -1767,6 +1767,184 @@ table {
   }
 }
 
+
+
+
+
+
+
+/*** ------------------------- IOS GLASSMORPHISM ----------------------------- ***/
+
+.native-ios-glassmorphism-grid__item {
+  display: inline-block;
+  width: 50%; /* Each grid item occupies 1/4 of the view */
+}
+
+@supports (display: grid) {
+  .native-ios-glassmorphism-grid {
+    display: grid; /* use grid layout */
+    grid-template-columns: 1fr 1fr; /* no of grid columns */
+    gap: 50px; /* spacing between grid elements */
+    /* This is if I wanted the text to be vertically centered */
+    /* align-items: center;
+    justify-items: center; */
+  }
+
+  .native-ios-glassmorphism-grid__item { /* grid cell contents will occupiy entire space */
+    /* Center contents */
+    width: auto;
+    min-height: auto;
+    margin: 0;
+  }
+
+  .native-ios-glassmorphism-grid__item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Intro Text */
+  .native-ios-glassmorphism-grid__item:first-child {
+    grid-column-start: span 2;
+  }
+
+  /* Image of all phones */
+  .native-ios-glassmorphism-grid__item:nth-child(2) {
+    grid-column-start: span 2;
+  }
+
+  /* User flow sketch description */
+  .native-ios-glassmorphism-grid__item:nth-child(7) {
+    grid-column-start: span 2;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(8) {
+    grid-column-start: span 2;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(13) {
+    grid-column-start: span 2;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(14) {
+    grid-column-start: span 2;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(15) {
+    grid-column-start: span 2;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(16) {
+    grid-column-start: span 2;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(17) {
+    grid-column-start: span 2;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(18) {
+    grid-column-start: span 2;
+  }
+}
+
+/* ------------------------- Grid for mobile devices ----------------------------- */
+
+/* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
+
+@media all and (max-width: 750px) {
+  .native-ios-glassmorphism-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .native-ios-glassmorphism-grid h1 {
+    font-size: 26px;
+  }
+
+  .native-ios-glassmorphism-grid h2 {
+    font-size: 20px;
+  }
+
+  .native-ios-glassmorphism-grid__item:first-child {
+    grid-column-start: span 1;
+    grid-row-start: 1;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(2) {
+    grid-column-start: span 1;
+    grid-row-start: 2;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(3) {
+    grid-row-start: 3;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(4) {
+    grid-row-start: 4;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(5) {
+    grid-row-start: 6;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(6) {
+    grid-row-start: 5;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(7) {
+    grid-column-start: span 1;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(8) {
+    grid-column-start: span 1;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(9) {
+    grid-row-start: 7;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(10) {
+    grid-row-start: 8;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(11) {
+    grid-row-start: 12;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(12) {
+    grid-row-start: 11;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(13) {
+    grid-column-start: span 1;
+    grid-row-start: 13;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(14) {
+    grid-column-start: span 1;
+    grid-row-start: 14;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(15) {
+    grid-column-start: span 1;
+    grid-row-start: 15;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(16) {
+    grid-column-start: span 1;
+    grid-row-start: 16;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(17) {
+    grid-column-start: span 1;
+    grid-row-start: 17;
+  }
+
+  .native-ios-glassmorphism-grid__item:nth-child(18) {
+    grid-column-start: span 1;
+    grid-row-start: 18;
+  }
+}
+
+
 /*** ------------------------- COLORS PROJECT GRID ----------------------------- ***/
 
 .colors-grid__item {
