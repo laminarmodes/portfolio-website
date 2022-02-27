@@ -2,226 +2,247 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Anya Traille - Glassmorphism Experiment</title>
-    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Patua+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anya Traille - Glassmorphism Experiment</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Patua+One&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 <!-- This is a comment -->
 
 <body>
-    <div class="page-wrap">
-        <header class="page-header">
-            <nav class="main-navigation page-header__item">
-                <img src="img/DrAnyaTraille.png" class="page-logo page-header__item" alt="logo">
-                <div class="menu-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul role="menubar" class="navigation-list no-search">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem"
-                            class="navigation-list__item navigation-list__item--active">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="publications.html" role="menuitem" class="navigation-list__item">Publications</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <div class="page-wrap">
+    <header class="page-header">
+      <nav class="main-navigation page-header__item">
+        <img src="img/Anya_071cropped-modified.png" style="width: 2.5rem; height: auto;"
+          class="page-logo page-header__item" alt="logo">
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul role="menubar" class="navigation-list no-search">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+          </li>
+          <li role="presentation">
+            <a href="publications.html" role="menuitem" class="navigation-list__item">Publications</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <main class="main">
-            <!--<div class="project-intro">
+    <main class="main">
+      <!--<div class="project-intro">
                       <h1>Coming soon...</h1>
                       <h2>This section is work in progress :)</h2>
                   </div>-->
-            <div class="project-main" style="padding-bottom: 10%;">
-              <h1 id="slide-4-title">Native iOS - Glassmorphism</h1>
-              <div class="native-ios-glassmorphism-grid">
-      
-                <!-- 1: Intro text -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>Native iOS Glassmorphism</h2>
-                  <p>Here I am experimenting with Glassmorphism in SwiftUI.  Glassmorphism is a UI trend, but also 
-                      standard that has been used lightly for years.  For this experiment I decided to go extremely 
-                      loud and rude with the colours and would highly recommend toning it down for a real design. </p>
-                </div>
-      
-                <!-- 2: Image of all phones -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-100" id="data-all-v04" src="img/glassmorphism-experiments/small-glass-all-blue.png" alt="all phone simulators">
-                </div>
-      
-                <!-- 3: User flow sketch description -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>Cheerful Colors</h2>
-                  <p>In this design I have used two colour ramps on the background vs foreground that cover 
-                      different parts of the spectrum.  This is about as loud as one can get.  Here I am using 
-                      warm colours for the background gradient and cool colours for the bar chart, foreground 
-                      icons and foreground text.</p>
-                </div>
-      
-                <!-- 4: Image of user flow sketch -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-100" src="img/glassmorphism-experiments/small-glass-01-BarChartsWarmBackground.png" alt="user flow sketch">
-                </div>
-      
-                <!-- 5: Image of screen sketch -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-100" src="img/glassmorphism-experiments/small-glass-02-LineChartsWarmBackground.png" alt="sketch of screens">
-                </div>
-      
-                <!-- 6: Screen sketch description -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>Accessibility</h2>
-                  <p>Glassmorphism is more accessible than Neumorphism, but not without its challenges.  A glossy 
-                    UI can take the user's attention away from the text so a lot of care must be taken when using 
-                    it excessively, especially when the UI gets more complex.
-                </p>
-                </div>
-      
-                <!-- 7: Swift description -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>Design System</h2>
-                  <p>I made the decision to squeeze three UI styles, each having three layout, inside one app.  
-                    The reason for this is because I want to create a living design system.  The demonstrator 
-                    is populated with a data model and dummy data and the user can add and delete information and 
-                    this is persisted.  Rather than keep separate branches, I wanted to keep all the design styles 
-                    in one place while debugging and setting up the core data stack.</p>
-                </div>
-      
-                <!-- 8: Xcode image -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-100" id="viridis-data-04-xcode" src="img/glassmorphism-experiments/small-glass-05-CodeColdBackground.png" alt="Xcode">
-                </div>
-      
-                <!-- 9: Phone with barchart description -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>Loud but fun</h2>
-                  <p>Here I use cool colors for the background gradient and warm colours for the line charts, 
-                    foreground icons and foreground text.  Menu items for example can be a great opportunity 
-                    to enjoy glassmorphism whereas the reader probably shouldn't be reading long passages this 
-                    way.</p>
-                </div>
-      
-                <!-- 10: Image of phone with bar chart -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-50" id="viridis-data-01" src="img/glassmorphism-experiments/small-glass-03-LazyGridColdBackground.png" alt="iPhone app bar chart and card scene">
-                </div>
-      
-                <!-- 11: Image of phone with line chart -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-50" id="plasma-data-01" src="img/glassmorphism-experiments/small-glass-04-LazyGridDrilldownColdBackground.png" alt="iPhone app line chart and carousel scene">
-                </div>
-      
-                <!-- 12: Description of phone with line chart -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>Contrast challenges</h2>
-                  <p>Contrast is still very important.  The contrast between the dark grey text and its background 
-                    and the contrast between the purple text/icons and background can be improved even further.</p>
-                </div>
-      
-                <!-- 13: Description of adding items -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>Can always water it down</h2>
-                  <p>With simple user interfaces one can have a lot of fun with glassmorphism, especially when 
-                      changing backgrounds.  One thing I haven’t tried yet is using a lighter pastel gradient 
-                      background.  This could make the UI less intense and even more readable.</p>
-                </div>
-      
-                <!-- 14: Image of adding items -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-100" id="plasma-detail-and-alternative-view"
-                    src="img/glassmorphism-experiments/small-glass-all-warm.png" alt="List and detail view">
-                </div>
-      
-                <!-- 15: Description of adding items -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>A Clean and Organised Design System</h2>
-                  <p>I plan to spend some time cleaning up and simplifying the Design System code, to ensure consistency 
-                    and also to make it even easier to reuse components.</p>
-      
-                </div>
-      
-                <!-- 16: Image of adding items -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-100" id="ios-interaction-01" src="img/glassmorphism-experiments/small-glass-05-CodeWarmBackground.png" alt="iPhone app when adding items">
-                </div>
-      
-                <!-- 17: Description of adding section -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>Atmosphere</h2>
-                  <p>As we know, different colours create different moods so I am very keen to enable the user to change or customize the UI easily</p>
-                </div>
-      
-                <!-- 18: Image of adding section-->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-100" id="ios-interaction-02" src="img/glassmorphism-experiments/small-glass-all-mixed.png" alt="iPhone app when adding section">
-                </div>
-      
-                <!-- 19: Description of future plans -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <h2>What's next</h2>
-                  <p>Once this design system is finished I am planning to go deeper into the data visualisations 
-                      and hopefully have a large library of charts with different UI styles.
-                  </p>
-                </div>
-      
-                <!-- 12: Image of future plans -->
-                <div class="native-ios-glassmorphism-grid__item">
-                  <img class="image-100" src="img/glassmorphism-experiments/small-glass-04-LazyGridDrilldownWarmBackground.png" alt="sketch of future ideas">
-                </div>
-              </div>
-            </div>
-      
-            <div class="return-button">
-              <button onclick="goBack()">Back</button>
+      <div class="project-main" style="padding-bottom: 10%;">
+        <h1 id="slide-4-title">Native iOS - Glassmorphism</h1>
+        <div class="native-ios-glassmorphism-grid">
+
+          <!-- 1: Intro text -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>Native iOS Glassmorphism</h2>
+            <p>Here I am experimenting with Glassmorphism in SwiftUI. Glassmorphism is a UI trend, but also
+              standard that has been used lightly for years. For this experiment I decided to go extremely
+              loud and rude with the colours and would highly recommend toning it down for a real design. </p>
           </div>
-          </main>
 
-        <footer class="page-footer">
-            <p>Find me on</p>
+          <!-- 2: Image of all phones -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-100" id="data-all-v04" src="img/glassmorphism-experiments/small-glass-all-blue.png"
+              alt="all phone simulators">
+          </div>
 
-            <div class="social-media">
-                <a href="https://twitter.com/LaminarModes" target="_blank"><img class="find-me-on"
-                        src="img/tweet_black_icon.svg" alt="tweet image"></a>
-                <a href="https://www.instagram.com/laminarmodes/" target="_blank"><img class="find-me-on"
-                        src="img/insta_icon.svg" alt="insta image"></a>
-                <a href="#" target="_blank"><img class="find-me-on" src="img/git_icon.png" alt="git image"></a>
-                <a href="https://www.linkedin.com/in/anyatraille/" target="_blank"><img class="find-me-on"
-                        src="img/link_icon.png" alt="lin image"></a>
-            </div>
-        </footer>
-    </div>
+          <!-- 3: User flow sketch description -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>Cheerful Colors</h2>
+            <p>In this design I have used two colour ramps on the background vs foreground that cover
+              different parts of the spectrum. This is about as loud as one can get. Here I am using
+              warm colours for the background gradient and cool colours for the bar chart, foreground
+              icons and foreground text.</p>
+          </div>
 
-    
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src="scripts.js"></script>
+          <!-- 4: Image of user flow sketch -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-100" src="img/glassmorphism-experiments/small-glass-01-BarChartsWarmBackground.png"
+              alt="user flow sketch">
+          </div>
+
+          <!-- 5: Image of screen sketch -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-100" src="img/glassmorphism-experiments/small-glass-02-LineChartsWarmBackground.png"
+              alt="sketch of screens">
+          </div>
+
+          <!-- 6: Screen sketch description -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>Accessibility</h2>
+            <p>Glassmorphism is more accessible than Neumorphism, but not without its challenges. A glossy
+              UI can take the user's attention away from the text so a lot of care must be taken when using
+              it excessively, especially when the UI gets more complex.
+            </p>
+          </div>
+
+          <!-- 7: Swift description -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>Design System</h2>
+            <p>I made the decision to squeeze three UI styles, each having three layout, inside one app.
+              The reason for this is because I want to create a living design system. The demonstrator
+              is populated with a data model and dummy data and the user can add and delete information and
+              this is persisted. Rather than keep separate branches, I wanted to keep all the design styles
+              in one place while debugging and setting up the core data stack.</p>
+          </div>
+
+          <!-- 8: Xcode image -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-100" id="viridis-data-04-xcode"
+              src="img/glassmorphism-experiments/small-glass-05-CodeColdBackground.png" alt="Xcode">
+          </div>
+
+          <!-- 9: Phone with barchart description -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>Loud but fun</h2>
+            <p>Here I use cool colors for the background gradient and warm colours for the line charts,
+              foreground icons and foreground text. Menu items for example can be a great opportunity
+              to enjoy glassmorphism whereas the reader probably shouldn't be reading long passages this
+              way.</p>
+          </div>
+
+          <!-- 10: Image of phone with bar chart -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-50" id="viridis-data-01"
+              src="img/glassmorphism-experiments/small-glass-03-LazyGridColdBackground.png"
+              alt="iPhone app bar chart and card scene">
+          </div>
+
+          <!-- 11: Image of phone with line chart -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-50" id="plasma-data-01"
+              src="img/glassmorphism-experiments/small-glass-04-LazyGridDrilldownColdBackground.png"
+              alt="iPhone app line chart and carousel scene">
+          </div>
+
+          <!-- 12: Description of phone with line chart -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>Contrast challenges</h2>
+            <p>Contrast is still very important. The contrast between the dark grey text and its background
+              and the contrast between the purple text/icons and background can be improved even further.</p>
+          </div>
+
+          <!-- 13: Description of adding items -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>Can always water it down</h2>
+            <p>With simple user interfaces one can have a lot of fun with glassmorphism, especially when
+              changing backgrounds. One thing I haven’t tried yet is using a lighter pastel gradient
+              background. This could make the UI less intense and even more readable.</p>
+          </div>
+
+          <!-- 14: Image of adding items -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-100" id="plasma-detail-and-alternative-view"
+              src="img/glassmorphism-experiments/small-glass-all-warm.png" alt="List and detail view">
+          </div>
+
+          <!-- 15: Description of adding items -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>A Clean and Organised Design System</h2>
+            <p>I plan to spend some time cleaning up and simplifying the Design System code, to ensure consistency
+              and also to make it even easier to reuse components.</p>
+
+          </div>
+
+          <!-- 16: Image of adding items -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-100" id="ios-interaction-01"
+              src="img/glassmorphism-experiments/small-glass-05-CodeWarmBackground.png"
+              alt="iPhone app when adding items">
+          </div>
+
+          <!-- 17: Description of adding section -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>Atmosphere</h2>
+            <p>As we know, different colours create different moods so I am very keen to enable the user to change or
+              customize the UI easily</p>
+          </div>
+
+          <!-- 18: Image of adding section-->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-100" id="ios-interaction-02" src="img/glassmorphism-experiments/small-glass-all-mixed.png"
+              alt="iPhone app when adding section">
+          </div>
+
+          <!-- 19: Description of future plans -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <h2>What's next</h2>
+            <p>Once this design system is finished I am planning to go deeper into the data visualisations
+              and hopefully have a large library of charts with different UI styles.
+            </p>
+          </div>
+
+          <!-- 12: Image of future plans -->
+          <div class="native-ios-glassmorphism-grid__item">
+            <img class="image-100"
+              src="img/glassmorphism-experiments/small-glass-04-LazyGridDrilldownWarmBackground.png"
+              alt="sketch of future ideas">
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="return-button">
+        <button onclick="goBack()">Back</button>
+      </div> -->
+    </main>
+
+    <footer class="page-footer">
+      <p>Find me on</p>
+
+      <div class="social-media">
+        <a href="https://twitter.com/LaminarModes" target="_blank"><img class="find-me-on"
+            src="img/tweet_black_icon.svg" alt="tweet image"></a>
+        <a href="https://www.instagram.com/laminarmodes/" target="_blank"><img class="find-me-on"
+            src="img/insta_icon.svg" alt="insta image"></a>
+        <a href="#" target="_blank"><img class="find-me-on" src="img/git_icon.png" alt="git image"></a>
+        <a href="https://www.linkedin.com/in/anyatraille/" target="_blank"><img class="find-me-on"
+            src="img/link_icon.png" alt="lin image"></a>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
