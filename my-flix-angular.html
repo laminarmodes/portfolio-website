@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>myFlix App</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Patua+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<!-- This is a comment -->
+
+<body>
+    <div class="page-wrap">
+        <header class="page-header">
+            <nav class="main-navigation page-header__item">
+                <img src="img/Anya_071cropped-modified.png" style="width: 2.5rem; height: auto;"
+                    class="page-logo page-header__item" alt="logo">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul role="menubar" class="navigation-list no-search">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="work.html" role="menuitem"
+                            class="navigation-list__item navigation-list__item--active">Work</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="other.html" role="menuitem" class="navigation-list__item">Training</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h1>MyFlix App using MEAN</h1>
+            <h2>User Interface built with Angular</h2>
+            <p>This was a great opportunity to reuse my movie API and rebuild the myFlix client using the
+                Angular framework. I found Angular to really shine when it comes to forms and dialogues, especially with
+                single-page apps.
+                The Angular framework is more complex than react however the cleanliness of the code made the process
+                delightful.
+                The client API routes were redefined very conveniently using the FetchApiDataService.
+            </p>
+            <img class="image-100" src="img/my-flix-angular/my-flix-angular-03.jpg" alt="MyFlix Movie View">
+            <p>Some additoinal concepts, similar to seen in native apps, included:</p>
+            <ul>
+                <li>
+                    Interpolation. One-way data binding, where the data originates in the <em>component</em> and is
+                    rendered
+                    in the <em>template</em> (visual part), but not the other way around.
+                </li>
+                <li>
+                    Data-Binding to synchronizes (or bind) what is seen in the UI with what is in the data source
+                </li>
+                <li>
+                    Template-driven forms, where the <em>template</em> (visual part with the input value) is the only
+                    source of truth and only the <em>ngModel</em> directive can access the form.
+                </li>
+                <li>
+                    Reactive forms, where the model <em>component</em> is the source of truth and the value is provided
+                    through the <em>[formControl]</em>, which also allows for listening for changes in a model.
+                </li>
+
+            </ul>
+            <p>This is a 2-page app that makes use of dialogues. The UI takes on a dark theme with purple representing
+                the primary calls to action, the blue representing
+                secondary calls to action, the yellow color signifying data changes
+                and finally bright pink for warnings (deleting profile) and pale pink for closing windows. The link to
+                the
+                repository
+                can be found <a href="https://github.com/laminarmodes/myFlix-Angular-client" target="_blank">here.</a>
+            </p>
+
+            <div class="project-main" style="padding-bottom: 1%;">
+                <h2>MyFlix App in Angular</h2>
+                <p>After loggin in, the user can see a library of movies pulled form the API and they can add or remove
+                    movies
+                    from their favorites.
+                </p>
+                <img class="image-100" src="img/my-flix-angular/my-flix-angular-03.jpg" alt="MyFlix Movie View">
+                <p>Press the "Details" button to get a brief description of the movie plot.</p>
+                <img class="image-100" src="img/my-flix-angular/my-flix-angular-04.jpg"
+                    alt="MyFlix Movie Description Dialog">
+                <p>Click the director to obtain a brief background about the director.</p>
+                <img class="image-100" src="img/my-flix-angular/my-flix-angular-05.jpg"
+                    alt="MyFlix Director Info Dialog">
+                <p>A link to the standard definition of the genre is also provided.</p>
+                <img class="image-100" src="img/my-flix-angular/my-flix-angular-06.jpg" alt="MyFlix Genre Info Dialog">
+                <p>Each user has their own profile where they can see their favorite movies and profile information</p>
+                <img class="image-100" src="img/my-flix-angular/my-flix-angular-07.jpg" alt="MyFlix User Profile">
+                <p>Each user can change their username, password and date of birth.</p>
+                <img class="image-100" src="img/my-flix-angular/my-flix-angular-08.jpg" alt="MyFlix Edit User Dialog">
+                <p>MyFlix App is live and new users can optionally register and create their own profie if they want to.
+                </p>
+                <img class="image-100" src="img/my-flix-angular/my-flix-angular-09.jpg"
+                    alt="MyFlix Registration Dialog">
+                <p>For testing purposes, it is recommended to use the login provided.</p>
+                <img class="image-100" src="img/my-flix-angular/my-flix-angular-00.jpg" alt="MyFlix Login Dialog">
+
+            </div>
+
+
+
+            <!-- <div class="return-button" style="padding-bottom: 1%;">
+                <button onclick="goBack()">Back</button>
+            </div> -->
+        </main>
+
+        <footer class="page-footer">
+            <p>Find me on</p>
+
+            <div class="social-media">
+                <a href="https://twitter.com/LaminarModes" target="_blank"><img class="find-me-on"
+                        src="img/tweet_black_icon.svg" alt="tweet image"></a>
+                <a href="https://www.instagram.com/laminarmodes/" target="_blank"><img class="find-me-on"
+                        src="img/insta_icon.svg" alt="insta image"></a>
+                <a href="#" target="_blank"><img class="find-me-on" src="img/git_icon.png" alt="git image"></a>
+                <a href="https://www.linkedin.com/in/anyatraille/" target="_blank"><img class="find-me-on"
+                        src="img/link_icon.png" alt="lin image"></a>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
