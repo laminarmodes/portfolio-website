@@ -31,6 +31,220 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <style>
+    .native-ios-glassmorphism-grid__item {
+      display: inline-block;
+      width: 50%;
+      /* Each grid item occupies 1/4 of the view */
+    }
+
+    @supports (display: grid) {
+      .native-ios-glassmorphism-grid {
+        display: -ms-grid;
+        display: grid;
+        /* use grid layout */
+        -ms-grid-columns: 1fr 50px 1fr;
+        grid-template-columns: 1fr 1fr;
+        /* no of grid columns */
+        gap: 50px;
+        /* spacing between grid elements */
+        /* This is if I wanted the text to be vertically centered */
+        /* align-items: center;
+    justify-items: center; */
+      }
+
+      .native-ios-glassmorphism-grid__item {
+        /* grid cell contents will occupiy entire space */
+        /* Center contents */
+        width: auto;
+        min-height: auto;
+        margin: 0;
+      }
+
+      .native-ios-glassmorphism-grid__item img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Intro Text */
+      .native-ios-glassmorphism-grid__item:first-child {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+
+      /* Image of all phones */
+      .native-ios-glassmorphism-grid__item:nth-child(2) {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+
+      /* User flow sketch description */
+      .native-ios-glassmorphism-grid__item:nth-child(7) {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(8) {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(13) {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(14) {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(15) {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(16) {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(17) {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(18) {
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+      }
+    }
+
+    /* ------------------------- Grid for mobile devices ----------------------------- */
+
+    /* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
+
+    @media all and (max-width: 750px) {
+      .native-ios-glassmorphism-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+      }
+
+      .native-ios-glassmorphism-grid h1 {
+        font-size: 26px;
+      }
+
+      .native-ios-glassmorphism-grid h2 {
+        font-size: 20px;
+      }
+
+      .native-ios-glassmorphism-grid__item:first-child {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+        -ms-grid-row: 1;
+        grid-row-start: 1;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(2) {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+        -ms-grid-row: 2;
+        grid-row-start: 2;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(3) {
+        -ms-grid-row: 3;
+        grid-row-start: 3;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(4) {
+        -ms-grid-row: 4;
+        grid-row-start: 4;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(5) {
+        -ms-grid-row: 6;
+        grid-row-start: 6;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(6) {
+        -ms-grid-row: 5;
+        grid-row-start: 5;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(7) {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(8) {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(9) {
+        -ms-grid-row: 7;
+        grid-row-start: 7;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(10) {
+        -ms-grid-row: 8;
+        grid-row-start: 8;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(11) {
+        -ms-grid-row: 12;
+        grid-row-start: 12;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(12) {
+        -ms-grid-row: 11;
+        grid-row-start: 11;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(13) {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+        -ms-grid-row: 13;
+        grid-row-start: 13;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(14) {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+        -ms-grid-row: 14;
+        grid-row-start: 14;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(15) {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+        -ms-grid-row: 15;
+        grid-row-start: 15;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(16) {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+        -ms-grid-row: 16;
+        grid-row-start: 16;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(17) {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+        -ms-grid-row: 17;
+        grid-row-start: 17;
+      }
+
+      .native-ios-glassmorphism-grid__item:nth-child(18) {
+        -ms-grid-column: span 1;
+        grid-column-start: span 1;
+        -ms-grid-row: 18;
+        grid-row-start: 18;
+      }
+    }
+  </style>
 </head>
 <!-- This is a comment -->
 
@@ -68,7 +282,7 @@
                       <h2>This section is work in progress :)</h2>
                   </div>-->
       <div class="project-main" style="padding-bottom: 10%;">
-        <h1 id="slide-4-title">Native iOS - Glassmorphism</h1>
+        <h1>Native iOS - Glassmorphism</h1>
         <div class="native-ios-glassmorphism-grid">
 
           <!-- 1: Intro text -->

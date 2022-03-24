@@ -61,6 +61,175 @@
                     </li>
                 </ul>
             </nav>
+            <style>
+                .form-language-grid__item {
+                    display: inline-block;
+                    width: 50%;
+                    /* Each grid item occupies 1/4 of the view */
+                }
+
+                @supports (display: grid) {
+                    .form-language-grid {
+                        display: -ms-grid;
+                        display: grid;
+                        /* use grid layout */
+                        -ms-grid-columns: 1fr 50px 1fr;
+                        grid-template-columns: 1fr 1fr;
+                        /* no of grid columns */
+                        gap: 50px;
+                        /* spacing between grid elements */
+                        /* This is if I wanted the text to be vertically centered */
+                        /* align-items: center;
+    justify-items: center; */
+                    }
+
+                    .form-language-grid__item {
+                        /* grid cell contents will occupiy entire space */
+                        /* Center contents */
+                        width: auto;
+                        min-height: auto;
+                        margin: 0;
+                    }
+
+                    .form-language-grid__item img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .form-language-grid__item:nth-child(3) {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+
+                    .form-language-grid__item:nth-child(4) {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+
+                    .form-language-grid__item:nth-child(5) {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+
+                    .form-language-grid__item:nth-child(6) {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+
+                    .form-language-grid__item:nth-child(11) {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+
+                    .form-language-grid__item:nth-child(12) {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+                }
+
+                /* ------------------------- Grid for mobile devices ----------------------------- */
+
+                /* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
+
+                @media all and (max-width: 750px) {
+                    .form-language-grid {
+                        -ms-grid-columns: 1fr;
+                        grid-template-columns: 1fr;
+                    }
+
+                    .form-language-grid h1 {
+                        font-size: 26px;
+                    }
+
+                    .form-language-grid h2 {
+                        font-size: 20px;
+                    }
+
+                    .form-language-grid__item:first-child {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 1;
+                        grid-row-start: 1;
+                    }
+
+                    .form-language-grid__item:nth-child(2) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 2;
+                        grid-row-start: 2;
+                    }
+
+                    .form-language-grid__item:nth-child(3) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 3;
+                        grid-row-start: 3;
+                    }
+
+                    .form-language-grid__item:nth-child(4) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 4;
+                        grid-row-start: 4;
+                    }
+
+                    .form-language-grid__item:nth-child(5) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 5;
+                        grid-row-start: 5;
+                    }
+
+                    .form-language-grid__item:nth-child(6) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 6;
+                        grid-row-start: 6;
+                    }
+
+                    .form-language-grid__item:nth-child(7) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 7;
+                        grid-row-start: 7;
+                    }
+
+                    .form-language-grid__item:nth-child(8) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 8;
+                        grid-row-start: 8;
+                    }
+
+                    .form-language-grid__item:nth-child(9) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 10;
+                        grid-row-start: 10;
+                    }
+
+                    .form-language-grid__item:nth-child(10) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 9;
+                        grid-row-start: 9;
+                    }
+
+                    .form-language-grid__item:nth-child(11) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 11;
+                        grid-row-start: 11;
+                    }
+
+                    .form-language-grid__item:nth-child(12) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 12;
+                        grid-row-start: 12;
+                    }
+                }
+            </style>
         </header>
 
         <main class="main">

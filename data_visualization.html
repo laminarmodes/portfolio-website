@@ -31,6 +31,238 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <style>
+        .data-visualization-grid__item {
+            display: inline-block;
+            width: 50%;
+            /* Each grid item occupies 1/4 of the view */
+        }
+
+        @supports (display: grid) {
+            .data-visualization-grid {
+                display: -ms-grid;
+                display: grid;
+                /* use grid layout */
+                -ms-grid-columns: 1fr 50px 1fr;
+                grid-template-columns: 1fr 1fr;
+                /* no of grid columns */
+                gap: 50px;
+                /* spacing between grid elements */
+                /* This is if I wanted the text to be vertically centered */
+                /* align-items: center;
+    justify-items: center; */
+            }
+
+            .data-visualization-grid__item {
+                /* grid cell contents will occupiy entire space */
+                /* Center contents */
+                width: auto;
+                min-height: auto;
+                margin: 0;
+            }
+
+            .data-visualization-grid__item img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Intro Text */
+            .data-visualization-grid__item:first-child {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .data-visualization-grid__item:nth-child(2) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .data-visualization-grid__item:nth-child(3) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .data-visualization-grid__item:nth-child(4) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .data-visualization-grid__item:nth-child(9) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .data-visualization-grid__item:nth-child(10) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .data-visualization-grid__item:nth-child(11) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .data-visualization-grid__item:nth-child(12) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .data-visualization-grid__item:nth-child(13) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+        }
+
+        @media all and (max-width: 750px) {
+            .data-visualization-grid {
+                -ms-grid-columns: 1fr;
+                grid-template-columns: 1fr;
+            }
+
+            .data-visualization-grid h1 {
+                font-size: 26px;
+            }
+
+            .data-visualization-grid h2 {
+                font-size: 20px;
+            }
+
+            .data-visualization-grid__item:first-child {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 1;
+                grid-row-start: 1;
+            }
+
+            .data-visualization-grid__item:nth-child(2) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 2;
+                grid-row-start: 2;
+            }
+
+            .data-visualization-grid__item:nth-child(3) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 3;
+                grid-row-start: 3;
+            }
+
+            .data-visualization-grid__item:nth-child(4) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 4;
+                grid-row-start: 4;
+            }
+
+            .data-visualization-grid__item:nth-child(5) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 6;
+                grid-row-start: 6;
+            }
+
+            .data-visualization-grid__item:nth-child(6) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 5;
+                grid-row-start: 5;
+            }
+
+            .data-visualization-grid__item:nth-child(7) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 7;
+                grid-row-start: 7;
+            }
+
+            .data-visualization-grid__item:nth-child(8) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 8;
+                grid-row-start: 8;
+            }
+
+            .data-visualization-grid__item:nth-child(9) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 9;
+                grid-row-start: 9;
+            }
+
+            .data-visualization-grid__item:nth-child(10) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 10;
+                grid-row-start: 10;
+            }
+
+            .data-visualization-grid__item:nth-child(11) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 11;
+                grid-row-start: 11;
+            }
+
+            .data-visualization-grid__item:nth-child(12) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 12;
+                grid-row-start: 12;
+            }
+
+            .data-visualization-grid__item:nth-child(13) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 13;
+                grid-row-start: 13;
+            }
+        }
+
+        /*** ------------------------- BALSAMIQ GRID ----------------------------- ***/
+
+        .balsamiq-grid__item {
+            display: inline-block;
+            width: 50%;
+            /* Each grid item occupies 1/4 of the view */
+        }
+
+        @supports (display: grid) {
+            .balsamiq-grid {
+                display: -ms-grid;
+                display: grid;
+                /* use grid layout */
+                -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                /* no of grid columns */
+                gap: 50px;
+                /* spacing between grid elements */
+                /* This is if I wanted the text to be vertically centered */
+                /* align-items: center;
+    justify-items: center; */
+            }
+
+            .balsamiq-grid__item {
+                /* grid cell contents will occupiy entire space */
+                /* Center contents */
+                width: auto;
+                min-height: auto;
+                margin: 0;
+            }
+
+            .balsamiq-grid__item img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media all and (max-width: 750px) {
+            .balsamiq-grid {
+                -ms-grid-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
 </head>
 <!-- This is a comment -->
 

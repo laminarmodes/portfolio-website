@@ -61,6 +61,147 @@
                     </li>
                 </ul>
             </nav>
+            <style>
+                .ios-ui-grid__item {
+                    display: inline-block;
+                    width: 50%;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    justify-items: center;
+                }
+
+                @supports (display: grid) {
+                    .ios-ui-grid {
+                        display: -ms-grid;
+                        display: grid;
+                        -ms-grid-columns: 1fr 50px 1fr;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 50px;
+                        /* This is if I wanted the text to be vertically centered */
+                        /* align-items: center;
+    justify-items: center; */
+                    }
+
+                    .ios-ui-grid__item {
+                        width: auto;
+                        min-height: auto;
+                        margin: 0;
+                    }
+
+                    .ios-ui-grid__item img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .ios-ui-grid__item:first-child {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+
+                    .ios-ui-grid__item:nth-child(2) {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+
+                    .ios-ui-grid__item:nth-child(3) {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+
+                    .ios-ui-grid__item:nth-child(4) {
+                        -ms-grid-column: span 2;
+                        grid-column-start: span 2;
+                    }
+                }
+
+                /* ------------------------- Grid for mobile devices ----------------------------- */
+
+                /* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
+
+                @media all and (max-width: 750px) {
+                    .ios-ui-grid {
+                        -ms-grid-columns: 1fr;
+                        grid-template-columns: 1fr;
+                    }
+
+                    .ios-ui-grid h1 {
+                        font-size: 26px;
+                    }
+
+                    .ios-ui-grid h2 {
+                        font-size: 20px;
+                    }
+
+                    .ios-ui-grid__item:first-child {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 1;
+                        grid-row-start: 1;
+                    }
+
+                    .ios-ui-grid__item:nth-child(2) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 2;
+                        grid-row-start: 2;
+                    }
+
+                    .ios-ui-grid__item:nth-child(3) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 3;
+                        grid-row-start: 3;
+                    }
+
+                    .ios-ui-grid__item:nth-child(4) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 4;
+                        grid-row-start: 4;
+                    }
+
+                    .ios-ui-grid__item:nth-child(5) {
+                        -ms-grid-row: 5;
+                        grid-row-start: 5;
+                    }
+
+                    .ios-ui-grid__item:nth-child(6) {
+                        -ms-grid-row: 6;
+                        grid-row-start: 6;
+                    }
+
+                    .ios-ui-grid__item:nth-child(7) {
+                        -ms-grid-row: 8;
+                        grid-row-start: 8;
+                    }
+
+                    .ios-ui-grid__item:nth-child(8) {
+                        -ms-grid-row: 7;
+                        grid-row-start: 7;
+                    }
+
+                    .ios-ui-grid__item:nth-child(9) {
+                        -ms-grid-row: 9;
+                        grid-row-start: 9;
+                    }
+
+                    .ios-ui-grid__item:nth-child(10) {
+                        -ms-grid-row: 10;
+                        grid-row-start: 10;
+                    }
+
+                    .ios-ui-grid__item:nth-child(11) {
+                        -ms-grid-row: 12;
+                        grid-row-start: 12;
+                    }
+
+                    .ios-ui-grid__item:nth-child(12) {
+                        -ms-grid-row: 11;
+                        grid-row-start: 11;
+                    }
+                }
+            </style>
         </header>
 
         <main class="main">

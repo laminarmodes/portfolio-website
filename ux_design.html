@@ -31,6 +31,209 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <style>
+        .fly-ux-grid__item {
+            display: inline-block;
+            width: 50%;
+            /* Each grid item occupies 1/4 of the view */
+        }
+
+        @supports (display: grid) {
+            .flyux-grid {
+                display: -ms-grid;
+                display: grid;
+                /* use grid layout */
+                -ms-grid-columns: 1fr 50px 1fr;
+                grid-template-columns: 1fr 1fr;
+                /* no of grid columns */
+                gap: 50px;
+                /* spacing between grid elements */
+                /* This is if I wanted the text to be vertically centered */
+                /* align-items: center;
+    justify-items: center; */
+            }
+
+            .flyux-grid__item {
+                /* grid cell contents will occupiy entire space */
+                /* Center contents */
+                width: auto;
+                min-height: auto;
+                margin: 0;
+            }
+
+            .flyux-grid__item img {
+                width: 100%;
+                height: auto;
+            }
+
+            .flyux-grid__item:nth-child(5) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .flyux-grid__item:nth-child(6) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .flyux-grid__item:nth-child(7) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .flyux-grid__item:nth-child(8) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .flyux-grid__item:nth-child(9) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .flyux-grid__item:nth-child(10) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .flyux-grid__item:nth-child(15) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+
+            .flyux-grid__item:nth-child(16) {
+                -ms-grid-column: span 2;
+                grid-column-start: span 2;
+            }
+        }
+
+        @media all and (max-width: 750px) {
+            .flyux-grid {
+                -ms-grid-columns: 1fr;
+                grid-template-columns: 1fr;
+            }
+
+            .flyux-grid h1 {
+                font-size: 26px;
+            }
+
+            .flyux-grid h2 {
+                font-size: 20px;
+            }
+
+            .flyux-grid__item:first-child {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 1;
+                grid-row-start: 1;
+            }
+
+            .flyux-grid__item:nth-child(2) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 2;
+                grid-row-start: 2;
+            }
+
+            .flyux-grid__item:nth-child(3) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 4;
+                grid-row-start: 4;
+            }
+
+            .flyux-grid__item:nth-child(4) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 3;
+                grid-row-start: 3;
+            }
+
+            .flyux-grid__item:nth-child(5) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 5;
+                grid-row-start: 5;
+            }
+
+            .flyux-grid__item:nth-child(6) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 6;
+                grid-row-start: 6;
+            }
+
+            .flyux-grid__item:nth-child(7) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 7;
+                grid-row-start: 7;
+            }
+
+            .flyux-grid__item:nth-child(8) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 8;
+                grid-row-start: 8;
+            }
+
+            .flyux-grid__item:nth-child(9) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 9;
+                grid-row-start: 9;
+            }
+
+            .flyux-grid__item:nth-child(10) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 10;
+                grid-row-start: 10;
+            }
+
+            .flyux-grid__item:nth-child(11) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 11;
+                grid-row-start: 11;
+            }
+
+            .flyux-grid__item:nth-child(12) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 12;
+                grid-row-start: 12;
+            }
+
+            .flyux-grid__item:nth-child(13) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 14;
+                grid-row-start: 14;
+            }
+
+            .flyux-grid__item:nth-child(14) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 13;
+                grid-row-start: 13;
+            }
+
+            .flyux-grid__item:nth-child(15) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 15;
+                grid-row-start: 15;
+            }
+
+            .flyux-grid__item:nth-child(16) {
+                -ms-grid-column: span 1;
+                grid-column-start: span 1;
+                -ms-grid-row: 16;
+                grid-row-start: 16;
+            }
+        }
+    </style>
 </head>
 <!-- This is a comment -->
 
