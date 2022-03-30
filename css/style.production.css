@@ -446,6 +446,10 @@ button:focus,
     padding: 15px;
   }
 
+  .main-navigation img {
+    padding-bottom: 0px;
+  }
+
   .main-navigation li:first-child {
     margin-top: 50px;
   }
