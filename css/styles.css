@@ -382,7 +382,7 @@ button:focus,
     flex-direction: column;
     position: fixed;
     justify-content: start;
-    top: 30px; /* 55px */
+    top: 35px; /* 55px, then 30 */
     background-color: var(--nav-background-color);
     width: 100%;
     height: calc(100vh - 55px); /* 100vh - 55px
