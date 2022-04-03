@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 3830 3566" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g transform="matrix(1,0,0,1,-23331,-22172.5)">
+        <g transform="matrix(5.55556,0,0,5.55556,15655,21370)">
+            <g>
+                <g transform="matrix(1,0,0,1,1723.46,200.379)">
+                    <path d="M0,522.463C0,522.463 -221.047,121.021 -277.419,18.345C-285.986,2.741 -232.764,57.534 -209.919,57.534C-184.263,57.534 -170.583,36.444 -164.487,21.285C-158.435,6.234 -163.323,0 -155.962,20.916C-150.96,35.131 -132.242,55.958 -109.79,55.958C-91.383,55.958 -72.181,36.426 -65.695,28.001C-52.365,10.688 -58.506,10.333 -48.714,27.929C-42.923,38.336 -23.802,58.406 -5.636,58.984C16.764,59.696 39.538,33.63 45.407,25.098C57.429,7.619 53.18,10.859 66.329,25.232C75.448,35.201 89.932,57.322 112.375,57.322C136.26,57.322 146.84,37.226 155.387,27.12C166.541,13.931 170.703,9.63 179.3,23.876C185.776,34.608 201.087,58.791 222.564,57.483C244.581,56.143 298.543,1.568 280.521,31.35C260.647,64.191 0,522.463 0,522.463Z" style="fill:none;fill-rule:nonzero;stroke:rgb(0,84,163);stroke-width:12.62px;"/>
+                </g>
+                <g transform="matrix(0,1,1,0,1682.31,341.368)">
+                    <path d="M64.055,-64.054C43.84,-64.054 27.452,-35.376 27.452,0C27.452,35.377 43.84,64.055 64.055,64.055C84.27,64.055 100.657,35.377 100.657,0C100.657,-35.376 84.27,-64.054 64.055,-64.054" style="fill:white;fill-rule:nonzero;stroke:rgb(0,84,163);stroke-width:0.18px;stroke-linejoin:round;stroke-miterlimit:2;"/>
+                </g>
+                <g transform="matrix(0,1,1,0,1682.31,341.368)">
+                    <ellipse cx="64.054" cy="0.001" rx="36.603" ry="64.054" style="fill:none;stroke:rgb(0,84,163);stroke-width:9.65px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,1751.68,409.26)">
+                    <path d="M0,-0.278C0,23.663 48.83,50.183 44.736,36.324C36.394,8.081 33.787,-6.773 44.736,-36.881C49.675,-50.461 0,-20.193 0,-0.278" style="fill:white;fill-rule:nonzero;stroke:rgb(0,84,163);stroke-width:0.18px;stroke-linejoin:round;stroke-miterlimit:2;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,1751.68,409.26)">
+                    <path d="M0,-0.278C0,23.663 48.83,50.183 44.736,36.324C36.394,8.081 33.787,-6.773 44.736,-36.881C49.675,-50.461 0,-20.193 0,-0.278Z" style="fill:none;fill-rule:nonzero;stroke:rgb(0,84,163);stroke-width:9.25px;"/>
+                </g>
+                <g transform="matrix(0,1,1,0,1652.73,393.222)">
+                    <path d="M6.1,-6.1C2.731,-6.1 0,-3.369 0,-0C0,3.37 2.731,6.1 6.1,6.1C9.47,6.1 12.2,3.37 12.2,-0C12.2,-3.369 9.47,-6.1 6.1,-6.1" style="fill:rgb(0,84,163);fill-rule:nonzero;stroke:rgb(0,84,163);stroke-width:0.18px;stroke-linejoin:round;stroke-miterlimit:2;"/>
+                </g>
+                <g transform="matrix(0,1,1,0,1603.97,333.443)">
+                    <path d="M17.772,-17.773C7.957,-17.773 0,-9.816 0,0C0,9.815 7.957,17.772 17.772,17.772C27.588,17.772 35.545,9.815 35.545,0C35.545,-9.816 27.588,-17.773 17.772,-17.773" style="fill:rgb(254,254,254);fill-rule:nonzero;stroke:rgb(0,84,163);stroke-width:7px;stroke-linejoin:round;stroke-miterlimit:2;"/>
+                </g>
+                <g transform="matrix(0,1,1,0,1586.2,291.065)">
+                    <path d="M11.347,-11.347C5.081,-11.347 -0,-6.267 -0,0C-0,6.267 5.081,11.347 11.347,11.347C17.614,11.347 22.694,6.267 22.694,0C22.694,-6.267 17.614,-11.347 11.347,-11.347" style="fill:white;fill-rule:nonzero;stroke:rgb(0,84,163);stroke-width:7px;stroke-linejoin:round;stroke-miterlimit:2;"/>
+                </g>
+                <g transform="matrix(0,1,1,0,1557.64,261.243)">
+                    <path d="M7.186,-7.186C3.218,-7.186 0.001,-3.969 0.001,-0.001C0.001,3.968 3.218,7.186 7.186,7.186C11.154,7.186 14.371,3.968 14.371,-0.001C14.371,-3.969 11.154,-7.186 7.186,-7.186" style="fill:rgb(0,84,163);fill-rule:nonzero;stroke:rgb(0,84,163);stroke-width:0.18px;stroke-linejoin:round;stroke-miterlimit:2;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
