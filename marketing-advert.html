@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fiji</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Patua+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<!-- This is a comment -->
+
+<body>
+    <div class="page-wrap">
+        <header class="page-header">
+            <nav class="main-navigation page-header__item">
+                <img src="img/Anya_071cropped-modified.png" style="width: 2.5rem; height: auto;"
+                    class="page-logo page-header__item" alt="logo">
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul role="menubar" class="navigation-list no-search">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="work.html" role="menuitem"
+                            class="navigation-list__item navigation-list__item--active">Work</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="other.html" role="menuitem" class="navigation-list__item">Training</a>
+                    </li>
+                </ul>
+            </nav>
+            <style>
+                .marketing-advertising-grid__item {
+                    display: inline-block;
+                    width: 50%;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    justify-items: center;
+                }
+
+                @supports (display: grid) {
+                    .marketing-advertising-grid {
+                        display: -ms-grid;
+                        display: grid;
+                        -ms-grid-columns: 1fr 50px 1fr;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 50px;
+
+                    }
+
+                    .marketing-advertising-grid__item {
+                        width: auto;
+                        min-height: auto;
+                        margin: 0;
+                    }
+
+                    .marketing-advertising-grid__item img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+
+
+                }
+
+                /* ------------------------- Grid for mobile devices ----------------------------- */
+
+                /* On mobile, layout adjustments are made to the position of images and descriptive text, by swaping rows */
+
+                @media all and (max-width: 750px) {
+                    .marketing-advertising-grid {
+                        -ms-grid-columns: 1fr;
+                        grid-template-columns: 1fr;
+                    }
+
+                    .marketing-advertising-grid h1 {
+                        font-size: 26px;
+                    }
+
+                    .marketing-advertising-grid h2 {
+                        font-size: 20px;
+                    }
+
+                    .marketing-advertising-grid__item:first-child {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 1;
+                        grid-row-start: 1;
+                    }
+
+                    .marketing-advertising-grid__item:nth-child(2) {
+                        -ms-grid-column: span 1;
+                        grid-column-start: span 1;
+                        -ms-grid-row: 2;
+                        grid-row-start: 2;
+                    }
+
+                }
+            </style>
+        </header>
+
+        <main class="main">
+            <h1>Marketing and Advertising</h1>
+
+            <h2>Fiji</h2>
+            <p>Fiji is my favorite vacation spot. It is where I first gained the courage to learn scuba diving
+                and I remember very well our first suba tip where I encountered an amazing coral mesh. The mesh was
+                shaped
+                like a purple sparkly globe and there were little fish swimming in and out of it.
+            </p>
+            <p>This is my attempt to reduce the coral mesh and fish to their most simple form.</p>
+
+            <div class="marketing-advertising-grid">
+                <div class="marketing-advertising-grid__item">
+                    <img class="image-50" id="neo-plasma-02" src="img/marketing-advert/coral-mesh-fish-flat.png"
+                        alt="Coral mesh in reduced form (flat)">
+                </div>
+
+                <!-- 11: Image of lazy-grid view -->
+                <div class="marketing-advertising-grid__item">
+                    <img class="image-50" id="neo-vir-04" src="img/marketing-advert/coral-mesh-fish-3d.jpg"
+                        alt="Coral mesh in reduced form (3D)">
+                </div>
+
+            </div>
+
+            <div class="project-main" style="padding-bottom: 1%;">
+                <h2>Blue Lagoon</h2>
+                <p>I usually visit 3 islands at a time in Fiji, spending 3 or 4 nights at each island. Each time we
+                    visit we
+                    repeat one of our favorite islands, and add one new island. Blue Lagoon has been one island that we
+                    repeat
+                    each time.
+                </p>
+                <h2>Blue Lagoon before sunset. </h2>
+                <p>Not much going on here...
+                </p>
+                <img class="image-100" id="workshop-03" src="img/marketing-advert/Fiji-01-xsmall.png" alt="Advert 1">
+                <h2>Blue Lagoon Resort. </h2>
+                <p>Be lazy or go crazy...</p>
+                <img class="image-100" id="workshop-03" src="img/marketing-advert/Fiji-02-xsmall.png" alt="Advert 2">
+                <h2>Blue Lagoon in the day. </h2>
+                <p>We have wi-fi, if you insist...</p>
+                <img class="image-100" id="workshop-03" src="img/marketing-advert/Fiji-03-xsmall.png" alt="Advert 3">
+                <p>A very simple view of genre information.</p>
+            </div>
+
+
+        </main>
+
+        <footer class="page-footer">
+            <p>Find me on</p>
+
+            <div class="social-media">
+                <a href="https://twitter.com/LaminarModes" target="_blank"><img class="find-me-on"
+                        src="img/tweet_black_icon.svg" alt="tweet image"></a>
+                <a href="https://www.instagram.com/laminarmodes/" target="_blank"><img class="find-me-on"
+                        src="img/insta_icon.svg" alt="insta image"></a>
+                <a href="#" target="_blank"><img class="find-me-on" src="img/git_icon.png" alt="git image"></a>
+                <a href="https://www.linkedin.com/in/anyatraille/" target="_blank"><img class="find-me-on"
+                        src="img/link_icon.png" alt="lin image"></a>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
