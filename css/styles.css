@@ -33,11 +33,11 @@ body {
 
   /* background: white; */
 
-  font-family:  'EB Garamond', serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
-  
+
 }
 
 h1 {
@@ -61,7 +61,7 @@ h2 {
   font-weight: 400;
   font-size: 24px;
   color: var(--dark-grey);
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 h3 {
@@ -71,12 +71,14 @@ h3 {
   color: var(--dark-grey);
 }
 
-p, ul, li {
+p,
+ul,
+li {
   /* font-family: 'Lato', sans-serif; */
   font-size: 20px;
   /*font-family: 'Merriweather', serif; */
   /* font-family:  'Cormorant Garamond', serif; */
-  font-family:  'EB Garamond', serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 300;
   color: var(--dark-grey);
 }
@@ -207,8 +209,7 @@ button:focus,
   margin: 0 auto;
 }
 
-@media all and (min-width: 500px) and (max-width: 750px)
-{
+@media all and (min-width: 500px) and (max-width: 750px) {
   .main {
     margin: 20px;
   }
@@ -235,7 +236,8 @@ button:focus,
   width: 100%;
 
   /* height: 55px;  set */
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
+  /* Safari */
   position: sticky;
   top: 0;
   background-color: var(--nav-background-color);
@@ -256,7 +258,8 @@ button:focus,
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
-  height: 55px; /* from 50 */
+  height: 55px;
+  /* from 50 */
   overflow: hidden;
 }
 
@@ -273,7 +276,7 @@ button:focus,
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-self: end;
-  
+
 }
 
 .navigation-list {
@@ -350,7 +353,7 @@ button:focus,
 
 /*** ------------------------- MOBILE NAVIGATION ----------------------------- ***/
 
-/* THIS CAN BE USED TO SHRINK THE FONT SIZE IN THE SLIDES */ 
+/* THIS CAN BE USED TO SHRINK THE FONT SIZE IN THE SLIDES */
 @media only screen and (max-width: 770px) {
   .features {
     flex-direction: column;
@@ -382,10 +385,12 @@ button:focus,
     flex-direction: column;
     position: fixed;
     justify-content: start;
-    top: 35px; /* 55px, then 30 */
+    top: 35px;
+    /* 55px, then 30 */
     background-color: var(--nav-background-color);
     width: 100%;
-    height: calc(100vh - 55px); /* 100vh - 55px
+    height: calc(100vh - 55px);
+    /* 100vh - 55px
     /* moves the nav drawer off screen */
     transform: translate(-101%);
     text-align: center;
@@ -544,7 +549,7 @@ table {
 }
 
 /* The grid h3 text will be white, hidden and have a transition */
-.grid__item > .cell-text {
+.grid__item>.cell-text {
   position: absolute;
 
   /* positions corner of text in center */
@@ -586,12 +591,13 @@ table {
 .project-image:hover {
   vertical-align: middle;
   border-radius: var(--grid-corner-radius);
-  filter: brightness(1); /* seems to have no effect, done in grid__item */
+  filter: brightness(1);
+  /* seems to have no effect, done in grid__item */
   box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
   transition: all ease-in-out 0.2%;
 }
 
-.grid__item:hover > .cell-text {
+.grid__item:hover>.cell-text {
   visibility: hidden;
 }
 
@@ -632,14 +638,13 @@ table {
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 770px)
-{
+@media all and (min-width: 500px) and (max-width: 770px) {
 
-   .main {
+  .main {
     margin-left: 2%;
     margin-right: 2%;
- 
-  }  
+
+  }
 
   .grid {
     grid-template-columns: 1fr 1fr;
@@ -654,14 +659,13 @@ table {
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 600px)
-{
+@media all and (min-width: 500px) and (max-width: 600px) {
 
-   .main {
+  .main {
     margin-left: 2%;
     margin-right: 2%;
- 
-  }  
+
+  }
 
   .grid {
     grid-template-columns: 1fr 1fr;
@@ -753,15 +757,19 @@ table {
 
 @supports (display: grid) {
   .profile-grid {
-    display: grid; /* use grid layout */
-    grid-template-columns: 1fr 1fr; /* no of grid columns */
-    gap: 50px; /* spacing between grid elements */
+    display: grid;
+    /* use grid layout */
+    grid-template-columns: 1fr 1fr;
+    /* no of grid columns */
+    gap: 50px;
+    /* spacing between grid elements */
     /* This is if I wanted the text to be vertically centered */
     /* align-items: center;
     justify-items: center; */
   }
 
-  .profile-grid__item { /* grid cell contents will occupiy entire space */
+  .profile-grid__item {
+    /* grid cell contents will occupiy entire space */
     /* Center contents */
     width: auto;
     min-height: auto;
@@ -797,5 +805,3 @@ table {
     grid-row-start: 2;
   }
 }
-
-

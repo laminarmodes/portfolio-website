@@ -18,11 +18,11 @@ body {
 
   /* background: white; */
 
-  font-family:  'EB Garamond', serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
-  
+
 }
 
 h1 {
@@ -46,7 +46,8 @@ h2 {
   font-weight: 400;
   font-size: 24px;
   color: #333;
-  margin-top: 10px;
+  margin-top: 50px;
+
 }
 
 h3 {
@@ -54,6 +55,7 @@ h3 {
   font-weight: 400;
   font-size: 18px;
   color: #333;
+
 }
 
 p {
@@ -61,7 +63,7 @@ p {
   font-size: 20px;
   /*font-family: 'Merriweather', serif; */
   /* font-family:  'Cormorant Garamond', serif; */
-  font-family:  'EB Garamond', serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 300;
   color: #333;
 }
@@ -71,7 +73,7 @@ ul {
   font-size: 20px;
   /*font-family: 'Merriweather', serif; */
   /* font-family:  'Cormorant Garamond', serif; */
-  font-family:  'EB Garamond', serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 300;
   color: #333;
 }
@@ -81,7 +83,7 @@ li {
   font-size: 20px;
   /*font-family: 'Merriweather', serif; */
   /* font-family:  'Cormorant Garamond', serif; */
-  font-family:  'EB Garamond', serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 300;
   color: #333;
 }
@@ -93,7 +95,7 @@ li {
 /* attention: when making width 100% then adding padding and boarder causes 100% + padding + boarder */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .body-image {
@@ -158,8 +160,8 @@ button,
   /* align text vertically */
   padding: 0;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 
   /*
   box-shadow: (inset = inner shadow) h-offset v-offset blur spread color
@@ -171,7 +173,7 @@ button,
     inset -7px -7px 10px 0 rgba(0, 0, 0, 0.1),
     7px 7px 20px 0 rgba(0, 0, 0, 0.1),
     4px 4px 5px 0 rgba(0, 0, 0, 0.1);
-          box-shadow:
+  box-shadow:
     inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5),
     inset -7px -7px 10px 0 rgba(0, 0, 0, 0.1),
     7px 7px 20px 0 rgba(0, 0, 0, 0.1),
@@ -195,8 +197,8 @@ button,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   margin-top: 30px;
 }
@@ -221,21 +223,20 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 .main {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   max-width: 800px;
   margin: 0 auto;
 }
 
-@media all and (min-width: 500px) and (max-width: 750px)
-{
+@media all and (min-width: 500px) and (max-width: 750px) {
   .main {
     margin: 20px;
   }
@@ -261,7 +262,8 @@ button:focus,
 .page-header {
   width: 100%;
 
-  /* height: 55px;  set */ /* Safari */
+  /* height: 55px;  set */
+  /* Safari */
   position: sticky;
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
@@ -284,9 +286,10 @@ button:focus,
   -ms-grid-columns: 1fr 3fr;
   grid-template-columns: 1fr 3fr;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 55px; /* from 50 */
+  -ms-flex-align: center;
+  align-items: center;
+  height: 55px;
+  /* from 50 */
   overflow: hidden;
 }
 
@@ -294,7 +297,7 @@ button:focus,
   height: 16px;
   width: auto;
   -ms-grid-column-align: start;
-      justify-self: start;
+  justify-self: start;
   margin-left: 20px;
   padding-bottom: 16px;
 }
@@ -304,13 +307,13 @@ button:focus,
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-self: end;
-  
+
 }
 
 .navigation-list {
   -webkit-transform: translate(0);
-      -ms-transform: translate(0);
-          transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
 
   /* z-index: 3; */
 }
@@ -332,8 +335,8 @@ button:focus,
 /* SEARCH FUNCTION */
 .no-search {
   -webkit-transform: translate(0);
-      -ms-transform: translate(0);
-          transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
 
   /* This makes the menu slide in and out - removed */
 
@@ -354,7 +357,7 @@ button:focus,
 
 .menu-toggle {
   -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
   margin-right: 25px;
   display: none;
 }
@@ -386,13 +389,13 @@ button:focus,
 
 /*** ------------------------- MOBILE NAVIGATION ----------------------------- ***/
 
-/* THIS CAN BE USED TO SHRINK THE FONT SIZE IN THE SLIDES */ 
+/* THIS CAN BE USED TO SHRINK THE FONT SIZE IN THE SLIDES */
 @media only screen and (max-width: 770px) {
   .features {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 50px;
   }
 
@@ -422,20 +425,22 @@ button:focus,
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: fixed;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    top: 35px; /* 55px, then 30 */
+    -ms-flex-pack: start;
+    justify-content: start;
+    top: 35px;
+    /* 55px, then 30 */
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    height: calc(100vh - 55px); /* 100vh - 55px
+    height: calc(100vh - 55px);
+    /* 100vh - 55px
     /* moves the nav drawer off screen */
     -webkit-transform: translate(-101%);
-        -ms-transform: translate(-101%);
-            transform: translate(-101%);
+    -ms-transform: translate(-101%);
+    transform: translate(-101%);
     text-align: center;
     overflow: hidden;
     z-index: 3;
@@ -466,8 +471,8 @@ button:focus,
 
   .mobile-nav {
     -webkit-transform: translate(0%) !important;
-        -ms-transform: translate(0%) !important;
-            transform: translate(0%) !important;
+    -ms-transform: translate(0%) !important;
+    transform: translate(0%) !important;
   }
 }
 
@@ -509,8 +514,8 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -570,8 +575,8 @@ table {
 /* center all the content in the grid cell and give padding */
 .grid__item {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   /* this is important to make sure h4 text position is relative to grid container, not full page */
   position: relative;
@@ -592,12 +597,12 @@ table {
 
   /* create blur overlay */
   -webkit-filter: brightness(0.55) blur(5px);
-          filter: brightness(0.55) blur(5px);
+  filter: brightness(0.55) blur(5px);
   margin: -5px -10px -10px -0;
 
   /* crate box shadow */
   -webkit-box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
-          box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
 }
 
 .nav {
@@ -605,7 +610,7 @@ table {
 }
 
 /* The grid h3 text will be white, hidden and have a transition */
-.grid__item > .cell-text {
+.grid__item>.cell-text {
   position: absolute;
 
   /* positions corner of text in center */
@@ -650,15 +655,16 @@ table {
   vertical-align: middle;
   border-radius: 10px;
   -webkit-filter: brightness(1);
-          filter: brightness(1); /* seems to have no effect, done in grid__item */
+  filter: brightness(1);
+  /* seems to have no effect, done in grid__item */
   -webkit-box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
-          box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
   -webkit-transition: all ease-in-out 0.2%;
   -o-transition: all ease-in-out 0.2%;
   transition: all ease-in-out 0.2%;
 }
 
-.grid__item:hover > .cell-text {
+.grid__item:hover>.cell-text {
   visibility: hidden;
 }
 
@@ -699,14 +705,13 @@ table {
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 770px)
-{
+@media all and (min-width: 500px) and (max-width: 770px) {
 
-   .main {
+  .main {
     margin-left: 2%;
     margin-right: 2%;
- 
-  }  
+
+  }
 
   .grid {
     -ms-grid-columns: 1fr 1fr;
@@ -722,14 +727,13 @@ table {
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 600px)
-{
+@media all and (min-width: 500px) and (max-width: 600px) {
 
-   .main {
+  .main {
     margin-left: 2%;
     margin-right: 2%;
- 
-  }  
+
+  }
 
   .grid {
     -ms-grid-columns: 1fr 1fr;
@@ -826,16 +830,20 @@ table {
 @supports (display: grid) {
   .profile-grid {
     display: -ms-grid;
-    display: grid; /* use grid layout */
+    display: grid;
+    /* use grid layout */
     -ms-grid-columns: 1fr 50px 1fr;
-    grid-template-columns: 1fr 1fr; /* no of grid columns */
-    gap: 50px; /* spacing between grid elements */
+    grid-template-columns: 1fr 1fr;
+    /* no of grid columns */
+    gap: 50px;
+    /* spacing between grid elements */
     /* This is if I wanted the text to be vertically centered */
     /* align-items: center;
     justify-items: center; */
   }
 
-  .profile-grid__item { /* grid cell contents will occupiy entire space */
+  .profile-grid__item {
+    /* grid cell contents will occupiy entire space */
     /* Center contents */
     width: auto;
     min-height: auto;
@@ -864,17 +872,15 @@ table {
 
   .profile-grid__item:first-child {
     -ms-grid-column: span 1;
-        grid-column-start: span 1;
+    grid-column-start: span 1;
     -ms-grid-row: 1;
-        grid-row-start: 1;
+    grid-row-start: 1;
   }
 
   .profile-grid__item:nth-child(2) {
     -ms-grid-column: span 1;
-        grid-column-start: span 1;
+    grid-column-start: span 1;
     -ms-grid-row: 2;
-        grid-row-start: 2;
+    grid-row-start: 2;
   }
 }
-
-
