@@ -30,9 +30,543 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <style>
+        #profile-pic-01 {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /*** ------------------------- ABOUT SECTION - IMAGE ANIMATIONS ----------------------------- ***/
+
+        /* Circle 0 */
+        @-webkit-keyframes circle-0-color-change {
+            0% {
+                fill: #6b0097;
+                stroke: #6b0097;
+            }
+
+            100% {
+                fill: #342870;
+                stroke: #342870;
+            }
+        }
+
+        @keyframes circle-0-color-change {
+            0% {
+                fill: #6b0097;
+                stroke: #6b0097;
+            }
+
+            100% {
+                fill: #342870;
+                stroke: #342870;
+            }
+        }
+
+        @-webkit-keyframes circle-0-ring-color-change {
+            0% {
+                stroke: #6b0097;
+            }
+
+            100% {
+                stroke: #342870;
+            }
+        }
+
+        @keyframes circle-0-ring-color-change {
+            0% {
+                stroke: #6b0097;
+            }
+
+            100% {
+                stroke: #342870;
+            }
+        }
+
+        .circle-0 {
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-name: circle-0-color-change;
+            animation-name: circle-0-color-change;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        .circle-0-ring {
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-name: circle-0-ring-color-change;
+            animation-name: circle-0-ring-color-change;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        /* Circlel 1 */
+        @-webkit-keyframes circle-1-color-change {
+            0% {
+                fill: #be3263;
+                stroke: #be3263;
+            }
+
+            100% {
+                fill: #1f7f79;
+                stroke: #1f7f79;
+            }
+        }
+
+        @keyframes circle-1-color-change {
+            0% {
+                fill: #be3263;
+                stroke: #be3263;
+            }
+
+            100% {
+                fill: #1f7f79;
+                stroke: #1f7f79;
+            }
+        }
+
+        @-webkit-keyframes circle-1-ring-color-change {
+            0% {
+                stroke: #be3263;
+            }
+
+            100% {
+                stroke: #1f7f79;
+            }
+        }
+
+        @keyframes circle-1-ring-color-change {
+            0% {
+                stroke: #be3263;
+            }
+
+            100% {
+                stroke: #1f7f79;
+            }
+        }
+
+        .circle-1 {
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-name: circle-1-color-change;
+            animation-name: circle-1-color-change;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        .circle-1-ring {
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-name: circle-1-ring-color-change;
+            animation-name: circle-1-ring-color-change;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        /* Circle 2 */
+        @-webkit-keyframes circle-2-color-change {
+            0% {
+                fill: #990182;
+                stroke: #990182;
+            }
+
+            100% {
+                fill: #26547b;
+                stroke: #26547b;
+            }
+        }
+
+        @keyframes circle-2-color-change {
+            0% {
+                fill: #990182;
+                stroke: #990182;
+            }
+
+            100% {
+                fill: #26547b;
+                stroke: #26547b;
+            }
+        }
+
+        @-webkit-keyframes circle-2-ring-color-change {
+            0% {
+                stroke: #990182;
+            }
+
+            100% {
+                stroke: #26547b;
+            }
+        }
+
+        @keyframes circle-2-ring-color-change {
+            0% {
+                stroke: #990182;
+            }
+
+            100% {
+                stroke: #26547b;
+            }
+        }
+
+        .circle-2 {
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-name: circle-2-color-change;
+            animation-name: circle-2-color-change;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        .circle-2-ring {
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-name: circle-2-ring-color-change;
+            animation-name: circle-2-ring-color-change;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        /* circle 3 */
+        @-webkit-keyframes circle-3-color-change {
+            0% {
+                fill: #df5848;
+                stroke: #df5848;
+            }
+
+            100% {
+                fill: #2fac66;
+                stroke: #2fac66;
+            }
+        }
+
+        @keyframes circle-3-color-change {
+            0% {
+                fill: #df5848;
+                stroke: #df5848;
+            }
+
+            100% {
+                fill: #2fac66;
+                stroke: #2fac66;
+            }
+        }
+
+        @-webkit-keyframes circle-3-ring-color-change {
+            0% {
+                stroke: #df5848;
+            }
+
+            100% {
+                stroke: #2fac66;
+            }
+        }
+
+        @keyframes circle-3-ring-color-change {
+            0% {
+                stroke: #df5848;
+            }
+
+            100% {
+                stroke: #2fac66;
+            }
+        }
+
+        .circle-3 {
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-name: circle-3-color-change;
+            animation-name: circle-3-color-change;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        .circle-3-ring {
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-name: circle-3-ring-color-change;
+            animation-name: circle-3-ring-color-change;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        /* Background Circle Animation */
+        @-webkit-keyframes blob-float {
+            from {
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+            }
+
+            to {
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                -webkit-transform: rotateZ(360deg);
+                transform: rotateZ(360deg);
+            }
+        }
+
+        @keyframes blob-float {
+            from {
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+            }
+
+            to {
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                -webkit-transform: rotateZ(360deg);
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .background-circle {
+            -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+            -webkit-animation-name: blob-float;
+            animation-name: blob-float;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: normal;
+            animation-direction: normal;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+
+        /*** ------------------------- PARALLAX SCROLLING EXPERIMENT ----------------------------- ***/
+
+        /* slide layout
+--------------------------------------------- */
+
+        .slide {
+            position: relative;
+            padding: 8% 0;
+
+            /* height: 100%; */
+
+            /* height: 100%; */
+
+            /* USE THIS TO CHANGE THE HEIGHT OF EACH SLIDE */
+        }
+
+        .slide__content {
+            max-width: 1200px;
+            /* 1200px */
+            margin: auto;
+        }
+
+        .slide__text,
+        .slide__image {
+            padding: 8%;
+        }
+
+        .slide__image svg {
+            display: block;
+            width: 100%;
+            max-width: 560px;
+            margin: auto;
+        }
+
+        .slide__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        /* slide backgrounds */
+
+        #slide-1 .slide__bg {
+            background-image: -o-linear-gradient(315deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
+            background-image: linear-gradient(135deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
+        }
+
+        #slide-2 .slide__bg {
+            background: white;
+        }
+
+        #slide-3 .slide__bg {
+            background-image: -o-linear-gradient(315deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
+            background-image: linear-gradient(135deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
+        }
+
+        #slide-4 .slide__bg {
+            background: white;
+        }
+
+        #slide-5 .slide__bg {
+            background-image: -o-linear-gradient(315deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
+            background-image: linear-gradient(135deg, rgba(81, 0, 255, 0.23853291316526615) 0%, rgba(0, 127, 189, 0.22172619047619047) 14%, rgba(213, 168, 0, 0.48783263305322133) 100%);
+        }
+
+        #slide-6 .slide__bg {
+            background: white;
+        }
+
+        /* misc
+--------------------------------------------- */
+
+        .scrolling_footer {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 80%;
+            text-align: center;
+            background: rgba(80, 0, 170, 0.5);
+            padding: 0.5em;
+            z-index: 100;
+        }
+
+        /* Homepage Large screen layout
+--------------------------------------------- */
+
+        @media screen and (min-width: 45em) {
+            .slide__content {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            .slide__image,
+            .slide__text {
+                padding: 3%;
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+
+            .slide:nth-child(2n) .slide__text {
+                -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                order: 1;
+            }
+
+
+
+            /* parallax */
+            @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+
+
+                body {
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    /* Fix paint issues in Edge && Safari H/W acceleration */
+                }
+
+                .slides {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    -webkit-perspective: 300px;
+                    perspective: 300px;
+                    scroll-behavior: smooth;
+                }
+
+                .slide,
+                .slide__content {
+                    -webkit-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+                }
+
+                .slide__text {
+                    -webkit-transform: translateZ(60px) scale(0.8);
+                    transform: translateZ(60px) scale(0.8);
+                    -webkit-transform-origin: 100% 50%;
+                    -ms-transform-origin: 100% 50%;
+                    transform-origin: 100% 50%;
+                }
+
+                .slide:nth-child(2n) .slide__image {
+                    -webkit-transform: translateZ(100px) scale(0.67);
+                    transform: translateZ(100px) scale(0.67);
+                    -webkit-transform-origin: 100% 50%;
+                    -ms-transform-origin: 100% 50%;
+                    transform-origin: 100% 50%;
+                }
+
+                .slide:nth-child(2n) .slide__text {
+                    -webkit-transform-origin: 0% 50%;
+                    -ms-transform-origin: 0% 50%;
+                    transform-origin: 0% 50%;
+                }
+
+                .slide:nth-child(2n) .slide__bg {
+                    -webkit-transform: translateZ(59px) scale(0.85);
+                    transform: translateZ(59px) scale(0.85);
+                }
+
+                .slide:nth-child(2n+1):not(:first-child) .slide__bg {
+                    top: -50%;
+                }
+
+                .slide:nth-child(2n+1):not(:last-child) .slide__bg {
+                    bottom: -50%;
+                }
+
+                .slide:first-child {
+                    padding-top: 14%;
+                    padding-bottom: 1%;
+                    /* Controls the padding for the first slide */
+                }
+
+                .slide:last-child {
+                    padding-bottom: 20%;
+                }
+
+                .slide:nth-child(2n) {
+                    z-index: 1;
+                    /* ensure slides overlay correctly */
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
+
     <div class="page-wrap">
         <header class="page-header">
             <nav class="main-navigation page-header__item">
@@ -61,7 +595,160 @@
             </nav>
         </header>
 
-        <main class="main">
+        <div class="slides">
+            <div class="slide" id="slide-1">
+                <div class="slide__bg"></div>
+                <div class="slide__content profile-grid">
+                    <div class="slide__text profile-grid-item">
+                        <h1 id="slide-1-title">Singapore</h1>
+                        <h2>Rolls-Royce, ST Electronics</h2>
+                        <p>I moved to Singapore in 2015 and worked for ST Electronics - Satcom & Sensors, and then
+                            Rolls-Royce
+                            R2 Data Labs.
+                        </p>
+
+                    </div>
+                    <div class="slide__image profile-grid__item">
+
+                        <img id="profile-pic-01" class="image-100" id="technology-evolution-02"
+                            src="img/about/aatc-sim.png" alt="AATC">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" id="slide-2">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <div class="slide__text">
+
+
+
+                        <h1 id="slide-4-title">Toulouse</h1>
+                        <h2>LAAS-CNRS</h2>
+
+                        <p>In 2010, I joined The Laboratory for Analysis and Architecture of Systems
+                            (French: Laboratoire d'analyse et d'architectures des systèmes, LAAS) in Toulouse, France.
+                        </p>
+                    </div>
+                    <div class="slide__image">
+                        <img id="profile-pic-01" class="image-100" id="technology-evolution-02"
+                            src="img/about/toulouse-hiking.png" alt="Evolution of information recording">
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="slide" id="slide-3">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <div class="slide__text">
+
+                        <h1 id="slide-2-title">USA, London, Ireland</h1>
+                        <h2>Imperial Collegel London, Georgia Tech Ireland</h2>
+
+                        <p>
+                            I was a visiting scholar in GTRI Ireland and Imperial College London.
+                        </p>
+                    </div>
+                    <div class="slide__image">
+                        <img id="profile-pic-01" src="img/about/athlone-cows.png" alt="map of where I have been">
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="slide" id="slide-4">
+
+
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <div class="slide__text">
+
+
+                        <h1 id="slide-3-title">D.C, Colorado, Georgia, Everywhere</h1>
+                        <h2>Georgia Tech</h2>
+                        <p>I studied Electrical & Computer Engineering and Mathematics in the USA.
+                        </p>
+                    </div>
+                    <div class="slide__image">
+                        <img class="image-100" src="img/about/nz-tour.png" alt="Evolution of information recording">
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="slide" id="slide-5">
+                <div class="slide__bg"></div>
+                <div class="slide__content">
+                    <div class="slide__text">
+
+
+                        <h1 id="slide-5-title">Training</h1>
+                        <h2>Student for Life</h2>
+                        <p>I have always considered myself a student for life, even after I completed my Doctorate.
+                            Before and
+                            through the pandemic, I worked to keep my soft-skills and technical-skills that were
+                            relevant to my
+                            path up to date.
+                        </p>
+                        <p>Even more, I enjoy sharing the knowledge and skills I have learned with other people. Feel
+                            free to
+                            reach out to me if you would like
+                            to learn more about these topics.
+                        </p>
+                    </div>
+                    <div class="slide__image">
+                        <img src="img/about/training-mind-map.png" class="image-100" alt="Mind map of training" />
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- Change class back to "page-footer" if parallax scrolling doesn't work, and move outisde the 'main' class -->
+
+        <footer class="scrolling_footer">
+            <div class="social-media">
+                <a href="https://twitter.com/LaminarModes" target="_blank"><img class="find-me-on"
+                        src="img/tweet_black_icon.svg" alt="tweet image"></a>
+                <!-- <a href="https://www.instagram.com/laminarmodes/" target="_blank"><img class="find-me-on"
+                        src="img/insta_icon.svg" alt="insta image"></a> -->
+                <a href="#" target="_blank"><img class="find-me-on" src="img/git_icon.png" alt="git image"></a>
+                <a href="https://www.linkedin.com/in/anyatraille/" target="_blank"><img class="find-me-on"
+                        src="img/link_icon.png" alt="lin image"></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="scripts.js"></script>
+</body>
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+<!-- <main class="main">
             <div class="contact-section">
                 <h1>Training</h1>
                 <h2>Student for Life</h2>
@@ -77,25 +764,4 @@
             </div>
 
 
-        </main>
-
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <a href="https://twitter.com/LaminarModes" target="_blank"><img class="find-me-on"
-                        src="img/tweet_black_icon.svg" alt="tweet image"></a>
-                <!-- <a href="https://www.instagram.com/laminarmodes/" target="_blank"><img class="find-me-on"
-                        src="img/insta_icon.svg" alt="insta image"></a> -->
-                <a href="#" target="_blank"><img class="find-me-on" src="img/git_icon.png" alt="git image"></a>
-                <a href="https://www.linkedin.com/in/anyatraille/" target="_blank"><img class="find-me-on"
-                        src="img/link_icon.png" alt="lin image"></a>
-            </div>
-        </footer>
-    </div>
-
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src="scripts.js"></script>
-</body>
-
-</html>
+        </main> -->
