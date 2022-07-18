@@ -65,13 +65,52 @@
         </header>
 
         <main class="main">
-            <h1>Productivity App (working progress...).</h1>
-            <h2>Introduction</h2>
-            <p>I have just started designing a mobile version of a productivity app for 16 to 24 year olds who would
-                like to keep their study plans and to-do lists in one place and manage them on the go. However this app
-                encourages the user to monitor outcomes rather than specific tasks. As in who cares
-                about meeting your agenda today, did you achieve your daily goals for “fun”, “learning”,
-                “wellness”, “helping others”? Deadlines and alerts will exist but they are not the main focus of the
+            <h1>Productivity App (writeup in progress...)</h1>
+            <h2>Introduction and video</h2>
+            <p>My mission this month was to design and implement a simple productivity app
+                that encourages the user to monitor outcomes rather than specific tasks. </p>
+            <p>The video introduction can be
+                found <a href="https://www.youtube.com/watch?v=XyA_n30UGuw" target="_blank">here</a>.</p>
+
+            <h3>Designing in Figma for SwiftUI</h3>
+            <p>There are a few important reasons for why I am super excited to build this app in SwiftUI.</p>
+            <ul>
+                <li>
+                    There are some amazing Swift charting packages available but it used to take me ages to
+                    create the exact charts that I wanted.
+                    WWDC's announcement of Swift Charts is a real game changer.
+                </li>
+                <li>
+                    The last time I used weather data in an app was 2 years ago where I worked with 3 weather APIs in
+                    UIKit. Everything worked out but I didn't get very far and never published the app.
+                    I cannot wait to get back into weather data again using Apple's weather API (and this time with
+                    SwiftUI).
+                </li>
+                <li>
+                    I can finally practice Core Data again (it has been 2 years)
+                </li>
+                <li>
+                    I might finally learn how to use Cloud Kit
+                </li>
+            </ul>
+
+            <h3>High Fidelity MVP Screens</h3>
+            <p>For personal projects, I usually prefer to design directly in Xcode. This will be the first time that I
+                attempt to hand over a
+                design to "myself" from Figma.</p>
+
+            <img class="image-100" src="img/ui-productivity/figma-12-final-screens-whiteBackground.png"
+                alt="UI MVP for Productivity App in Figma" style="margin-top: 5%;">
+
+
+            <h2>Background</h2>
+            <p>My mission was to design a task, habit and item tracking app that
+                encourages the user to focucs on the big picture of their life, but in a very simple way. Rather than
+                focusing on meeting
+                exact agendas each day, they would
+                focus on wheather or not they are achieving their outcomes or long term goals for “fun”, “learning”,
+                “wellness” or “helping others”, as a few exampels. Deadlines and alerts will exist but they are not the
+                main focus of the
                 user experience.
             </p>
             <img class="image-100" src="img/ui-productivity/ideate-04-screenSketchSide.jpg" alt="Structs in Swift">
@@ -105,7 +144,7 @@
             used to help achieve each user goal.
 
             <img class="image-50" src="img/ui-productivity/ideate-02-uiResearch.png" alt="User story to design pattern"
-                style="margin-left: auto; margin-right: auto; display: block;">
+                style="margin-left: auto; margin-right: auto; display: block; ">
 
             <h2>Low-Fidelity Sketching</h2>
             <p>For each user story, and with inspiration from the design patterns on Dribble, pttrns and mobbin,
@@ -113,27 +152,42 @@
                     include the user flow.</em></p>
             <img class="image-100" src="img/ui-productivity/ideate-03-screenSketch.png" alt="Low fidelity wireframes">
 
+
             <h2>Digital Low-Fidelity Wireframes</h2>
             <p>I used Balsamiq to design the low-fidelity digital wireframes and confirm the most basic flows.</p>
             <!-- <h3>First version</h3> -->
             <img class="image-100" src="img/ui-productivity/ideate-05-balsamiq.png"
                 alt="Digitized Low fidelity wireframes in Balsamiq">
+
+
             <h2>Low-Fidelity Wireframes with grid</h2>
             <h3>Grid System</h3>
             <p>I used a 10-pt grid with 6 columns and 20pt margins. My reason for selecting 10 points is because it is
                 more efficient to work with figma. In figma
                 one can use the shift key to move an element 10pts at a time. </p>
-            <img class="image-50" src="img/ui-productivity/figma-01-greyBoxingSingle.png" alt="Grid System"
-                style="margin-left: auto; margin-right: auto; display: block; padding-top: 5%;">
+
+            <!-- <img class="image-50" src="img/ui-productivity/figma-01-greyBoxingSingle.png" alt="Grid System"
+                style="margin-left: auto; margin-right: auto; display: block; padding-top: 5%;"> -->
+
+            <img src="img/ui-productivity/figma-01-greyBoxingSingle.png" alt="Grid System"
+                style="width: 25%; height: auto; margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
+
             <h3>Gray Boxing</h3>
             <p>The UI elements are drawn with simplified gray boxes of approximate size. The boxes are not
                 the exact size but allowed me to validate the layouts with the grid system within a reasonable time.</p>
-            <img class="image-100" src="img/ui-productivity/figma-02-greyBoxing.png"
-                alt="Low fidelity wireframes in Figma">
+
+
+            <!-- <img class="image-100" src="img/ui-productivity/figma-02-greyBoxing.png"
+                alt="Low fidelity wireframes in Figma"> -->
+
+            <img class="image-50" src="img/ui-productivity/figma-02-greyBoxing.png"
+                alt="Low fidelity wireframes in Figma"
+                style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
 
 
 
             <h2>Icon Design</h2>
+
             <h3>Ideation and first sketches</h3>
             <p>I wanted to create custom icons for the bottom navigation and started the process by first
                 identifying the purpose of each icon. I then quickly sketched three variations of each icon that I
@@ -143,46 +197,62 @@
                 alt="First ideation sketches for bottom navigation icon set"> -->
             <img class="image-50" src="img/ui-productivity/ideate-06-iconSketch.svg"
                 alt="First ideation sketches for bottom navigation icon set"
-                style="margin-left: auto; margin-right: auto; display: block; padding-top: 5%;">
+                style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
+
             <h3>Icons drawn in Figma</h3>
-            This is the first final digital version of the navigation bar icons. I am still working to get the <span
-                style="font-weight:600">line thicknesses</span>, <span style="font-weight:600">angles</span>,
-            and <span style="font-weight:600">corner radii</span> consistent in order to make the icon set feel more
-            like a family. One very important thing I learned was the importance of getting early feedback on new icon
-            designs in order to verify
-            that other people will interpret them correctly.
+            This is the first final digital version of the tab bar icons. The profile section contains both profile
+            information and statustics so I thought to
+            combine those two concepts into one icon as a face and a bar chart.
+
             <img style="margin-top: 40px; margin-bottom: 40px;" class="image-100"
-                src="img/ui-productivity/figma-03-icons.svg"
+                src="img/ui-productivity/figma-04-icons.svg"
                 alt="First ideation sketches for bottom navigation icon set">
-            The last menu item with the smilie face and bar chart used to be "Stats" but I made the decision to comebine
-            the stats with the user profile and actually place that icon on the profile screen where the user can decide
-            between
-            either viewing their profile information or viewing their stats (and selecting the smilie face and bar icon
-            on a navigation button)
+
+            For the final MVP tab bar, I reverted back to a simple face for the profile icon after receiving feedback
+            from a confused user who was not able to associate the shape with the contents.
+
+            <img style="margin-top: 40px; margin-bottom: 40px;" class="image-100"
+                src="img/ui-productivity/figma-05-icons-v2.svg"
+                alt="First ideation sketches for bottom navigation icon set">
+
+            I am still working to get the line thicknesses, angles,
+            and corner radii consistent in order to make the icon set feel more
+            like a family.
 
 
-            <!-- <h2>UI Components</h2>
-            <h3>Adding UI components and readjusting to grid</h3>
-            <p>Here I begin to add shape and realistic sizes to the UI elements while respecting the grid system. In
-                addition, I am
-                included some of the basic interactions required in order for the user to complete their tasks.
-            </p>
-            <img class="image-50" src="img/ui-productivity/wireframe-with-ui-elements-single-compressed.png"
-                alt="Adding UI components and readjusting to grid"
-                style="margin-left: auto; margin-right: auto; display: block; padding-top: 5%;"> -->
+
             <h2>Basic UI components</h2>
+
             <h3>Conversion to iPhone 8 and Small Android</h3>
             <p>According to <em>Mobile Screen Resolution Stats Worldwide for June 2021 to June 2022</em>, the
                 most common screen size is the iPhone 8 (375 x 667) and Small Android Small (360 x 840). I therefore
                 converted my artboards to iPhone 8 and adjusted the UI components.</p>
-            <p>I also removed Lorom ipsum to bring more understanding into the interface.</p>
+
+            <h3>Let's take a break</h3>
+            <p>I ordered the most amazingly comfortable oversized pullover online. This is great for those late nights
+                spent naming, grouping and ordering layers. Even better,
+                the color is ideal for spilling beer and snacks on without worrying about them leaving a permanent
+                stain. </p>
+
+            <img style="margin-top: 40px; margin-bottom: 40px;" class="image-100"
+                src="img/ui-productivity/me-02-pullover.jpg"
+                alt="First ideation sketches for bottom navigation icon set">
+
             <h3>Simplifying design</h3>
             <p>The current interface was quite dense and heavy so I made some changes, starting with removing the top
                 navigation bar
                 and integrating the user profile into the navigation bar.
             </p>
 
-            <img class="image-100" src="img/ui-productivity/figma-02-uiElements.png" alt="Mid fidelity">
+            <!-- <img class="image-100" src="img/ui-productivity/figma-03-uiElements.png" alt="Mid fidelity"> -->
+
+
+
+            <img class="image-50" src="img/ui-productivity/figma-03-uiElements.png"
+                alt="Mid fidelity wireframes in Figma" style="margin-left: auto; margin-right: auto; display: block;">
+
+
+
             <!-- <p>I also introduce a generic set of icons and copy. At this stage, the icons have not been designed yet and
                 I am using a set from the Figma plugin.
                 This is the same case with the typography, where the final typeface and fonts have not been selected
@@ -222,28 +292,84 @@
 
             <h3>Typeface and Fonts</h3>
 
-            <img class="image-100" src="img/ui-productivity/figma-04-typographySelection.png" alt="Typography"
+            <p>I later changed the heading typeface to a more modern Serif called Solway. I really liked the Medium font
+                but after comparing my app with other recent apps, I decided
+                that regular was more appropriate.
+            </p>
+
+            <img class="image-100" src="img/ui-productivity/figma-07-typographySelection.png" alt="Typography"
                 style="margin-top: 5%;">
 
             <h3>Screens with Typography applied</h3>
 
-            <img class="image-100" src="img/ui-productivity/figma-03-screensWithType.png" alt="Typography"
+            <img class="image-100" src="img/ui-productivity/figma-06-screensWithType.png" alt="Typography"
                 style="margin-top: 5%;">
 
             <h2>Colors</h2>
             <h3>Color choices</h3>
-            <p>Initially I selected a dark theme with light red-amber-green to represent task status (blocked, in
-                progress, done) and
-                blue as a neutral color (to do).</p>
-            <img class="image-100" src="img/ui-productivity/figma-06-colorChoices.png" alt="Color palette"
+            <p>I chose purple for the primary color to use for the calls to action and data visualizatoins. Color ramps
+                can be difficult to interpret so
+                I took care in using annotations to directly label each category. The remaining colors were selected to
+                represent the default task status options which
+                are 'to do', 'doing', 'done' and 'blocked'.</p>
+            <img class="image-100" src="img/ui-productivity/figma-08-colorChoices.png" alt="Color palette"
                 style="margin-top: 5%;">
             <h3>Color experiments</h3>
             <p>I really like the dark theme but am not yet confident what the users will think so I started some
                 alternative
                 experiments so that I could get user feedback.
             </p>
-            <img class="image-100" src="img/ui-productivity/figma-06-testingPrimary.png" alt="Color experiments"
+
+
+            <img class="image-100" src="img/ui-productivity/figma-10-experiment.png" alt="UI Experiments"
                 style="margin-top: 5%;">
+
+            <!-- <img class="image-100" src="img/ui-productivity/figma-11-sample-screen-todo.png"
+                alt="Sample Final Screen, the To-Do list" style="margin-top: 5%;"> -->
+
+            <h2>Final MVP Design</h2>
+
+            <h3>Things I would have done better</h3>
+            <ul>
+                <li>
+                    The Today screen, particularly near the weather report at the top, could be a lot more interesting.
+                </li>
+                <li>
+                    The data visualizatoins could be more simple and self-explanatory.
+                </li>
+                <li>
+                    The item details could be broken down into smaller separate chunks.
+                </li>
+                <li>
+                    The badges, while they should look shiny, should be more harmonious the rest of the user interface.
+                </li>
+                <li>
+                    Only the tab bar icons have been custom designed, the rest of the icons throughout the UI need to be
+                    custom designed as a family.
+                </li>
+                <li>
+                    The copy can be greatly improved to be more meaningful, concise and self-explanatory.
+                </li>
+            </ul>
+
+            <img class="image-100" src="img/ui-productivity/figma-12-final-screens-whiteBackground.png"
+                alt="UI MVP for Productivity App in Figma" style="margin-top: 5%;">
+
+
+
+            <h3>The To-Do list</h3>
+
+            <img class="image-50" src="img/ui-productivity/figma-11-sample-screen-todo.png" alt="Grid System"
+                style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
+
+            <h3>The item details</h3>
+
+            <img class="image-50" src="img/ui-productivity/figma-13-sample-screen-detail.png" alt="Grid System"
+                style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
+
+
+
+
 
 
         </main>
