@@ -64,63 +64,182 @@
         </header>
 
         <main class="main">
-            <h1>SwiftUI</h1>
-            <h2>Working progress...</h2>
-            <p>I have been working on a new SwiftUI Design System and will be updating over the next couple of months.
+            <h1>SwiftUI. In an ideal world, how do you want to view your data?</h1>
+            <h2>Introduction</h2>
+
+            <h3>Dessert Marketplace</h3>
+            <p>In this project, I plugged an NFT-style data model and data set into a SwiftUI design system. The
+                demonstrator supplied the data and control logic that brings
+                the design system to life even as a living and testable product that supports complex user flows and
+                information architecture. This demonstrator will be extremly handy for designing my upcoming
+                productivity app.
+            </p>
+            <p>In this Swift User Interface, we can reconfigure and test:</p>
+            <ul>
+                <li>
+                    2 color sets
+                </li>
+                <li>
+                    6 layouts for viewing and exploring information
+                </li>
+                <li>
+                    3 different UI textures
+                </li>
+            </ul>
+            <p>and each permutation resides in the same app. <span style="font-weight:600">The User Interface is
+                    available for public testing on iOS</span> <a href="https://testflight.apple.com/join/Ylmtp2l9"
+                    target="_blank"><span style="font-weight:600">here</span></a></p>
+            <img class="image-100" src="img/ui-desserts/design-system-1A-compressed.png" alt="UI Desserts in SwiftUI">
+
+            <p>This can be used for any application. Think of all those times you spend with excel sheets and tables in
+                your own work. How can this experience
+                be improved?
+                In an ideal world, how would you want to view your data?
             </p>
 
-            <h2>Title</h2>
-            <p>Screenshot 1A</p>
-            <img class="image-100" src="img/ui-desserts/design-system-1A-compressed.png" alt="UI Desserts in SwiftUI">
-            <p>Screenshot 1B</p>
+            <h3>UI Frameworks for native app development</h3>
+            <p>Native Apps provide the best user experience, especially when accessing hardware and harnessing features
+                such as AR. Native development is known to be expensive but the modern declarative frameworks such
+                as SwiftUI for iOS and Jetpack Compose for Android make it building beautiful high quality user
+                interfaces and apps more efficient. </p>
             <img class="image-100" src="img/ui-desserts/design-system-1B-compressed.png" alt="UI Desserts in SwiftUI">
+            <p>
+                In addition, KMP seems like a promising architecture where the SwiftUI or Jetpack Compose UI views
+                can be driven by the same backend and logic. Just a note, this is a very simplified explanation
+                of KMP. I am not a KMP expert so I won’t go further into this :D
+            </p>
+
+
+            <h2>Using Data in First Prototype</h2>
+            <h3>Market Structure</h3>
+            The data structure is very simple. It allows us to make multiple markets, where each market can have a set
+            of
+            flavors and each flavor can have
+            a set of desserts.
+            <img class="image-50" src="img/ui-desserts/structs.png" alt="Data Model"
+                style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
+            <p>The data set really helps to bring the prototype to life while designing the user interface.
+                We are able to see how the data appears on different textures
+            </p>
+            <ul>
+                <li>
+                    Flat
+                </li>
+                <li>
+                    Neumorphic
+                </li>
+                <li>
+                    Glass
+                </li>
+            </ul>
+            <p>We can test things such as accessibility and obsrve how users feel when they interact with different
+                textures.</p>
+            <img class="image-100" src="img/ui-desserts/design-system-4A-compressed.png" alt="UI Desserts in SwiftUI">
+            <h3>Data Set</h3>
+            <p>A large set of sample data is used to provide a prototyping data set that can be accessed by all of the
+                views. For prototyping, I created an ObservableObject class with a dataset that
+                uses the @Published property wrapper. It is called ObservableObject because SwiftUI monitors the
+                ObservableObject which in turn will announces when changes to the data set occur.</p>
+
+            <img class="image-100" src="img/ui-desserts/dummy-data.png" alt="Sample data in SwiftUI">
+            <p>This was a lot of copy to write and in making this I have learned a lot of fun facts about fruits and
+                desserts :D</p>
+
+            <img class="image-100" src="img/ui-desserts/design-system-4B-compressed.png" alt="UI Desserts in SwiftUI">
+
 
             <h2>Icons</h2>
-            <p>This is only the first iteration of the icons</p>
+            <p>This is the first iteration of icons for each flavor (created in Figma). There is still more work to be
+                done in order to
+                make them look more consistent and like a family.</p>
             <img class="image-100" src="img/ui-desserts/process-icons.png" alt="Icons in figma">
 
-            <h2>Title</h2>
-            <p>Screenshot 4A</p>
+            <h3>Warm color flavors</h3>
+            <p>Lemon, Orange, Watermelon, Strawberry, Dragon Fruit, Plum, Raspberry, Blueberry</p>
+            <p>This layout allows one to see, for one market, how many desserts there are for each flavor and a
+                description of each flavor.</p>
+
             <img class="image-100" src="img/ui-desserts/design-system-5A-compressed.png" alt="UI Desserts in SwiftUI">
-            <p>Screenshot 4B</p>
+
+            <h3>Cool color flavors</h3>
+            <p>Avocado, Lime, Apple, Mint, Elderberry, Concord Grape, Lavendar, Blackberry</p>
+
             <img class="image-100" src="img/ui-desserts/design-system-5B-compressed.png" alt="UI Desserts in SwiftUI">
 
             <h2>Desserts</h2>
-            <p>The pixel desserts were created in Figma.</p>
+            <p>I created the pixel desserts in Figma. They are not the greatest but were quick to make and kind of cute.
+            </p>
+            <ul>
+                <li>
+                    Sorbet
+                </li>
+                <li>
+                    Ice Cream
+                </li>
+                <li>
+                    Crushed Ice
+                </li>
+                <li>
+                    Doughnuts
+                </li>
+                <li>
+                    Crushed Ice
+                </li>
+                <li>
+                    Smoothie
+                </li>
+                <li>
+                    Candy
+                </li>
+                <li>
+                    Cake
+                </li>
+            </ul>
+            <p>
+                Figma is actually not an optimal tool for making pixel art but throughout these projects I have been
+                accumulating too many tools and
+                subscriptions so I decide to cut down.
+            </p>
             <img class="image-100" src="img/ui-desserts/process-desserts.svg" alt="Pixel desserts in figma">
+            <p>
+                For the prototype data set, I kept things simple and used the
+                same set of desserts for each flavor.
+            </p>
             <img class="image-100" src="img/ui-desserts/process-desserts-color.svg"
                 alt="Pixel desserts in figma, set to flavor colors">
 
-            <h2>Title</h2>
-            <p>Screenshot 5A</p>
+
+
+            <h2>Exploring the Entire Market</h2>
+            <p>The carousel allows you to visualize and explore, on one screen, all fruits within each flavor for one
+                market.
+                This was the most complicated layout to implement because it contained data and nested scroll views with
+                headers.
+            </p>
             <img class="image-100" src="img/ui-desserts/design-system-6A-compressed.png" alt="UI Desserts in SwiftUI">
-            <p>Screenshot 5B</p>
+            <p>This view will also allow the user to add new desserts to any flavor. This is discussed in more detail at
+                the very end.</p>
             <img class="image-100" src="img/ui-desserts/design-system-6B-compressed.png" alt="UI Desserts in SwiftUI">
 
 
-            <h2>Title</h2>
-            <p>Screenshot</p>
-            <img class="image-100" src="img/ui-desserts/structs.png" alt="Data Model">
-
-            <h2>Title</h2>
-            <p>Screenshot 6A</p>
+            <h2>Lazy Grid</h2>
+            <p>This layout allows the user to explore the desserts within one specific flavor using the lazy grid.</p>
             <img class="image-100" src="img/ui-desserts/design-system-7A-compressed.png" alt="UI Desserts in SwiftUI">
-            <p>Screenshot 6B</p>
+            <p>As hopefully noticed by now :), I have been switching between a warm and cool color palette. It is well
+                known that
+                warm colors tend to appear closer while cool colors appear more distant and mixing warm with cool (e.g.
+                red and blue)
+                can create a strong emotional response.
+            </p>
             <img class="image-100" src="img/ui-desserts/design-system-7B-compressed.png" alt="UI Desserts in SwiftUI">
+
+
+
 
             <h2>Title</h2>
             <p>Screenshot 2</p>
             <img class="image-100" src="img/ui-desserts/design-system-2AB-compressed.png" alt="UI Desserts in SwiftUI">
 
-            <h2>Sample Data</h2>
-            <p>A large set of sample data is used to test the interface.</p>
-            <img class="image-100" src="img/ui-desserts/dummy-data.png" alt="Sample data in SwiftUI">
-
-            <h2>Title</h2>
-            <p>Screenshot 3A</p>
-            <img class="image-100" src="img/ui-desserts/design-system-4A-compressed.png" alt="UI Desserts in SwiftUI">
-            <p>Screenshot 3B</p>
-            <img class="image-100" src="img/ui-desserts/design-system-4B-compressed.png" alt="UI Desserts in SwiftUI">
 
             <h2>Title</h2>
             <p>Screenshot 7</p>
