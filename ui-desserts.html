@@ -64,15 +64,25 @@
         </header>
 
         <main class="main">
-            <h1>SwiftUI. In an ideal world, how do you want to view your data?</h1>
+            <h1>How do you want to view and explore your data?</h1>
+            <p>
+                Note: This work is purely for enjoyment and learning and so I am not diving into the details of
+                accessibility.
+                Accessibility is an important but also complicated subject because we all have our unique ways of
+                integrating
+                space and time
+                and as they say, 'none of
+                us is at the center of the bellcurve'.
+            </p>
+
             <h2>Introduction</h2>
 
-            <h3>Dessert Marketplace</h3>
-            <p>In this project, I plugged an NFT-style data model and data set into a SwiftUI design system. The
-                demonstrator supplied the data and control logic that brings
-                the design system to life even as a living and testable product that supports complex user flows and
-                information architecture. This demonstrator will be extremly handy for designing my upcoming
-                productivity app.
+            <h3>WTF (What's this For)</h3>
+            <p>In this project, I plugged a simplified NFT-style data model, data set and control logic into a SwiftUI
+                design system. The
+                the app brings the design system to life as a living and testable product that needs to support complex
+                user flows and
+                information architecture.
             </p>
             <p>In this Swift User Interface, we can reconfigure and test:</p>
             <ul>
@@ -91,10 +101,27 @@
                     target="_blank"><span style="font-weight:600">here</span></a></p>
             <img class="image-100" src="img/ui-desserts/design-system-1A-compressed.png" alt="UI Desserts in SwiftUI">
 
-            <p>This can be used for any application. Think of all those times you spend with excel sheets and tables in
-                your own work. How can this experience
-                be improved?
-                In an ideal world, how would you want to view your data?
+            <p>I found through experimentation that everyday users enjoy colorful user interfaces. Designers though are
+                quite cautious in their
+                use of color because they are very aware of the delight (and drama) that color alone is responsible for.
+                Warm colors appear
+                closer, cool colors more distant, red & blue together spark emotions
+                and yellow, being the center wavelength, just hits us smack between the eyes.
+            </p>
+            <p>The programming language R
+                gives access to
+                several color-blind friendly maps for visualizing and interpreting complex data.</p>
+
+            <img class="image-100" src="img/ui-desserts/two-color-maps.png" alt="Viridis and Magma color maps in R">
+
+            <p>
+                There is magic to color
+                that goes beyond aesthetics. Wavelength divition
+                multiplexing (WDM) is
+                a technology where large quantities of data are split into different light channels and transmitted
+                simultaneously (the fiber bandwidth is increased). Some research suggests that lightly tinted glasses of
+                different
+                colors can enhance depth perception.
             </p>
 
             <h3>UI Frameworks for native app development</h3>
@@ -106,17 +133,18 @@
             <p>
                 In addition, KMP seems like a promising architecture where the SwiftUI or Jetpack Compose UI views
                 can be driven by the same backend and logic. Just a note, this is a very simplified explanation
-                of KMP. I am not a KMP expert so I won’t go further into this :D
+                of KMP. I am not a KMP expert so I won't go further into this :D
             </p>
 
 
-            <h2>Using Data in First Prototype</h2>
+            <h2>Using Data in the First Prototype</h2>
             <h3>Market Structure</h3>
-            The data structure is very simple. It allows us to make multiple markets, where each market can have a set
+            The data structure of this app has a steep hierarchy but is still very simple. It allows us to make multiple
+            markets, where each market can have a set
             of
             flavors and each flavor can have
             a set of desserts.
-            <img class="image-50" src="img/ui-desserts/structs.png" alt="Data Model"
+            <img class="image-50" src="img/ui-desserts/hand-drawn-struct.png" alt="Data Model"
                 style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
             <p>The data set really helps to bring the prototype to life while designing the user interface.
                 We are able to see how the data appears on different textures
@@ -141,8 +169,9 @@
                 uses the @Published property wrapper. It is called ObservableObject because SwiftUI monitors the
                 ObservableObject which in turn will announces when changes to the data set occur.</p>
 
-            <img class="image-100" src="img/ui-desserts/dummy-data.png" alt="Sample data in SwiftUI">
-            <p>This was a lot of copy to write and in making this I have learned a lot of fun facts about fruits and
+            <img class="image-100" src="img/ui-desserts/sample-data.jpeg" alt="Sample data in SwiftUI">
+            <p>This was a lot of copy to write, 1200 Swift lines of copy in fact. And in making this I have learned a
+                lot of fun facts about fruits and
                 desserts :D</p>
 
             <img class="image-100" src="img/ui-desserts/design-system-4B-compressed.png" alt="UI Desserts in SwiftUI">
@@ -207,7 +236,8 @@
             </p>
             <img class="image-100" src="img/ui-desserts/process-desserts-color.svg"
                 alt="Pixel desserts in figma, set to flavor colors">
-
+            <p>They need iteration (I drew them very quickly and spent most of the time getting the svgs into Xcode).
+            </p>
 
 
             <h2>Exploring the Entire Market</h2>
@@ -221,45 +251,79 @@
                 the very end.</p>
             <img class="image-100" src="img/ui-desserts/design-system-6B-compressed.png" alt="UI Desserts in SwiftUI">
 
+            <h2>A Pause</h2>
+            <h3>Random Insight</h3>
+            <p>
+                I've been sharing so many screens so I thought it would be nice to have a breather. A random fact: I
+                braid my own hair
+                to make it easier to participate in swimming or sports. It's very easy (though being
+                ambidextrous helps). I maintain it by doing 5 each day (or night).
+            </p>
+
+            <img class="image-100" src="img/ui-desserts/black-white-braids.jpeg" alt="Me with braids">
 
             <h2>Lazy Grid</h2>
-            <p>This layout allows the user to explore the desserts within one specific flavor using the lazy grid.</p>
+            <p>This layout was a great opportunity to explore the benefits of the SwiftUI lazy grid. From a UI
+                perspective, the layout
+                allows the user to explore the desserts within one specific flavor.</p>
             <img class="image-100" src="img/ui-desserts/design-system-7A-compressed.png" alt="UI Desserts in SwiftUI">
-            <p>As hopefully noticed by now :), I have been switching between a warm and cool color palette. It is well
+            <!-- <p>As hopefully noticed by now :), I have been switching between a warm and cool color palette. It is well
                 known that
                 warm colors tend to appear closer while cool colors appear more distant and mixing warm with cool (e.g.
                 red and blue)
                 can create a strong emotional response.
-            </p>
+            </p> -->
+            <p>I could elaborate more on this but, I'm feeling lazy at the moment.</p>
             <img class="image-100" src="img/ui-desserts/design-system-7B-compressed.png" alt="UI Desserts in SwiftUI">
 
-
-
-
-            <h2>Title</h2>
-            <p>Screenshot 2</p>
+            <h2>Navigating to details</h2>
+            <h3>An Acknowledgement</h3>
+            <p>I learned iOS development right before
+                the
+                COVID-19 pandemic started.
+                Part of my background was in Computational Electromagnetics but I had not touched this since my academic
+                years and really missed it. After going through Udacity to laern the concepts of UIKit, Networking,
+                Native Authentication (dear lord, never again)
+                and data persistance (Core Data), I transitioned to SwiftUI thanks to Meng To from Design+Code and
+                Robert Petras from
+                the Credo Academy who
+                taught me how to create this lovely detailed view here.
+            </p>
+            <p>I know I have a little issue with the blue back-navigation over the pink (will sort that out later).</p>
             <img class="image-100" src="img/ui-desserts/design-system-2AB-compressed.png" alt="UI Desserts in SwiftUI">
 
 
-            <h2>Title</h2>
-            <p>Screenshot 7</p>
+            <h2>Forms</h2>
+            <h3>Adding new desserts</h3>
+            <p>Designing and implementing a model form takes time. For this first iteration, I decided to keep
+                it simple because it took awhile for me to get the prototype of the controller logic to properly allow
+                for
+                user input; adding a new dessert.
+            </p>
             <img class="image-100" src="img/ui-desserts/design-system-8-compressed.png" alt="UI Desserts in SwiftUI">
 
-            <h2>Title</h2>
-            <p>Screenshot 8A</p>
+            <h3>Adding new flavors</h3>
+            <p>In addition to adding desserts, the user can add new flavours as well. And within the new flavor, can add
+                more desserts. </p>
             <img class="image-100" src="img/ui-desserts/design-system-10-compressed.png" alt="UI Desserts in SwiftUI">
-            <p>Screenshot 8B</p>
+
+            <p>When testing this UI you will notice that each new
+                dessert appears very instantly. For future iterations I am planning to add animations to make the data
+                updates
+                and transitions more smooth and engaging.
+            </p>
             <img class="image-100" src="img/ui-desserts/design-system-11-compressed.png" alt="UI Desserts in SwiftUI">
 
+            <h2>What's next?</h2>
+            <h3>Using this design system to build practical productivity apps</h3>
+            <p>This concludes the first version of my marketplace design. Feel free to test the UI here and leave
+                feedback. As for what is next, I plan to use this project to develop and maintain a design system that I
+                can
+                apply to
+                other apps that I would actually build for production.</p>
 
 
             <div class="project-main" style="padding-bottom: 1%;">
-
-                <!-- <h2>Introduction</h2>
-                <p>Here is a sneak peak (more update to come)
-                </p> -->
-
-
 
 
             </div>
