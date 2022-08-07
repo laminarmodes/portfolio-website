@@ -65,7 +65,7 @@
         </header>
 
         <main class="main">
-            <h1>How do you want to view and explore your data?</h1>
+            <h1>How do you want to explore your data?</h1>
             <p>
                 Note: This work is purely for enjoyment and learning and so I am not diving into the details of
                 accessibility.
@@ -105,7 +105,7 @@
             <p>I found through research that everyday users enjoy colorful user interfaces. Designers though are
                 cautious in their
                 use of color because they are very aware of the delight (and drama) that color is responsible for.
-                Warm colors appear
+                It is well known that warm colors appear
                 closer, cool colors more distant, red & blue together spark emotions
                 and yellow, being the center wavelength, just hits us smack between the eyes.
             </p>
@@ -120,10 +120,10 @@
                 that goes beyond aesthetics though. Wavelength divition
                 multiplexing (WDM) is
                 a technology where large quantities of data are split into different light channels and transmitted
-                simultaneously (the fiber bandwidth is increased). This perhaps can be observed physically; some
+                simultaneously (the fiber bandwidth is increased). This can perhaps be observed physically as some
                 research suggests that lightly tinted glasses of
                 different
-                colors can enhance depth perception.
+                colors can enhance reduce tunneling and depth perception.
             </p>
 
             <h3>UI Frameworks for native app development</h3>
@@ -141,14 +141,17 @@
 
             <h2>Using Data in the First Prototype</h2>
             <h3>Market Structure</h3>
-            The data structure of this app has a steep hierarchy but is still very simple. It allows us to make multiple
-            markets, where each market can have a set
+            The data structure of this app has a steep hierarchy but is overall is simple. We can create make multiple
+            markets, where each market has a set
             of
-            flavors and each flavor can have
-            a set of desserts. Excuse my handwriting, I wrioe this while lying down in bed.
+            flavors (or categories) and each flavor can have
+            a set of desserts (or items).
+
+            I thought I'd give my code a little character here :D
+
             <img class="image-50" src="img/ui-desserts/hand-drawn-struct.png" alt="Data Model"
                 style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
-            <p>The data set really helps to bring the prototype to life while designing the user interface.
+            <p>The data set is provided early in the prototyping stage to inform and guide the user interface design.
                 We are able to see how the data appears on different textures
             </p>
             <ul>
@@ -164,39 +167,42 @@
             </ul>
             <img class="image-100" src="img/ui-desserts/design-system-4A-compressed.png" alt="UI Desserts in SwiftUI">
             <h3>Data Set</h3>
-            <p>A large set of sample data is used to provide a prototyping data set that can be accessed by all of the
-                views. For prototyping, I created an ObservableObject class with a dataset that
-                uses the @Published property wrapper. It is called ObservableObject because SwiftUI monitors the
+            <p>I placed the sampel data in an ObservableObject class and used the @Published property wrapper. It is
+                called ObservableObject because SwiftUI monitors the
                 ObservableObject which in turn will announces when changes to the data set occur.</p>
 
             <img class="image-100" src="img/ui-desserts/sample-data.jpeg" alt="Sample data in SwiftUI">
             <p>This was a lot of copy to write, 1200 Swift lines of copy in fact. And in making this I have learned a
                 lot of fun facts about fruits and
-                desserts :D</p>
+                desserts.</p>
 
             <img class="image-100" src="img/ui-desserts/design-system-4B-compressed.png" alt="UI Desserts in SwiftUI">
 
 
             <h2>Icons</h2>
-            <p>This is the first iteration of icons for each flavor (created in Figma). There is still more work to be
+            <p>Next comes icons. This is the first iteration of icons for each flavor (created in Figma). There is still
+                more work to be
                 done in order to
-                make them look more consistent and like a family.</p>
+                make them look more consistent and like a family but I hope this is a good start.</p>
             <img class="image-100" src="img/ui-desserts/process-icons.png" alt="Icons in figma">
 
             <h3>Warm color flavors</h3>
-            <p>Lemon, Orange, Watermelon, Strawberry, Dragon Fruit, Plum, Raspberry, Blueberry</p>
+            <p>The warm colors are Lemon, Orange, Watermelon, Strawberry, Dragon Fruit, Plum, Raspberry, Blueberry</p>
             <p>This layout allows one to see, for one market, how many desserts there are for each flavor and a
                 description of each flavor.</p>
 
             <img class="image-100" src="img/ui-desserts/design-system-5A-compressed.png" alt="UI Desserts in SwiftUI">
 
             <h3>Cool color flavors</h3>
-            <p>Avocado, Lime, Apple, Mint, Elderberry, Concord Grape, Lavendar, Blackberry</p>
+            <p>The cool color flavors are Avocado, Lime, Apple, Mint, Elderberry, Concord Grape, Lavendar, Blackberry
+            </p>
 
             <img class="image-100" src="img/ui-desserts/design-system-5B-compressed.png" alt="UI Desserts in SwiftUI">
 
             <h2>Desserts</h2>
-            <p>I created the pixel desserts in Figma. They are not the greatest but were quick to make and kind of cute.
+            <p>I created the pixel desserts in Figma. They are not the greatest but were quick to make and pretty funny
+                to me. It is known that faces attract more attention than pain objects so I gave each dessert little
+                eyes.
             </p>
             <ul>
                 <li>
@@ -227,7 +233,7 @@
             <p>
                 Figma is actually not an optimal tool for making pixel art but throughout these projects I have been
                 accumulating too many tools and
-                subscriptions so I decide to cut down.
+                subscriptions so I decided to cut down.
             </p>
             <img class="image-100" src="img/ui-desserts/process-desserts.svg" alt="Pixel desserts in figma">
             <p>
@@ -252,15 +258,17 @@
             <img class="image-100" src="img/ui-desserts/design-system-6B-compressed.png" alt="UI Desserts in SwiftUI">
 
             <h2>A Pause</h2>
-            <h3>Random Insight</h3>
-            <p>
+            <h3>Hello there</h3>
+
+            <!-- <p>
                 I've been sharing so many screens so I thought it would be nice to have a breather. A random fact: I
-                braid my own hair
+                startrebraid my own hair
                 to make it easier to participate in swimming or sports. It's very easy (though being
                 ambidextrous helps). I maintain it by doing 5 each day (or night).
-            </p>
+            </p> -->
 
-            <img class="image-100" src="img/ui-desserts/black-white-braids.jpeg" alt="Me with braids">
+            <img class="image-50" src="img/ui-desserts/black-white-braids.jpeg" alt="Photo of me"
+                style="margin-left: auto; margin-right: auto; display: block; ">
 
             <h2>Lazy Grid</h2>
             <p>This layout was a great opportunity to explore the benefits of the SwiftUI lazy grid. From a UI
