@@ -31,6 +31,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+
+
+    <style>
+        .balsamiq-grid__item {
+            display: inline-block;
+            width: 50%;
+            /* Each grid item occupies 1/4 of the view */
+        }
+
+        @supports (display: grid) {
+            .balsamiq-grid {
+                display: -ms-grid;
+                display: grid;
+                /* use grid layout */
+                -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                /* no of grid columns */
+                gap: 50px;
+                /* spacing between grid elements */
+                /* This is if I wanted the text to be vertically centered */
+                /* align-items: center;
+    justify-items: center; */
+            }
+
+            .balsamiq-grid__item {
+                /* grid cell contents will occupiy entire space */
+                /* Center contents */
+                width: auto;
+                min-height: auto;
+                margin: 0;
+            }
+
+            .balsamiq-grid__item img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media all and (max-width: 750px) {
+            .balsamiq-grid {
+                -ms-grid-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+
 </head>
 <!-- This is a comment -->
 
@@ -129,12 +175,127 @@
                 <img class="image-100" style="margin-bottom: 5%;" src="img/data-figma/pin-09.png" alt="Bubble Chart">
 
 
-                <h2>More to come (including filters and controls)</h2>
+                <h2>Chart Library</h2>
+                <p style="padding-bottom: 5%;">These data charts, as crooked as they are, look amazing in Balsamiq
+                    dashboard
+                    wireframes. Feel free to rech out to me
+                    if you would like me to send you a copy of these (and more).
+                </p>
+
+                <!-- <div class="data-visualization-grid__item"> -->
+                <img class="image-100" src="img/data-visualization/data-sketch.jpg" alt="dashboard">
+                <!-- </div> -->
+
+                <div class="balsamiq-grid" style="padding-bottom: 10%; padding-top: 10%">
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-01.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-02.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-03.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-04.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-06.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-08.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-09.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-11.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-10.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-11.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-12.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-17.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-18.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-19.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-20.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-21.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-22.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-23.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-24.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-25.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-26.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-27.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-28.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-29.png" alt="balsamiq image">
+                    </div>
+
+                    <div class="balsamiq-grid__item">
+                        <img class="balsamiq" src="img/data-visualization/balsamiq-30.png" alt="balsamiq image">
+                    </div>
+
+                </div>
+
+                <!-- <h2>More to come (including filters and controls)</h2>
                 <p>The redrawing takes some time but I will be updating one chart per day and include some
                     new charts that I have never attempted with design software.
                 </p>
                 <img class="image-100" src="img/data-figma/updated-dashboard-wip.png"
-                    alt="work-in-progress new dashboard">
+                    alt="work-in-progress new dashboard"> -->
 
             </div>
 
