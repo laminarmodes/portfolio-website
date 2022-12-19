@@ -71,98 +71,86 @@
         </header>
 
         <main class="main">
-            <h1>Productivity App (writeup in progress...)</h1>
-            <h2>Introduction and video</h2>
-            <p>My mission this month was to design and implement a simple productivity app
-                that encourages the user to monitor outcomes rather than specific tasks. </p>
-            <p>The video introduction can be
-                found <a href="https://www.youtube.com/watch?v=XyA_n30UGuw" target="_blank">here</a>.</p>
-
-            <h3>Designing in Figma for SwiftUI</h3>
-            <p>There are a few important reasons for why I am super excited to build this app in SwiftUI.</p>
-            <ul>
-                <li>
-                    There are some amazing Swift charting packages available but it used to take me ages to
-                    create the exact charts that I wanted.
-                    WWDC's announcement of Swift Charts is a real game changer.
-                </li>
-                <li>
-                    The last time I used weather data in an app was 2 years ago where I worked with 3 weather APIs in
-                    UIKit. Everything worked out but I didn't get very far and never published the app.
-                    I cannot wait to get back into weather data again using Apple's weather API (and this time with
-                    SwiftUI).
-                </li>
-                <li>
-                    I can finally practice Core Data again (it has been 2 years)
-                </li>
-                <li>
-                    I might finally learn how to use Cloud Kit
-                </li>
-            </ul>
-
-            <h3>High Fidelity MVP Screens</h3>
-            <p>For personal projects, I usually prefer to design directly in Xcode. This will be the first time that I
-                attempt to hand over a
-                design to "myself" from Figma.</p>
-
-            <img class="image-100" src="img/ui-productivity/figma-12-final-screens-whiteBackground.png"
-                alt="UI MVP for Productivity App in Figma" style="margin-top: 5%;">
-
-
-            <h2>Background</h2>
-            <p>I really wanted to design a productivity tracking app that
-                encourages the user to focucs on the big picture of their life, but in a very simple way. Rather than
-                focusing on meeting
-                exact agendas each day, they would
-                focus on wheather or not they are achieving their outcomes or long term goals for, say for example,
-                “fun”, “learning”,
-                “wellness” or “helping others”, as a few exampels. Deadlines and alerts would still exist but they are
-                not the
-                main focus of the
-                user experience.
-            </p>
-            <img class="image-100" src="img/ui-productivity/ideate-04-screenSketchSide.jpg" alt="Structs in Swift">
-            <!-- <h2>Introduction</h2>
-            <img class="image-100 body-image" id="workshop-03"
-                style="margin-left: auto; margin-right: auto; display: block; padding-top: 5%;"
-                src="img/cf-intro/warmup.jpg" alt="Figma mobile app"> -->
-            <h2>UI Research</h2>
-            <h3>Analysis</h3>
-            <p>I started by performing an analysis of current productivity apps and identifying the design pattern
-                categories used.
-                The most common categories I identified were
-            <ul>
-                <li> <span style="font-weight:600">gathering input</span> - on the task name and
-                    additional details</li>
-                <li> <span style="font-weight:600">data management</span> - to display task lists</li>
-                <li> <span style="font-weight:600">navigation</span> - to access task status, days of the week or
-                    times of the day</li>
-            </ul>
-
-            <h3>User Stories</h3>
-            I then documented a list of user stories provided and generated new ones based on some light research with a
-            few productivity app users.
+            <h1>Productivity - User Interface Design</h1>
+            <h2>Introduction</h2>
+            <p>
+                The busy student is a person who wants to enjoy life while finding their place in the world.
+                They are motivated by 'purpose' and want to focus on what is most important to them while minimizing
+                distractions.
             </p>
 
-            <img class="image-100" src="img/ui-productivity/ideate-01-userStories.png" alt="User Stories">
+            <img class="image-100" src="img/ui-productivity/portfolio-mockups-set-01.png" alt="Mockups - Set 1">
+            <h3>A different generation</h3>
+            <p>The song "Takin Care of Business' was released in 1974, when the baby boomers were between 12 and 28
+                years old. This generation is known for their strong work ethic and competitiveness.</p>
+            <p>
+                However as I observe students today on social media discussing productivity apps, I noticed they
+                place importance on their productivity ‘boundaries’. They want to organize both what 'to do' and what
+                'not to do'.
+            </p>
 
-            <h3>Ideation</h3>
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
+                src="img/ui-productivity/ideate-04-screenSketchSide.jpg" alt="Structs in Swift">
 
-            For each user story, I performed a search on Dribble, Mobbin, pttrns and the App store for design patterns
-            used to help achieve each user goal.
+            <h3>What is most important?</h3>
+            <p>This is why the UI differentiates itself by encouraging the user to filter their tasks based on what they
+                value; something that can change from time to time.
+            </p>
+            <p>The ideal user can organize their tasks by purpose or 'outcome'.</p>
 
-            <img class="image-50" src="img/ui-productivity/ideate-02-uiResearch.png" alt="User story to design pattern"
-                style="margin-left: auto; margin-right: auto; display: block; ">
+            <img class="image-100" src="img/ui-productivity/portfolio-mockups-set-02.png" alt="Mockups - Set 2">
 
-            <h2>Low-Fidelity Sketching</h2>
-            <p>For each user story, and with inspiration from the design patterns on Dribble, pttrns and mobbin,
-                I sketched the low fidelity screens in Figjam. <em>Note: this particular design, intentionally, does not
-                    include the user flow.</em></p>
+            <h3>What problem are we trying to solve?</h3>
+            <p>How can we help students focus on what is most important to them? The answer was found through
+                conversations and sketching </p>
+
             <img class="image-100" src="img/ui-productivity/ideate-03-screenSketch.png" alt="Low fidelity wireframes">
 
 
+            <h3>Design Decision Mistakes</h3>
+            <p>Some parts of the design began to divert from this original purpose. The decision to use data charts and
+                statistics to
+                communicate insights, was not the best design decision, on my part.
+            </p>
+            <img class="image-100" src="img/ui-productivity/portfolio-mockups-set-03.png" alt="Mockups - Set 3">
+
+
+
+
+
+            <h2>UI Research</h2>
+            <h3>Analysis</h3>
+            <p>As an independent developer who was easing back into the design dimension, it was time to take a step
+                back and think in a new way. This started with an analysis of the most frequently used design pattern
+                categories
+                found in a To-Do app:</p>
+
+            <ul>
+                <li> <span style="font-weight:600">Gathering input</span> - on the task name and
+                    details</li>
+                <li> <span style="font-weight:600">Data management</span> - to display task lists</li>
+                <li> <span style="font-weight:600">Navigation</span> - to access task status or calendar days</li>
+            </ul>
+
+            <h3>User Stories</h3>
+            <p>Conversations produce great user stories and my main design mistakes came in the later part of the design
+                process where I added features that did not correspond to a user story.
+            </p>
+
+            <img class="image-100" src="img/ui-productivity/user-stories-miro.jpg" alt="User Stories">
+
+            <h3>Ideation</h3>
+
+            <p> Meanwhile each user story supported a thorough search for the best design patterns
+                that would help our users achieve their goals.</p>
+
+            <img class="image-50" src="img/ui-productivity/user-story-to-research-miro.jpg"
+                alt="User story to design pattern" style="margin-left: auto; margin-right: auto; display: block; ">
+
+
             <h2>Digital Low-Fidelity Wireframes</h2>
-            <p>I used Balsamiq to design the low-fidelity digital wireframes and confirm the most basic flows.</p>
+            <p>We piece together the essential screens to confirm the layout, user flows and information architecture at
+                the most basic level.</p>
             <!-- <h3>First version</h3> -->
             <img class="image-100" src="img/ui-productivity/ideate-05-balsamiq.png"
                 alt="Digitized Low fidelity wireframes in Balsamiq">
@@ -170,23 +158,14 @@
 
             <h2>Low-Fidelity Wireframes with grid</h2>
             <h3>Grid System</h3>
-            <p>I used a 10-pt grid with 6 columns and 20pt margins. My reason for selecting 10 points is because it is
-                more efficient to work with figma. In figma
+            <p>I used a 10-pt grid with 6 columns and 20pt margins because, in figma,
                 one can use the shift key to move an element 10pts at a time. </p>
-
-            <!-- <img class="image-50" src="img/ui-productivity/figma-01-greyBoxingSingle.png" alt="Grid System"
-                style="margin-left: auto; margin-right: auto; display: block; padding-top: 5%;"> -->
 
             <img src="img/ui-productivity/figma-01-greyBoxingSingle.png" alt="Grid System"
                 style="width: 25%; height: auto; margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
 
             <h3>Gray Boxing</h3>
-            <p>The UI elements are drawn with simplified gray boxes of approximate size. The boxes are not
-                the exact size but allowed me to validate the layouts with the grid system within a reasonable time.</p>
-
-
-            <!-- <img class="image-100" src="img/ui-productivity/figma-02-greyBoxing.png"
-                alt="Low fidelity wireframes in Figma"> -->
+            <p>How many rectangles did YOU draw today?</p>
 
             <img class="image-50" src="img/ui-productivity/figma-02-greyBoxing.png"
                 alt="Low fidelity wireframes in Figma"
@@ -197,37 +176,31 @@
             <h2>Icon Design</h2>
 
             <h3>Ideation and first sketches</h3>
-            <p>I wanted to create custom icons for the bottom navigation and started the process by first
-                identifying the purpose of each icon. I then quickly sketched three variations of each icon that I
-                wanted
-                to experiment with.</p>
-            <!-- <img class="image-100" src="img/ui-productivity/icon-sketches.svg"
-                alt="First ideation sketches for bottom navigation icon set"> -->
+            <p>While drawing 3 variations of each icon, looking at my handwriting, I want to ensure the reader that this
+                design was created not
+                only with love but also with a little bit of caffeine.
+            </p>
+
             <img class="image-50" src="img/ui-productivity/ideate-06-iconSketch.svg"
                 alt="First ideation sketches for bottom navigation icon set"
                 style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
 
-            <h3>Icons drawn in Figma</h3>
-            This is the first final digital version of the tab bar icons. The profile section contains both profile
-            information and statistics so I thought to
-            combine those two concepts into one icon as a face and a bar chart.
+            <h3>Design Changes</h3>
+            A clever idea of an icon that symbolized a user profile that also contains statistics.
 
-            <img style="margin-top: 40px; margin-bottom: 40px;" class="image-100"
-                src="img/ui-productivity/figma-04-icons.svg"
+            <img style="margin-top: 40px; margin-bottom: 40px; margin-left: auto; margin-right: auto; display: block;"
+                class="image-75" src="img/ui-productivity/figma-04-icons.svg"
                 alt="First ideation sketches for bottom navigation icon set">
 
-            For the final MVP tab bar, I reverted back to a simple face for the profile icon after receiving feedback
-            from a confused user who was not able to associate the shape with the contents.
+            Unfortunately such a idea was a little confusing for users.
 
-            <img style="margin-top: 40px; margin-bottom: 40px;" class="image-100"
-                src="img/ui-productivity/figma-05-icons-v2.svg"
+            <img style="margin-top: 40px; margin-bottom: 40px; margin-left: auto; margin-right: auto; display: block;"
+                class="image-75" src="img/ui-productivity/figma-05-icons-v2.svg"
                 alt="First ideation sketches for bottom navigation icon set">
 
-            I am still working to get the line thicknesses, angles,
-            and corner radii consistent in order to make the icon set feel more
-            like a family.
-
-
+            <h3>Improvements</h3>
+            <p>An icon set can feel more like a family with consistent line thicknesses, angles,
+                and corner radii</p>
 
             <h2>Basic UI components</h2>
 
@@ -236,16 +209,7 @@
                 most common screen size is the iPhone 8 (375 x 667) and Small Android Small (360 x 840). I therefore
                 converted my artboards to iPhone 8 and adjusted the UI components.</p>
 
-            <h3>Let's take a break</h3>
-            <p>I ordered the most amazingly comfortable oversized pullover online. This was great for those late nights
-                I spent naming, grouping and ordering layers. Even better,
-                the color is ideal for spilling beer and snacks on without worrying about them leaving a permanent
-                stain. If interested, please connect with me on social media to share with me what you do while you name
-                layers :)</p>
 
-            <img style="margin-top: 40px; margin-bottom: 40px;" class="image-100"
-                src="img/ui-productivity/me-02-pullover.jpg"
-                alt="First ideation sketches for bottom navigation icon set">
 
             <h3>Simplifying design</h3>
             <p>The current interface was quite dense and heavy so I made some changes, starting with removing the top
@@ -273,8 +237,8 @@
 
             <h2>Emotional inspiration</h2>
             <h3>Preparation for high-fidelity</h3>
-            <p>In order to prepare for high-fidelity, I started a moodboard for texture, colors, typography, images and
-                wording. The themes I had in mind were:</p>
+            <p>As I ideated on texture, colors, typography, images and
+                wording, the themes I had in mind were:</p>
             <ul>
                 <li>Fun</li>
                 <li>Focused</li>
@@ -283,6 +247,18 @@
             <img class="image-100" src="img/ui-productivity/ideate-07-moodboard.jpg"
                 alt="Inspiration Board (mood board)">
 
+            <h2>Colors</h2>
+            <h3>Primary</h3>
+            <p>Purple is the primary color, call to action and used for data visualizations</p>
+            <img class="image-100" src="img/ui-productivity/colors-01-primary.png" alt="Primary Color">
+
+            <h3>Secondary</h3>
+            <p>The secondary colors represent the task status or label</p>
+            <img class="image-100" src="img/ui-productivity/colors-02-secondary.png" alt="Primary Color">
+
+            <h3>Supporting Colors</h3>
+            <img class="image-100" src="img/ui-productivity/colors-03-grey.png" alt="Primary Color">
+            <p>The remaining colors and are controlled by the user.</p>
 
 
             <h2>Typography</h2>
@@ -294,92 +270,65 @@
                 Source
                 Sans Pro. I reduced the line height for Source Sans Pro to 110%.
             </p>
-            <p>Oh and by the way, even though I am speaking in first person, I actually had nothing to do with any of
-                this.
-                It was a frog.</p>
-            <img class="image-100" src="img/ui-productivity/me-01-frog-legs.jpg" alt="Frog">
 
-            <h3>Typeface and Fonts</h3>
-
-            <p>I later changed the heading typeface to a more modern Serif called Solway. I really liked the Medium font
-                but after comparing my app with other recent apps, I decided
-                that regular was more appropriate.
+            <h3>Design Changes</h3>
+            <p>The heading typeface looked better with a more modern Serif called Solway and a reduced font from bold to
+                medium.
             </p>
 
-            <img class="image-100" src="img/ui-productivity/figma-07-typographySelection.png" alt="Typography"
-                style="margin-top: 5%;">
+            <img class="image-100" src="img/ui-productivity/productivity-type.png" alt="Typography">
 
-            <h3>Screens with Typography applied</h3>
-            <p>So here they are, the medium fidelity screens before the next step which is adding color, texture and
-                emotion.</p>
+            <h2>Design Annotations</h2>
+            <p>While working on a solo project, I like to keep a collaborative mindset. That means naming layers. Every
+                last one :D</p>
 
-            <img class="image-100" src="img/ui-productivity/figma-06-screensWithType.png" alt="Typography"
-                style="margin-top: 5%;">
+            <img class="image-100" src="img/ui-productivity/figma-06-screensWithType.png" alt="Typography">
 
-            <h2>Colors</h2>
-            <h3>Color choices</h3>
-            <p>I chose purple for the primary color to use for the call to action and data visualizatoins. Color ramps
-                can be difficult to interpret so
-                I took care in using annotations to directly label each category. The remaining colors were selected to
-                represent the default task status options which
-                are 'to do', 'doing', 'done' and 'blocked'.</p>
-            <img class="image-100" src="img/ui-productivity/figma-08-colorChoices.png" alt="Color palette"
-                style="margin-top: 5%;">
-            <h3>Color experiments</h3>
-            <p>I really like the dark theme and plan to use one that follows the device settings. For this project
-                though I am designing and building for light theme first.
-            </p>
+            <h2>Design Iterations</h2>
+            <h3></h3>
+            <p>One of the most exciting parts of UI design is taking the opportunity to explore new UI styles, even
+                non-conventional ones, and feed them back into the design system.</p>
 
-
-            <img class="image-100" src="img/ui-productivity/figma-10-experiment.png" alt="UI Experiments"
-                style="margin-top: 5%;">
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block;"
+                src="img/ui-productivity/figma-10-experiment.png" alt="UI Experiments">
 
             <!-- <img class="image-100" src="img/ui-productivity/figma-11-sample-screen-todo.png"
                 alt="Sample Final Screen, the To-Do list" style="margin-top: 5%;"> -->
 
             <h2>Final MVP Design</h2>
 
-            <h3>Things I would have done better</h3>
+            <p>The design looks friendly, clean and data intensive. It feels simple, with the exception of the data
+                charts and I am concerned that they may distract the user from the experience.</p>
+
+            <img class="image-100" src="img/ui-productivity/figma-12-final-screens-whiteBackground.png"
+                alt="UI MVP for Productivity App in Figma" style="margin-top: 5%;">
+
+            <h3>What would I have done differently?</h3>
             <ul>
                 <li>
-                    The Today screen, particularly near the weather report at the top, could be a lot more interesting.
+                    The Today screen should have more personalization.
                 </li>
                 <li>
-                    The data visualizatoins could be more simple and self-explanatory.
-                </li>
-                <li>
-                    The item details could be broken down into smaller separate chunks.
-                </li>
-                <li>
-                    The badges, while they should look shiny, should be more harmonious the rest of the user interface.
-                </li>
-                <li>
-                    Only the tab bar icons have been custom designed, the rest of the icons throughout the UI need to be
-                    custom designed as a family.
+                    The data visualizations could be more simple and self-explanatory.
                 </li>
                 <li>
                     The copy can be greatly improved to be more meaningful, concise and self-explanatory.
                 </li>
             </ul>
 
-            <img class="image-100" src="img/ui-productivity/figma-12-final-screens-whiteBackground.png"
-                alt="UI MVP for Productivity App in Figma" style="margin-top: 5%;">
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block;"
+                src="img/ui-productivity/portfolio-mockups-set-04.png" alt="Mockups - Set 4">
 
+            <h3>Let's take a break</h3>
+            <p>I ordered the most amazingly comfortable oversized pullover online. This was great for those late nights
+                I spent naming, grouping and ordering layers. Even better,
+                the color is ideal for spilling beer and snacks on without worrying about them leaving a permanent
+                stain. If interested, please connect with me on social media to share with me what you do while you name
+                your layers :)</p>
 
-
-            <h3>The To-Do list</h3>
-
-            <img class="image-50" src="img/ui-productivity/figma-11-sample-screen-todo.png" alt="Grid System"
-                style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
-
-            <h3>The item details</h3>
-
-            <img class="image-50" src="img/ui-productivity/figma-13-sample-screen-detail.png" alt="Grid System"
-                style="margin-left: auto; margin-right: auto; display: block; padding-top: 2%;">
-
-
-
-
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block;"
+                src="img/ui-productivity/me-02-pullover.jpg"
+                alt="First ideation sketches for bottom navigation icon set">
 
 
         </main>

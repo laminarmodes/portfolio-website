@@ -112,12 +112,21 @@ li {
   width: 100%;
   height: auto;
   padding-top: 2%;
+  margin-bottom: 40px;
+}
+
+.image-75 {
+  width: 75%;
+  height: auto;
+  padding-top: 2%;
+  margin-bottom: 40px;
 }
 
 .image-50 {
   width: 50%;
   height: auto;
   padding-top: 2%;
+  margin-bottom: 40px;
 }
 
 /*** ------------------------- LINKS ----------------------------- ***/
