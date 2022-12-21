@@ -84,50 +84,85 @@
 
             </div>
 
-            <h2>Accessible Color Ramps</h2>
+            <h2>Color Ramp Generator</h2>
 
-            <p>There are around 300 million people in the world with color vision issues so I am keen to promote the use
-                of colorblind-friendly color ramps, particularly from matplotlib. These palettes are beautiful and been
-                tested on some common conditions of colorblindness.
+            <h3>Who is this for?</h3>
+            <p>The data analyst, mathematician, scientist or developer who is working with data visualizations or data
+                stories. They are
+                motivated by
+                their love of working with numbers and logic, with a goal to convert insights into value.
+            </p>
+            <p>Their typical day is spent meeting with clients, cleaning/preparing data and eventually training and
+                testing models. One challenge they face is making their visualizations compelling, understandable and
+                accessible.</p>
+
+            <h3>History</h3>
+            <p>Scientists, engineers and developers who uses R, Python or d3js are familiar with the well known
+                colormaps, created by Nathaniel
+                Smith and Stefan van der Walt. These colormaps greatly improve the user experience of interpreting
+                simple or complex
+                data visualizations and can be seen in many discrete charts or heat-maps such as the one below.</p>
+
+            <img class="image-100" src="img/ui-desserts/two-color-maps.png" alt="Viridis and Magma color maps in R">
+
+            <!-- <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/mockup-01.png"
+                alt="iPhone Mockups"> -->
+            <h3>Colormap generators exist so what new features do I want to bring?</h3>
+            <p>There are already a few online websites where you can generate these same palettes. I really wanted to
+                to
+                bring this capability into a new User Interface for a mobile app that can be used offline and have some
+                additional capabilities.
+                These
+                would include letting the user customize individual colors,
+                perform
+                accessibility tests as well as copy and share their palettes. </p>
+            <h3>iOS Design</h3>
+            <img class="image-100"" src=" img/ios-android-colorgen/mockups-all-iOS-warm.png" alt="iOS Mockups Mockups">
+
+            <h3>The job to be done - Make it easier to apply these to visuals</h3>
+            <p>We can make reporting visuals more engaging and less overwhelming when using harmonious color ramps.
+                Scientists and Engineers may already know, or want to discover, that creating harmonious and compelling
+                visualizations
+                will attract a wider audience and keep them more engaged. In academic conferences, what I remember most
+                is
+                1) A compelling speaker and 2) A chart or visual that tells a story that hits me right between the
+                eyes.
             </p>
 
-            <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/mockup-01.png"
-                alt="iPhone Mockups">
+            <!-- <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/mockup-02.png"
+                alt="iPhone Mockups"> -->
+            <p>An offline app for iOS and Android would make these ramps more accessible.</p>
+            <img class="image-100" src=" img/ios-android-colorgen/iOS-Android-customer-slider.png"
+                alt="iOS and Android Mockup">
 
-            <h3>Beautiful</h3>
+            <h3>Android Design</h3>
+            <p>Both the iOS and Android design use native
+                components
+                and so all details of the user interface are intentionally differentiated from that of iOS.</p>
+            <img class="image-100" src=" img/ios-android-colorgen/mockups-all-Android-cool.png" alt="Android Mockups">
 
-            <p>We can make reporting visuals more engaging and less overwhelming when using harmonious color ramps.</p>
-
-            <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/mockup-02.png"
-                alt="iPhone Mockups">
+            <h3>Android Flow</h3>
+            <p>The Android design has the same information architecture and user flow as for iOS.</p>
+            <img class="image-100" src="img/ios-android-colorgen/android-prototype.png" alt="Android prototype">
 
             <h3>Enhancing Data Visualizations</h3>
 
-            <p>This makes it easier to interpret complex data.</p>
+            <p>These color ramps greatly improve the users flow through complex data visualizations. In addition to
+                being
+                beautiful and better for data interpretation, these colormaps have also been
+                tested on the most common conditions of colorblindness.
+            </p>
 
-            <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/mockup-03.png"
-                alt="iPhone Mockups">
+            <!-- <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/mockup-03.png"
+                alt="iPhone Mockups"> -->
 
-            <h3>Save discrete sets for later</h3>
-            <p>Each configuration can be saved, shared, and used for just about any type of visualization.</p>
 
-            <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/mockups-saved-colors.png"
-                alt="Saved color palettes">
 
-            <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/example-filters.png"
-                alt="Saved color palettes">
+            <h2>From Idea to Action</h2>
 
-            <h2>The Idea</h2>
-            <p>There are already a few online websites where you can generate these same palettes. I really wanted to
-                to
-                bring this capability into a mobile app that can be used offline and have some additional capabilities.
-                These
-                would include letting the user customize individual colors and
-                perform
-                accessibility tests. </p>
-            <h3>Swift Test</h3>
+            <h3>Swift Feasibility Test</h3>
             <p>One evening, I downloaded the colormap data and tested some basic logic in
-                SwiftUI.</p>
+                SwiftUI to confirm that it was possible to work with the colormap data on the Swift platform.</p>
             <iframe src="https://www.youtube.com/embed/UlKSfHz7rCA"
                 style="display: block; margin-left: auto; margin-right: auto; margin-top: 2%; margin-bottom: 5%;"
                 title="YouTube video player" frameborder="0"
@@ -135,9 +170,10 @@
                 allowfullscreen></iframe>
 
             <h3>A Proposal</h3>
-            <p>I took the
+            <p>I then took the
                 opportunity to jump
-                into Figjam and think the idea through.
+                into Figjam and think the idea through. I had a few core functionalities in mind that would help
+                an everyday user easily access and make use of these ramps.
             </p>
             <img class="image-100" src="img/ios-android-colorgen/proposal.png" alt="Proposal">
 
@@ -162,34 +198,53 @@
                 I really love designing (and building) for Native, so much that even when grey-boxing I could not seem
                 to shut up.</p>
             <h3>iOS versus Android</h3>
-            <p>Pointing out every single design difference in each OS.</p>
+            <p>Here I point out all of the differences between the iOS and Android user interfaces. It is not required,
+                but I went
+                an extra mile of learning Swift and Kotlin thoroughly and I also carry an iPhone and Samsung Phone. Not
+                every UI designer
+                needs to do this. For me, it gave me an even deeper
+                understanding of the operating system for which I was designing for.
+            </p>
             <img class="image-100" src="img/ios-android-colorgen/iOS-android-low-fi-compressed-xsmal.png"
                 alt="Low Fidelity Screens - iOS versus Android">
 
             <h3>App Store Inspiration</h3>
-            <p>The best design inspiration comes from analyzing real apps directly on your phone. I carry both an iPhone
-                and Samsung phone daily partially for
-                this reason.
+            <p>The best design inspiration comes from analyzing real apps directly on your phone. Another reason I carry
+                an iPhone and
+                Android phone is so that I can download the same apps with each and do a comparison. Sometimes apps will
+                look almost
+                identical on iOS and Android, depending on how the app was designed as well as the UI technology used.
             </p>
             <img class="image-100" src="img/ios-android-colorgen/portfolio-app-search.png"
                 alt="Exploring apps on the app store">
 
             <h3>Updated Screen Designs</h3>
-            <p>Improved by seeing what others have built.</p>
+            <p>Seeing the user interfaces implemented in real apps was the biggest inspiration throughout the entire
+                design process. While Dribble
+                is great for expanding the mind, the app stores shed light on what final design decisions were made, and
+                what really works for users.
+            </p>
             <img class="image-100" src="img/ios-android-colorgen/portfolio-app-inspired.png"
                 alt="New screen designs based on apps from the app store">
 
 
             <h2>Sounds and Haptic Feedback</h2>
 
-            <p>To enhance user engagement.</p>
+            <p>The color selection process can be made more immersive and fun with sounds and haptic feedback. This
+                also brings up the fascinating topic of Chromesthesia, or 'color hearing', where musical tone causes
+                a person to see color. One user reported seeing lighter colors for high notes and darker colors for
+                low notes.
+            </p>
 
             <img class="image-100" src="img/ios-android-colorgen/color-gen-with-sound.png"
                 alt="Illustration of color generator sound experience">
 
             <h2>Gestures</h2>
 
-            <p>Can the user hold this app in one hand while using a BI tool in the other hand?</p>
+            <p>Can the user hold this app in one hand while using a BI tool in the other hand? Here we do an analysis
+                on the types of gestures used and confirm that they can be performed with one hand, either the left or
+                the right hand.
+            </p>
 
             <h3>Navigational Gestures (1 tap)</h3>
             <ul>
@@ -217,42 +272,56 @@
 
             <h2>Final Screens (iOS and Android)</h2>
 
-            <h3>Accessibility</h3>
+            <h3>Customizations</h3>
 
             <p>Depending on how the colors are used, the user may want to adjust the saturation of some colors in order
-                to suit specific accessibility needs (e.g. displaying text).
+                to suit specific accessibility needs. This is extremly important when displaying text.
             </p>
 
             <img style="width: 80%; height: auto; padding: 2%; margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/example-color-adjust-ios-android.png"
                 alt="Adjusting saturation and brightness">
+            <h3>Contrast Test</h3>
+            <p>While selecting colors, the user can actively test the color contrast performance right in the same app
+                and make the necessary adjustments
+                in order to satisfy color contrast requirements. For a given color pair, the color contrast performance
+                is different depending on
+                which color is in the foreground versus background.
 
-            <p>So it is important to be able to test, right in the app, how the adjustment performs under these
-                conditions.</p>
+            </p>
 
             <img class="image-100" src="img/ios-android-colorgen/contrast-test.png" alt="">
 
             <h3>iOS Screens</h3>
-            <p>It felt like there was little available when it came to native iOS components for Figma however I
-                discovered "Play", which
-                solves this challenge beautifully (I cannot wait to use it in a project).
-            </p>
+            <p>Pros and Cons of designing for Native iOS in Figma
+            <ul>
+                <li>Pro: You can copy SF symbols directly as SVG and paste them into the design</li>
+                <li>Con: There were not as many UI kits available</li>
+            </ul>
+
             <img class="image-100" src="img/ios-android-colorgen/portfolio-ios-all.png" alt="iOS Screens">
 
             <h3>Android Screens</h3>
-            <p>The number of very well maintained android components made the Android screens much easier to build.</p>
+            <p>Pros and Cons of designing for Android in Figma
+            <ul>
+                <li>Pro: There is a large number of very well maintained UI kits available</li>
+                <li>Pro: You can customize the fill, corner radius and size of the material icons before using them</li>
+                <li>Con: You have to first download the material icons, rather than copying and pasting them directly
+                </li>
+            </ul>
             <img class="image-100" src="img/ios-android-colorgen/portfolio-android-all.png" alt="Android Screens">
 
             <h2>Figma Party</h2>
 
             <h3>iOS Night</h3>
-            <p>I challenge somebody to do this using a trackpad.</p>
+
+            <p>This was all done using a trackpad. Just kidding :D</p>
+            There is a promising new tool called 'Play' that enables designing iOS apps with native components directly
+            on a mobile device.</p>
             <img class="image-100" style="padding-bottom: 4%;" src="img/ios-android-colorgen/ios-prototype.png"
                 alt="iOS prototype">
 
-            <h3>Android Night</h3>
-            <p>I challenge somebody to do this using a trackpad.</p>
-            <img class="image-100" src="img/ios-android-colorgen/android-prototype.png" alt="Android prototype">
+
 
             <h3>User Feedback</h3>
 
@@ -261,40 +330,42 @@
 
             <h3>Uniform Color Ramp</h3>
             <p>Right from our pocket we can select a set of colors from the desired color map.</p>
-            <img class="image-100" style="padding-bottom: 5%;"
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/mockups-iOS-Android-screen_02.png"
                 alt="iOS and Android - Custom Color Palette Screen">
 
             <h3>Custom Color Ramp Points</h3>
             <p>But maybe we want to customize the points, and leave out yellow. </p>
 
-            <img class="image-100" style="padding-bottom: 5%;"
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/mockups-iOS-Android-screen_01.png"
                 alt="iOS and Android - Uniform Color Palette Screen">
 
             <h3>Save Colors</h3>
             <p>Another important feature is the ability to save and copy entire palettes or individual colors.</p>
-            <img style="width: 80%; height: auto; padding: 2%; margin-left: auto; margin-right: auto; display: block; "
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/dialog-copy.png" alt="Adjusting saturation and brightness">
-            <img style="width: 80%; height: auto; padding: 2%; margin-left: auto; margin-right: auto; display: block; "
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/dialog-save.png" alt="Adjusting saturation and brightness">
 
-            <img class="image-100" style="padding-bottom: 5%;"
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/mockups-iOS-Android-screen_03.png" alt="iOS and Android - Saved Colors">
 
             <h3>Contrast Test</h3>
             <p>We can test the contrast, without having to go to another website or app</p>
-            <img class="image-100" style="padding-bottom: 5%;"
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/mockups-iOS-Android-screen_04.png" alt="iOS and Android - Contrast Test">
 
             <h3>Data Chart Test</h3>
             <p>And have a look at how they would appear in popular charts</p>
-            <img class="image-100" style="padding-bottom: 5%;"
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/mockups-iOS-Android-screen_05.png" alt="iOS and Android - Chart Test">
 
             <h3>Colorblind Test</h3>
-            <p>We can also very, especially after making adjustments, that set is still colorblind friendly.</p>
-            <img class="image-100" style="padding-bottom: 5%;"
+            <p>After selecting a colormap or customized color palette, it is important to check
+                the colorblind performance.
+            </p>
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/mockups-iOS-Android-screen_06.png"
                 alt="iOS and Android - Colorblind Test">
 
@@ -302,8 +373,18 @@
             <p>This app was inspired by the original creators of these colormaps who have kindly provided access to the
                 color data.
             </p>
-            <img class="image-100" style="padding-bottom: 5%;"
+            <img class="image-75" style="margin-left: auto; margin-right: auto; display: block; "
                 src="img/ios-android-colorgen/mockups-iOS-Android-screen_07.png" alt="iOS and Android - About Screen">
+
+
+            <h3>Save discrete sets for later</h3>
+            <p>Each configuration can be saved, shared, and used for just about any type of visualization.</p>
+
+            <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/mockups-saved-colors.png"
+                alt="Saved color palettes">
+
+            <!-- <img class="image-100" style="padding-bottom: 5%;" src="img/ios-android-colorgen/example-filters.png"
+                alt="Saved color palettes"> -->
 
             <h2>I cannot wait to start building this in SwiftUI</h2>
             <h3>What I learned</h3>
